@@ -1,0 +1,1 @@
+vhdtdtfi -prj Mechanical_clock -o C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhi -module UART_RX -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work UART_RX.vhd 

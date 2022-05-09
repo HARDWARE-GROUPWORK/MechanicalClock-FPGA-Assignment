@@ -11,12 +11,23 @@
 			<Port Id="1" Dir="IN"/>
 			<Port Id="0" Dir="IN"/>
 		</Bus>
+		<Bus Id="OUTPUT_DATA">
+			<Port Id="7" Dir="OUT"/>
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
 		<Port Id="CLK" Dir="IN"/>
 		<Port Id="TX_EN" Dir="IN"/>
 		<Port Id="TX" Dir="OUT"/>
 		<Port Id="TX_ACTIVE" Dir="OUT"/>
 		<Port Id="TX_DONE" Dir="OUT"/>
 		<Port Id="RX" Dir="IN"/>
+		<Port Id="RX_EN" Dir="OUT"/>
 	</Ifc>
 </Interface>
 

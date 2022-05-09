@@ -37,7 +37,9 @@ entity MECHANICAL_CLOCK is
 		TX_ACTIVE: OUT STD_LOGIC;
 		TX_DONE: OUT STD_LOGIC;
 		INPUT_DATA : IN STD_LOGIC_VECTOR(7 downto 0);  
-		RX: IN STD_LOGIC
+		RX: IN STD_LOGIC;
+		RX_EN: OUT STD_LOGIC;
+		OUTPUT_DATA : OUT STD_LOGIC_VECTOR(7 downto 0)
 	);
 end MECHANICAL_CLOCK;
 
@@ -53,16 +55,32 @@ architecture Behavioral of MECHANICAL_CLOCK is
 		);
 	END COMPONENT;
 	
-	signal FIX_DATA : STD_LOGIC_VECTOR(7 downto 0) := "01000001";
+	--signal FIX_DATA : STD_LOGIC_VECTOR(7 downto 0) := "01000001";
+
+	COMPONENT UART_RX
+	PORT(
+		i_Clk : IN std_logic;
+		i_RX_Serial : IN std_logic;          
+		o_RX_DV : OUT std_logic;
+		o_RX_Byte : OUT std_logic_vector(7 downto 0)
+		);
+	END COMPONENT;
 
 begin
 	Inst_UART_TX: UART_TX PORT MAP(
 		i_Clk => CLK,
 		i_TX_DV => TX_EN,
-		i_TX_Byte => FIX_DATA,
+		i_TX_Byte => INPUT_DATA,
 		o_TX_Active => TX_ACTIVE,
 		o_TX_Serial => TX,
 		o_TX_Done => TX_DONE
+	);
+	
+	Inst_UART_RX: UART_RX PORT MAP(
+		i_Clk => CLK,
+		i_RX_Serial => RX,
+		o_RX_DV => RX_EN,
+		o_RX_Byte =>  OUTPUT_DATA
 	);
 
 end Behavioral;

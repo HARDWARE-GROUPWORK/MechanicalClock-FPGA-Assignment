@@ -33,33 +33,51 @@ Data Sheet report:
 All values displayed in nanoseconds (ns)
 
 Setup/Hold to clock CLK
-------------+------------+------------+------------+------------+------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
-------------+------------+------------+------------+------------+------------------+--------+
-TX_EN       |    2.729(R)|      SLOW  |   -1.108(R)|      FAST  |CLK_BUFGP         |   0.000|
-------------+------------+------------+------------+------------+------------------+--------+
+-------------+------------+------------+------------+------------+------------------+--------+
+             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------+------------+------------------+--------+
+INPUT_DATA<0>|    0.536(R)|      FAST  |    0.342(R)|      SLOW  |CLK_BUFGP         |   0.000|
+INPUT_DATA<1>|    0.674(R)|      SLOW  |    0.184(R)|      SLOW  |CLK_BUFGP         |   0.000|
+INPUT_DATA<2>|    0.568(R)|      SLOW  |    0.283(R)|      SLOW  |CLK_BUFGP         |   0.000|
+INPUT_DATA<3>|    0.399(R)|      FAST  |    0.500(R)|      SLOW  |CLK_BUFGP         |   0.000|
+INPUT_DATA<4>|    0.926(R)|      SLOW  |   -0.038(R)|      SLOW  |CLK_BUFGP         |   0.000|
+INPUT_DATA<5>|    0.922(R)|      SLOW  |   -0.036(R)|      SLOW  |CLK_BUFGP         |   0.000|
+INPUT_DATA<6>|    0.878(R)|      SLOW  |    0.008(R)|      SLOW  |CLK_BUFGP         |   0.000|
+INPUT_DATA<7>|    0.810(R)|      SLOW  |    0.070(R)|      SLOW  |CLK_BUFGP         |   0.000|
+RX           |    1.673(R)|      SLOW  |   -0.721(R)|      FAST  |CLK_BUFGP         |   0.000|
+TX_EN        |    3.127(R)|      SLOW  |   -1.215(R)|      SLOW  |CLK_BUFGP         |   0.000|
+-------------+------------+------------+------------+------------+------------------+--------+
 
 Clock CLK to Pad
-------------+-----------------+------------+-----------------+------------+------------------+--------+
-            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
-Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
-------------+-----------------+------------+-----------------+------------+------------------+--------+
-TX          |         8.998(R)|      SLOW  |         4.831(R)|      FAST  |CLK_BUFGP         |   0.000|
-TX_ACTIVE   |         7.255(R)|      SLOW  |         3.788(R)|      FAST  |CLK_BUFGP         |   0.000|
-TX_DONE     |         8.178(R)|      SLOW  |         4.273(R)|      FAST  |CLK_BUFGP         |   0.000|
-------------+-----------------+------------+-----------------+------------+------------------+--------+
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+OUTPUT_DATA<0>|         6.579(R)|      SLOW  |         3.278(R)|      FAST  |CLK_BUFGP         |   0.000|
+OUTPUT_DATA<1>|         6.554(R)|      SLOW  |         3.250(R)|      FAST  |CLK_BUFGP         |   0.000|
+OUTPUT_DATA<2>|         6.579(R)|      SLOW  |         3.278(R)|      FAST  |CLK_BUFGP         |   0.000|
+OUTPUT_DATA<3>|         6.554(R)|      SLOW  |         3.250(R)|      FAST  |CLK_BUFGP         |   0.000|
+OUTPUT_DATA<4>|         6.620(R)|      SLOW  |         3.319(R)|      FAST  |CLK_BUFGP         |   0.000|
+OUTPUT_DATA<5>|         6.550(R)|      SLOW  |         3.246(R)|      FAST  |CLK_BUFGP         |   0.000|
+OUTPUT_DATA<6>|         6.581(R)|      SLOW  |         3.280(R)|      FAST  |CLK_BUFGP         |   0.000|
+OUTPUT_DATA<7>|         6.554(R)|      SLOW  |         3.250(R)|      FAST  |CLK_BUFGP         |   0.000|
+RX_EN         |         9.075(R)|      SLOW  |         4.830(R)|      FAST  |CLK_BUFGP         |   0.000|
+TX            |         9.640(R)|      SLOW  |         5.176(R)|      FAST  |CLK_BUFGP         |   0.000|
+TX_ACTIVE     |         7.718(R)|      SLOW  |         4.050(R)|      FAST  |CLK_BUFGP         |   0.000|
+TX_DONE       |         7.584(R)|      SLOW  |         3.923(R)|      FAST  |CLK_BUFGP         |   0.000|
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    2.775|         |         |         |
+CLK            |    3.100|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon May 09 18:39:36 2022 
+Analysis completed Mon May 09 22:00:36 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:

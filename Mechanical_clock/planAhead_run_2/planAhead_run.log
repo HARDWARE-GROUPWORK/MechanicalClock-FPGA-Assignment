@@ -11,89 +11,10 @@ Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts
 start_gui
 source C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/pa.fromHdl.tcl
 # create_project -name Mechanical_clock -dir "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/planAhead_run_2" -part xc6slx9tqg144-3
-# set_param project.pinAheadLayout yes
-# set srcset [get_property srcset [current_run -impl]]
-# set_property target_constrs_file "MECHANICAL_CLOCK.ucf" [current_fileset -constrset]
-Adding file 'C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.ucf' to fileset 'constrs_1'
-# set hdlfile [add_files [list {UART_TX.vhd}]]
-# set_property file_type VHDL $hdlfile
-# set_property library work $hdlfile
-# set hdlfile [add_files [list {MECHANICAL_CLOCK.vhd}]]
-# set_property file_type VHDL $hdlfile
-# set_property library work $hdlfile
-# set_property top MECHANICAL_CLOCK $srcset
-# add_files [list {MECHANICAL_CLOCK.ucf}] -fileset [get_property constrset [current_run]]
-# open_rtl_design -part xc6slx9tqg144-3
-Using Verific elaboration
-Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
-Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
-Parsing VHDL file "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_TX.vhd" into library work
-Parsing VHDL file "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.vhd" into library work
-Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
-Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
-Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
-Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
-Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
-Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
-Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
-Parsing UCF File [C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.ucf]
-Finished Parsing UCF File [C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.ucf]
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
 
-Phase 0 | Netlist Checksum: 39c0241b
-open_rtl_design: Time (s): elapsed = 00:00:07 . Memory (MB): peak = 669.090 ; gain = 150.578
-update_compile_order -fileset sim_1
-startgroup
-set_property package_pin P55 [get_ports {INPUT_DATA[7]}]
-endgroup
-startgroup
-set_property package_pin P56 [get_ports {INPUT_DATA[6]}]
-endgroup
-startgroup
-set_property package_pin P57 [get_ports {INPUT_DATA[5]}]
-endgroup
-startgroup
-set_property package_pin P58 [get_ports {INPUT_DATA[4]}]
-endgroup
-startgroup
-set_property package_pin P59 [get_ports {INPUT_DATA[3]}]
-endgroup
-startgroup
-set_property package_pin P61 [get_ports {INPUT_DATA[2]}]
-endgroup
-startgroup
-set_property package_pin P62 [get_ports {INPUT_DATA[1]}]
-endgroup
-startgroup
-set_property package_pin P66 [get_ports {INPUT_DATA[0]}]
-endgroup
-startgroup
-set_property package_pin P123 [get_ports CLK]
-endgroup
-set_property package_pin "" [get_ports [list  RX]]
-set_property package_pin "" [get_ports [list  TX]]
-startgroup
-set_property package_pin P124 [get_ports TX]
-endgroup
-set_property package_pin "" [get_ports [list  RX]]
-startgroup
-set_property package_pin P127 [get_ports RX]
-endgroup
-startgroup
-set_property package_pin P67 [get_ports TX_ACTIVE]
-endgroup
-startgroup
-set_property package_pin P74 [get_ports TX_DONE]
-endgroup
-startgroup
-set_property package_pin P45 [get_ports TX_EN]
-endgroup
-startgroup
-set_property package_pin P74 [get_ports TX_DONE]
-endgroup
-save_constraints
+    while executing
+"create_project -name Mechanical_clock -dir "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/planAhead_run_2" -part xc6slx9tqg144-3"
+    (file "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/pa.fromHdl.tcl" line 4)
 exit
-ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
-INFO: [Common 17-206] Exiting PlanAhead at Mon May 09 16:46:26 2022...
+INFO: [Common 17-206] Exiting PlanAhead at Mon May 09 21:59:56 2022...
 INFO: [Common 17-83] Releasing license: PlanAhead
