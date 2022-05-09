@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\ASUS\Desktop\FPGA_Project\tutorial\tutorial_led_blink.ncd
+OUTFILE=C:\Users\ASUS\Desktop\FPGA_Project\tutorial\tutorial_led_blink.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\Users\ASUS\Desktop\FPGA_Project\tutorial
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon May 09 04:19:28 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "i_switch_1" LOCATE = SITE "P56" LEVEL 1;
+COMP "i_switch_2" LOCATE = SITE "P57" LEVEL 1;
+COMP "i_clock" LOCATE = SITE "P123" LEVEL 1;
+COMP "i_enable" LOCATE = SITE "P55" LEVEL 1;
+COMP "o_led_drive" LOCATE = SITE "P67" LEVEL 1;
+SCHEMATIC END;
+

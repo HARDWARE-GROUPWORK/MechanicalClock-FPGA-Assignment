@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="i_clock" Dir="IN"/>
+		<Port Id="i_enable" Dir="IN"/>
+		<Port Id="i_switch_1" Dir="IN"/>
+		<Port Id="i_switch_2" Dir="IN"/>
+		<Port Id="o_led_drive" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

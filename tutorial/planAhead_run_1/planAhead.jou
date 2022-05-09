@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon May 09 03:58:17 2022
+# Process ID: 15212
+# Log file: C:/Users/ASUS/Desktop/FPGA_Project/tutorial/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/ASUS/Desktop/FPGA_Project/tutorial/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/ASUS/Desktop/FPGA_Project/tutorial/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P123 [get_ports i_clock]
+endgroup
+startgroup
+set_property package_pin P55 [get_ports i_enable]
+endgroup
+startgroup
+set_property package_pin P56 [get_ports i_switch_1]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports i_switch_2]
+endgroup
+startgroup
+set_property package_pin P67 [get_ports o_led_drive]
+endgroup
+save_constraints
+startgroup
+set_property package_pin P57 [get_ports i_switch_2]
+endgroup
+save_constraints

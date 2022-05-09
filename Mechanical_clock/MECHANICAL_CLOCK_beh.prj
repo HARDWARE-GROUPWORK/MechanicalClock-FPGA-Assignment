@@ -1,0 +1,2 @@
+vhdl work "UART_TX.vhd"
+vhdl work "MECHANICAL_CLOCK.vhd"

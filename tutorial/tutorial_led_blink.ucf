@@ -1,0 +1,8 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "i_clock" LOC = P123;
+NET "i_enable" LOC = P55;
+NET "i_switch_1" LOC = P56;
+NET "o_led_drive" LOC = P67;
+NET "i_switch_2" LOC = P57;
