@@ -1,9 +1,6 @@
-set -tmpdir "xst/projnav.tmp"
-set -xsthdpdir "xst"
-run
--ifn MECHANICAL_CLOCK.prj
--ofn MECHANICAL_CLOCK
--ofmt NGC
+set -tmpdir "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/xst"
+run -compileonly yes
 -p xc6slx9-3-tqg144
 -top MECHANICAL_CLOCK
 -opt_mode Speed
@@ -50,3 +47,4 @@ run
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
+-ifn MECHANICAL_CLOCK.prj

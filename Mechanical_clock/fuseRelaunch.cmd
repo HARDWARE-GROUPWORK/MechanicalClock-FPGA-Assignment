@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_isim_beh.exe" -prj "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_beh.prj" "work.MECHANICAL_CLOCK" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_tb_isim_beh.exe" -prj "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_tb_beh.prj" "work.MECHANICAL_CLOCK_tb" 
