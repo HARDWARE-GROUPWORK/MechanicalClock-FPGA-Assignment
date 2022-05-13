@@ -42,7 +42,7 @@ ARCHITECTURE behavior OF MECHANICAL_CLOCK_tb IS
     COMPONENT MECHANICAL_CLOCK
     PORT(
          CLK : IN  std_logic;
-         TX_EN : IN  std_logic;
+         --TX_EN : IN  std_logic;
          TX : OUT  std_logic;
          TX_ACTIVE : OUT  std_logic;
          TX_DONE : OUT  std_logic;
@@ -51,27 +51,25 @@ ARCHITECTURE behavior OF MECHANICAL_CLOCK_tb IS
          RX_EN : OUT  std_logic;
          OUTPUT_DATA : OUT  std_logic_vector(7 downto 0);
          SEND_BUTTON : IN  std_logic;
-			INDEX_TX: OUT natural range 0 to 1;
-			IS_SEND: OUT std_logic
-        );
+			INDEX_TX: OUT natural range 0 to 1
+        ); 
     END COMPONENT;
     
 
    --Inputs
    signal CLK : std_logic := '0';
-   signal TX_EN : std_logic := '0';
+   --signal TX_EN : std_logic := '0';
    signal INPUT_DATA : std_logic_vector(7 downto 0) := (others => '0');
    signal RX : std_logic := '0';
    signal SEND_BUTTON : std_logic := '0'; 
 
  	--Outputs
-   signal TX : std_logic;
-   signal TX_ACTIVE : std_logic;
-   signal TX_DONE : std_logic;
+   signal TX : std_logic;  
+   signal TX_ACTIVE : std_logic; 
+   signal TX_DONE : std_logic; 
    signal RX_EN : std_logic;
    signal OUTPUT_DATA : std_logic_vector(7 downto 0);
 	signal INDEX_TX: natural range 0 to 16;
-	signal IS_SEND : std_logic;
 	
 
    -- Clock period definitions
@@ -82,7 +80,7 @@ BEGIN
 	-- Instantiate the Unit Under Test (UUT)
    uut: MECHANICAL_CLOCK PORT MAP (
           CLK => CLK,
-          TX_EN => TX_EN,
+          --TX_EN => TX_EN,
           TX => TX,
           TX_ACTIVE => TX_ACTIVE,
           TX_DONE => TX_DONE,
@@ -91,8 +89,7 @@ BEGIN
           RX_EN => RX_EN,
           OUTPUT_DATA => OUTPUT_DATA,
           SEND_BUTTON => SEND_BUTTON,
-			 INDEX_TX => INDEX_TX,
-			 IS_SEND => IS_SEND
+			 INDEX_TX => INDEX_TX
         );
 
    -- Clock process definitions
@@ -113,13 +110,21 @@ BEGIN
 
       --wait for CLK_period*10;
 
-		wait for 100 ms;   
+		wait for 50 ms;   
 		
 
 		SEND_BUTTON <= '1';  
       -- insert stimulus here  
-		--wait for 100 ms;
-		--SEND_BUTTON <= '0'; 
+		wait for 200 us;
+		SEND_BUTTON <= '0'; 
+		
+		wait for 50 ms;
+		
+		SEND_BUTTON <= '1';  
+      -- insert stimulus here  
+		wait for 200 us;
+		SEND_BUTTON <= '0'; 
+		wait;
 
       --wait;
    end process;

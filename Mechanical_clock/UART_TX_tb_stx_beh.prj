@@ -1,2 +1,0 @@
-vhdl isim_temp "UART_TX.vhd"
-vhdl isim_temp "UART_TX_tb.vhd"
