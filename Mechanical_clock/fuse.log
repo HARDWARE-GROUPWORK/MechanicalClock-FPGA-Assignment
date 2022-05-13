@@ -17,8 +17,9 @@ Compiling architecture behavioral of entity UART_RX [\UART_RX(174)\]
 Compiling architecture behavioral of entity MECHANICAL_CLOCK [\MECHANICAL_CLOCK(174)\]
 Compiling architecture behavior of entity mechanical_clock_tb
 Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
 WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\MECHANICAL_CLOCK_tb_isim_beh.exe.sim\libPortability.dll".
 Compiled 10 VHDL Units
 Built simulation executable C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_tb_isim_beh.exe
-Fuse Memory Usage: 36340 KB
-Fuse CPU Usage: 484 ms
+Fuse Memory Usage: 36356 KB
+Fuse CPU Usage: 437 ms

@@ -9,4 +9,4 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # run all
-Stopped at time : 245623650 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.vhd" Line 95
+Stopped at time : 243041450 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 85

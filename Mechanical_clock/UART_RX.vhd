@@ -100,7 +100,7 @@ begin
            
         -- Check middle of start bit to make sure it's still low
         when s_RX_Start_Bit =>
-          if r_Clk_Count = (g_CLKS_PER_BIT-1)/2 then
+          if r_Clk_Count = (g_CLKS_PER_BIT-1)/2 then -- (g_CLKS_PER_BIT-1)/2
             if r_RX_Data = '0' then
               r_Clk_Count <= 0;  -- reset counter since we found the middle
               r_SM_Main   <= s_RX_Data_Bits;

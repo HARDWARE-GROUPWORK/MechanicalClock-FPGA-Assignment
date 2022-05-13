@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-POP_COMPUTER::  Fri May 13 07:48:04 2022
+POP_COMPUTER::  Fri May 13 15:56:48 2022
 
 par -w -intstyle ise -ol high -mt off MECHANICAL_CLOCK_map.ncd
 MECHANICAL_CLOCK.ncd MECHANICAL_CLOCK.pcf 
@@ -27,32 +27,39 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                    62 out of  11,440    1%
-    Number used as Flip Flops:                  62
+  Number of Slice Registers:                    69 out of  11,440    1%
+    Number used as Flip Flops:                  69
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                         96 out of   5,720    1%
-    Number used as logic:                       95 out of   5,720    1%
-      Number using O6 output only:              80
+  Number of Slice LUTs:                        108 out of   5,720    1%
+    Number used as logic:                       97 out of   5,720    1%
+      Number using O6 output only:              78
       Number using O5 output only:               0
-      Number using O5 and O6:                   15
+      Number using O5 and O6:                   19
       Number used as ROM:                        0
-    Number used as Memory:                       1 out of   1,440    1%
-      Number used as Dual Port RAM:              0
+    Number used as Memory:                       9 out of   1,440    1%
+      Number used as Dual Port RAM:              8
+        Number using O6 output only:             4
+        Number using O5 output only:             0
+        Number using O5 and O6:                  4
       Number used as Single Port RAM:            0
       Number used as Shift Register:             1
         Number using O6 output only:             1
         Number using O5 output only:             0
         Number using O5 and O6:                  0
+    Number used exclusively as route-thrus:      2
+      Number with same-slice register load:      2
+      Number with same-slice carry load:         0
+      Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    32 out of   1,430    2%
+  Number of occupied Slices:                    36 out of   1,430    2%
   Number of MUXCYs used:                         0 out of   2,860    0%
-  Number of LUT Flip Flop pairs used:          102
-    Number with an unused Flip Flop:            44 out of     102   43%
-    Number with an unused LUT:                   6 out of     102    5%
-    Number of fully used LUT-FF pairs:          52 out of     102   50%
+  Number of LUT Flip Flop pairs used:          111
+    Number with an unused Flip Flop:            51 out of     111   45%
+    Number with an unused LUT:                   3 out of     111    2%
+    Number of fully used LUT-FF pairs:          57 out of     111   51%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -63,8 +70,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        28 out of     102   27%
-    Number of LOCed IOBs:                       23 out of      28   82%
+  Number of bonded IOBs:                        33 out of     102   32%
+    Number of LOCed IOBs:                       23 out of      33   69%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -98,24 +105,20 @@ Router effort level (-rl):    High
 Starting initial Timing Analysis.  REAL time: 2 secs 
 Finished initial Timing Analysis.  REAL time: 2 secs 
 
+WARNING:Par:288 - The signal INPUT_DATA<5>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal INPUT_DATA<6>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal INPUT_DATA<7>_IBUF has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal INPUT_DATA<0>_IBUF has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal INPUT_DATA<1>_IBUF has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal INPUT_DATA<2>_IBUF has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal INPUT_DATA<3>_IBUF has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal INPUT_DATA<4>_IBUF has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal INPUT_DATA<5>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_r_Payload_RX1_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 555 unrouted;      REAL time: 2 secs 
+Phase  1  : 639 unrouted;      REAL time: 2 secs 
 
-Phase  2  : 512 unrouted;      REAL time: 2 secs 
+Phase  2  : 575 unrouted;      REAL time: 2 secs 
 
-Phase  3  : 131 unrouted;      REAL time: 3 secs 
+Phase  3  : 143 unrouted;      REAL time: 3 secs 
 
-Phase  4  : 131 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  4  : 143 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
 Updating file: MECHANICAL_CLOCK.ncd with current fully routed design.
 
@@ -151,8 +154,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     3.432ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.413ns|            |       0|           0
+  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     3.494ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.377ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -168,7 +171,7 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-WARNING:Par:283 - There are 8 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+WARNING:Par:283 - There are 4 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
 Total REAL time to PAR completion: 3 secs 
 Total CPU time to PAR completion: 3 secs 
@@ -179,7 +182,7 @@ Placer: Placement generated during map.
 Routing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 10
+Number of warning messages: 6
 Number of info messages: 2
 
 Writing design to file MECHANICAL_CLOCK.ncd

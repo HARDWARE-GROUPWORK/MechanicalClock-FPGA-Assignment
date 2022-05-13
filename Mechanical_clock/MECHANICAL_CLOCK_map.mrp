@@ -11,42 +11,49 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Fri May 13 07:47:56 2022
+Mapped Date    : Fri May 13 15:56:41 2022
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    0
+Number of warnings:    1
 Slice Logic Utilization:
-  Number of Slice Registers:                    62 out of  11,440    1%
-    Number used as Flip Flops:                  62
+  Number of Slice Registers:                    69 out of  11,440    1%
+    Number used as Flip Flops:                  69
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                         96 out of   5,720    1%
-    Number used as logic:                       95 out of   5,720    1%
-      Number using O6 output only:              80
+  Number of Slice LUTs:                        108 out of   5,720    1%
+    Number used as logic:                       97 out of   5,720    1%
+      Number using O6 output only:              78
       Number using O5 output only:               0
-      Number using O5 and O6:                   15
+      Number using O5 and O6:                   19
       Number used as ROM:                        0
-    Number used as Memory:                       1 out of   1,440    1%
-      Number used as Dual Port RAM:              0
+    Number used as Memory:                       9 out of   1,440    1%
+      Number used as Dual Port RAM:              8
+        Number using O6 output only:             4
+        Number using O5 output only:             0
+        Number using O5 and O6:                  4
       Number used as Single Port RAM:            0
       Number used as Shift Register:             1
         Number using O6 output only:             1
         Number using O5 output only:             0
         Number using O5 and O6:                  0
+    Number used exclusively as route-thrus:      2
+      Number with same-slice register load:      2
+      Number with same-slice carry load:         0
+      Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    32 out of   1,430    2%
+  Number of occupied Slices:                    36 out of   1,430    2%
   Number of MUXCYs used:                         0 out of   2,860    0%
-  Number of LUT Flip Flop pairs used:          102
-    Number with an unused Flip Flop:            44 out of     102   43%
-    Number with an unused LUT:                   6 out of     102    5%
-    Number of fully used LUT-FF pairs:          52 out of     102   50%
-    Number of unique control sets:              10
+  Number of LUT Flip Flop pairs used:          111
+    Number with an unused Flip Flop:            51 out of     111   45%
+    Number with an unused LUT:                   3 out of     111    2%
+    Number of fully used LUT-FF pairs:          57 out of     111   51%
+    Number of unique control sets:              11
     Number of slice register sites lost
-      to control set restrictions:              33 out of  11,440    1%
+      to control set restrictions:              38 out of  11,440    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -55,8 +62,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        28 out of     102   27%
-    Number of LOCed IOBs:                       23 out of      28   82%
+  Number of bonded IOBs:                        33 out of     102   32%
+    Number of LOCed IOBs:                       23 out of      33   69%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -85,7 +92,7 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                4.34
 
-Peak Memory Usage:  4513 MB
+Peak Memory Usage:  4512 MB
 Total REAL time to MAP completion:  5 secs 
 Total CPU time to MAP completion:   5 secs 
 
@@ -110,17 +117,18 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
+WARNING:PhysDesignRules:367 - The signal <Mram_r_Payload_RX1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
 
 Section 3 - Informational
 -------------------------
 INFO:LIT:243 - Logical network INPUT_DATA<7>_IBUF has no load.
-INFO:LIT:395 - The above info message is repeated 7 more times for the following
+INFO:LIT:395 - The above info message is repeated 4 more times for the following
    (max. 5 shown):
    INPUT_DATA<6>_IBUF,
    INPUT_DATA<5>_IBUF,
-   INPUT_DATA<4>_IBUF,
-   INPUT_DATA<3>_IBUF,
-   INPUT_DATA<2>_IBUF
+   Mram_r_Payload_RX22/SPO,
+   Mram_r_Payload_RX21/SPO
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -132,8 +140,8 @@ INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
    1.260 Volts)
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
-INFO:Place:834 - Only a subset of IOs are locked. Out of 28 IOs, 23 are locked
-   and 5 are not locked. If you would like to print the names of these IOs,
+INFO:Place:834 - Only a subset of IOs are locked. Out of 33 IOs, 23 are locked
+   and 10 are not locked. If you would like to print the names of these IOs,
    please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
 INFO:Pack:1650 - Map created a placed design.
 
@@ -157,6 +165,11 @@ Section 6 - IOB Properties
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 | CLK                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| INDEX_RX<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| INDEX_RX<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| INDEX_RX<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| INDEX_RX<3>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| INDEX_RX<4>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | INDEX_TX<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | INDEX_TX<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | INDEX_TX<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |

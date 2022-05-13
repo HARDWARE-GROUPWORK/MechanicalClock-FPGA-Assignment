@@ -26,11 +26,11 @@
 -- simulation model.
 --------------------------------------------------------------------------------
 LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_1164.ALL; 
  
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---USE ieee.numeric_std.ALL;
+USE ieee.numeric_std.ALL;
  
 ENTITY MECHANICAL_CLOCK_tb IS
 END MECHANICAL_CLOCK_tb;
@@ -51,7 +51,8 @@ ARCHITECTURE behavior OF MECHANICAL_CLOCK_tb IS
          RX_EN : OUT  std_logic;
          OUTPUT_DATA : OUT  std_logic_vector(7 downto 0);
          SEND_BUTTON : IN  std_logic;
-			INDEX_TX: OUT natural range 0 to 1
+			INDEX_TX: OUT natural range 0 to 16; -- change from 1 to 16
+			INDEX_RX: OUT natural range 0 to 16
         ); 
     END COMPONENT;
     
@@ -70,6 +71,7 @@ ARCHITECTURE behavior OF MECHANICAL_CLOCK_tb IS
    signal RX_EN : std_logic;
    signal OUTPUT_DATA : std_logic_vector(7 downto 0);
 	signal INDEX_TX: natural range 0 to 16;
+	signal INDEX_RX: natural range 0 to 16;
 	
 
    -- Clock period definitions
@@ -89,7 +91,8 @@ BEGIN
           RX_EN => RX_EN,
           OUTPUT_DATA => OUTPUT_DATA,
           SEND_BUTTON => SEND_BUTTON,
-			 INDEX_TX => INDEX_TX
+			 INDEX_TX => INDEX_TX,
+			 INDEX_RX => INDEX_RX
         );
 
    -- Clock process definitions
@@ -109,24 +112,68 @@ BEGIN
       --wait for 100 ns;	
 
       --wait for CLK_period*10;
-
-		wait for 50 ms;   
-		
+		wait for 20 ms;   
 
 		SEND_BUTTON <= '1';  
       -- insert stimulus here  
 		wait for 200 us;
 		SEND_BUTTON <= '0'; 
 		
-		wait for 50 ms;
+		wait for 20 ms;
 		
 		SEND_BUTTON <= '1';  
       -- insert stimulus here  
 		wait for 200 us;
-		SEND_BUTTON <= '0'; 
-		wait;
+		SEND_BUTTON <= '0';  
 
-      --wait;
+		wait for 200 us;
+		
+
+
+      wait;
    end process;
+	
+	stim_proc2: process
+	variable mock_data : std_logic_vector(7 downto 0) := (others => '0');
+	variable onebit : std_logic := '0'; 
+	begin
+		
+		RX <= '1';
+		wait for 20 ms; 
+	
+		wait for 0.225 us;
+		
+		-- first start bit
+		
+		for I in 0 to 16 loop
+			mock_data := std_logic_vector(to_unsigned(I, mock_data'length));
+		
+			RX <= '0';
+			wait for 8.7 us;
+			-- 8 bits
+			RX <= mock_data(0);
+			wait for 8.7 us;
+			RX <= mock_data(1);
+			wait for 8.7 us;
+			RX <= mock_data(2);
+			wait for 8.7 us;
+			RX <= mock_data(3);
+			wait for 8.7 us;
+			RX <= mock_data(4);
+			wait for 8.7 us;
+			RX <= mock_data(5);
+			wait for 8.7 us;
+			RX <= mock_data(6);
+			wait for 8.7 us;
+			RX <= mock_data(7);
+			wait for 8.7 us;
+			-- stop bit
+			RX <= '1';
+			wait for 8.7 us;
+		end loop;
+		
+		wait for 87 us;
+		wait;
+	end process;
 
 END;
