@@ -27,6 +27,7 @@
 -- (10000000)/(115200) = 87
 -- (20000000)/(115200) = 173.611 -> 174
 -- (20000000)/(57600) = 347.222 -> 347
+-- (20000000)/(9600) = 2,083.33 -> 2083
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -42,7 +43,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity UART_TX is
 	generic (
-    g_CLKS_PER_BIT : integer := 174     -- Needs to be set correctly
+    g_CLKS_PER_BIT : integer := 2083     -- Needs to be set correctly
     );
 	port (
     i_Clk       : in  std_logic;

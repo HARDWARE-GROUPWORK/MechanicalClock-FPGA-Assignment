@@ -30,9 +30,6 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity MECHANICAL_CLOCK is
-	generic (
-    g_CLKS_PER_BIT : integer := 174     -- Needs to be set correctly
-    );
 	PORT (
 		CLK : IN STD_LOGIC;
 		
@@ -44,12 +41,15 @@ entity MECHANICAL_CLOCK is
 		
 		RX: IN STD_LOGIC;
 		RX_EN: OUT STD_LOGIC;
+		RX_LED: OUT STD_LOGIC;
 		OUTPUT_DATA : OUT STD_LOGIC_VECTOR(7 downto 0);
 		
 		SEND_BUTTON: IN STD_LOGIC;
 		
 		INDEX_TX: OUT natural range 0 to 16;
-		INDEX_RX: OUT natural range 0 to 16
+		INDEX_RX: OUT natural range 0 to 16;
+		
+		LED_DEBUG: OUT STD_LOGIC := '0'
 	);
 end MECHANICAL_CLOCK;
 
@@ -182,14 +182,13 @@ begin
 					
 					when s_Receive_RX => -- case Receive
 						if r_RX_DONE = '1' then
-						
 							r_Main_RX <= s_Done_RX; -- receive done
 						else
 							r_Main_RX <= s_Receive_RX; -- waiting
 						end if;
-							
+						
 					when s_Done_RX =>
-						r_Payload_RX(r_Index_TX) <= r_Output_Byte; -- assign Output Byte to Payload (1 byte only at a time)
+						r_Payload_RX(r_Index_RX) <= r_Output_Byte; -- assign Output Byte to Payload (1 byte only at a time)
 						if r_Index_RX < 16 then -- during 17 bytes
 							r_Index_RX <= r_Index_RX + 1; -- increment + 1
 						else
@@ -229,6 +228,7 @@ begin
 	OUTPUT_DATA <= r_Payload_RX(to_integer(signed(INPUT_DATA))); -- test by switch
 	RX_EN <= r_RX_DONE;
 	INDEX_RX <= r_Index_RX;
+	RX_LED <= RX;
 
 
 end Behavioral;

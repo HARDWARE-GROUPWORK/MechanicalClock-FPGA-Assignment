@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-POP_COMPUTER::  Fri May 13 15:56:48 2022
+POP_COMPUTER::  Fri May 13 21:53:37 2022
 
 par -w -intstyle ise -ol high -mt off MECHANICAL_CLOCK_map.ncd
 MECHANICAL_CLOCK.ncd MECHANICAL_CLOCK.pcf 
@@ -27,39 +27,36 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                    69 out of  11,440    1%
-    Number used as Flip Flops:                  69
+  Number of Slice Registers:                    77 out of  11,440    1%
+    Number used as Flip Flops:                  77
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        108 out of   5,720    1%
-    Number used as logic:                       97 out of   5,720    1%
-      Number using O6 output only:              78
-      Number using O5 output only:               0
-      Number using O5 and O6:                   19
+  Number of Slice LUTs:                        121 out of   5,720    2%
+    Number used as logic:                      111 out of   5,720    1%
+      Number using O6 output only:              71
+      Number using O5 output only:              20
+      Number using O5 and O6:                   20
       Number used as ROM:                        0
-    Number used as Memory:                       9 out of   1,440    1%
+    Number used as Memory:                       8 out of   1,440    1%
       Number used as Dual Port RAM:              8
         Number using O6 output only:             4
         Number using O5 output only:             0
         Number using O5 and O6:                  4
       Number used as Single Port RAM:            0
-      Number used as Shift Register:             1
-        Number using O6 output only:             1
-        Number using O5 output only:             0
-        Number using O5 and O6:                  0
+      Number used as Shift Register:             0
     Number used exclusively as route-thrus:      2
-      Number with same-slice register load:      2
-      Number with same-slice carry load:         0
+      Number with same-slice register load:      0
+      Number with same-slice carry load:         2
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    36 out of   1,430    2%
-  Number of MUXCYs used:                         0 out of   2,860    0%
-  Number of LUT Flip Flop pairs used:          111
-    Number with an unused Flip Flop:            51 out of     111   45%
-    Number with an unused LUT:                   3 out of     111    2%
-    Number of fully used LUT-FF pairs:          57 out of     111   51%
+  Number of occupied Slices:                    40 out of   1,430    2%
+  Number of MUXCYs used:                        24 out of   2,860    1%
+  Number of LUT Flip Flop pairs used:          128
+    Number with an unused Flip Flop:            56 out of     128   43%
+    Number with an unused LUT:                   7 out of     128    5%
+    Number of fully used LUT-FF pairs:          65 out of     128   50%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -70,8 +67,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        33 out of     102   32%
-    Number of LOCed IOBs:                       23 out of      33   69%
+  Number of bonded IOBs:                        35 out of     102   34%
+    Number of LOCed IOBs:                       25 out of      35   71%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -112,29 +109,29 @@ WARNING:Par:288 - The signal Mram_r_Payload_RX1_RAMD_D1_O has no load.  PAR will
 Starting Router
 
 
-Phase  1  : 639 unrouted;      REAL time: 2 secs 
+Phase  1  : 649 unrouted;      REAL time: 2 secs 
 
-Phase  2  : 575 unrouted;      REAL time: 2 secs 
+Phase  2  : 567 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 143 unrouted;      REAL time: 3 secs 
+Phase  3  : 110 unrouted;      REAL time: 3 secs 
 
-Phase  4  : 143 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  4  : 110 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
 Updating file: MECHANICAL_CLOCK.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
-Total REAL time to Router completion: 3 secs 
-Total CPU time to Router completion: 3 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Total REAL time to Router completion: 4 secs 
+Total CPU time to Router completion: 4 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -154,8 +151,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     3.494ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.377ns|            |       0|           0
+  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     3.537ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.301ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -173,10 +170,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 4 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 3 secs 
-Total CPU time to PAR completion: 3 secs 
+Total REAL time to PAR completion: 4 secs 
+Total CPU time to PAR completion: 4 secs 
 
-Peak Memory Usage:  4458 MB
+Peak Memory Usage:  4456 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

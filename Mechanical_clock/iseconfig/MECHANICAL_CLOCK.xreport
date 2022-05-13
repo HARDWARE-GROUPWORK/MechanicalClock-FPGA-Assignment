@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-05-13T11:04:24</DateModified>
+  <DateModified>2022-05-13T23:49:53</DateModified>
   <ModuleName>MECHANICAL_CLOCK</ModuleName>
-  <SummaryTimeStamp>2022-05-13T07:48:13</SummaryTimeStamp>
+  <SummaryTimeStamp>2022-05-13T17:47:43</SummaryTimeStamp>
   <SavedFilePath>C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/iseconfig/MECHANICAL_CLOCK.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock\</ImplementationReportsDirectory>
   <DateInitialized>2022-05-09T15:15:46</DateInitialized>

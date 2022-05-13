@@ -9,4 +9,669 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # run all
-Stopped at time : 243041450 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 85
+Stopped at time : 1025 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# step
+Stopped at time : 1025 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 78
+# step
+Stopped at time : 1025 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 86
+# step
+Stopped at time : 1025 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 88
+# step
+Stopped at time : 1025 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 104
+# run all
+Stopped at time : 1075 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 1125 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 1175 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 1225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 1275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 1325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 1375 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 1425 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 1475 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 1525 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 1575 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 1625 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 1675 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 1725 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 1775 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 1825 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 1875 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 1925 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 1975 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2025 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2075 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2125 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2175 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2375 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2425 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2475 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2525 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2575 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2625 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2675 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2725 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2775 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2825 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2875 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2925 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 2975 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3025 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3075 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3125 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3175 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3375 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3425 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3475 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3525 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3575 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3625 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3675 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3725 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3775 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3825 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3875 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3925 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 3975 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4025 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4075 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4125 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4175 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4375 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4425 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4475 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4525 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4575 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4625 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4675 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4725 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4775 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4825 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4875 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4925 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 4975 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5025 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5075 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5125 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5175 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5375 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5425 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5475 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5525 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5575 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5625 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5675 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5725 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5775 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5825 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5875 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5925 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 5975 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6025 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6075 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6125 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6175 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6375 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6425 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6475 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6525 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6575 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6625 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6675 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6725 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6775 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6825 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6875 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6925 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 6975 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7025 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7075 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7125 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7175 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7375 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7425 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7475 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7525 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7575 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7625 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7675 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7725 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7775 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7825 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7875 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7925 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 7975 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8025 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8075 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8125 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8175 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8375 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8425 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8475 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8525 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8575 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8625 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8675 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8725 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8775 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8825 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8875 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8925 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 8975 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 9025 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 9075 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 9125 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 9175 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 9225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 9275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 9325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 9375 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 9425 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 9475 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 9525 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 9575 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 9625 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1.00us
+Stopped at time : 9675 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1.00us
+Stopped at time : 9725 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1.00us
+Stopped at time : 9775 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1.00us
+Stopped at time : 9825 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1.00us
+Stopped at time : 9875 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10.00us
+Stopped at time : 9925 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10.00us
+Stopped at time : 9975 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10.00us
+Stopped at time : 10025 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10.00us
+Stopped at time : 10075 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10.00us
+Stopped at time : 10125 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10.00us
+Stopped at time : 10175 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10.00us
+Stopped at time : 10225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10.00us
+Stopped at time : 10275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10.00us
+Stopped at time : 10325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10.00us
+Stopped at time : 10375 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 10425 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 10475 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 10525 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 10575 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 10625 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 10675 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 10725 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 10775 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 10825 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 10875 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 10925 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 10975 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 11025 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 11075 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 11125 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 11175 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 11225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 11275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 100.00us
+Stopped at time : 11325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 11375 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 11425 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 11475 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 11525 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 11575 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 11625 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 11675 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 11725 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 11775 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 11825 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 11875 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 11925 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 11975 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 12025 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 12075 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 12125 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 12175 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 12225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 12275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 12325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 12375 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 12425 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 12475 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 12525 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 1000.00us
+Stopped at time : 12575 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 12625 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 12675 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 12725 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 12775 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 12825 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 12875 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 12925 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 12975 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13025 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13075 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13125 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13175 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13375 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13425 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13475 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13525 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13575 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13625 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13675 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13725 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13775 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13825 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13875 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13925 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 13975 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 14025 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run 10000.00us
+Stopped at time : 14075 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 14125 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# run all
+Stopped at time : 52175 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 95
+# run all
+Stopped at time : 52225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 95
+# run all
+Stopped at time : 271179750 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.vhd" Line 107
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.vhd" Line 178
+# step
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_TX.vhd" Line 70
+# step
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_TX.vhd" Line 72
+# step
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_TX.vhd" Line 91
+# step
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_TX.vhd" Line 92
+# step
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_TX.vhd" Line 95
+# step
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_TX.vhd" Line 96
+# step
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_TX.vhd" Line 97
+# step
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 76
+# step
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# step
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 78
+# step
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 86
+# step
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 88
+# step
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 91
+# step
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 92
+# step
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 93
+# step
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 95
+# step
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 98
+# step
+Stopped at time : 20000225 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.vhd" Line 225
+# run all
+Stopped at time : 20000275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 78
+# step
+Stopped at time : 20000275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 86
+# step
+Stopped at time : 20000275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 88
+# step
+Stopped at time : 20000275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 91
+# step
+Stopped at time : 20000275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 92
+# step
+Stopped at time : 20000275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 93
+# step
+Stopped at time : 20000275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 95
+# step
+Stopped at time : 20000275 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 98
+# step
+Stopped at time : 20000300 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_tb.vhd" Line 101
+# step
+Stopped at time : 20000300 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_tb.vhd" Line 102
+# step
+Stopped at time : 20000300 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.vhd" Line 107
+# step
+Stopped at time : 20000300 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.vhd" Line 174
+# step
+Stopped at time : 20000300 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_TX.vhd" Line 70
+# step
+Stopped at time : 20000300 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 76
+# step
+Stopped at time : 20000300 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 86
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_tb.vhd" Line 103
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_tb.vhd" Line 104
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.vhd" Line 107
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.vhd" Line 108
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.vhd" Line 123
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.vhd" Line 129
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.vhd" Line 174
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.vhd" Line 175
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.vhd" Line 184
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.vhd" Line 188
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_TX.vhd" Line 70
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_TX.vhd" Line 72
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_TX.vhd" Line 91
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_TX.vhd" Line 92
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_TX.vhd" Line 95
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_TX.vhd" Line 96
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_TX.vhd" Line 97
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 76
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 77
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 78
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 86
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 88
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 91
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 92
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 93
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 95
+# step
+Stopped at time : 20000325 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 96

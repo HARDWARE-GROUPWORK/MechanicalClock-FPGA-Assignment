@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -119,12 +119,12 @@ Parsing architecture <Behavioral> of entity <mechanical_clock>.
 *                            HDL Elaboration                            *
 =========================================================================
 
-Elaborating entity <MECHANICAL_CLOCK> (architecture <Behavioral>) with generics from library <work>.
+Elaborating entity <MECHANICAL_CLOCK> (architecture <Behavioral>) from library <work>.
 INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 165. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 200. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 201. Case statement is complete. others clause is never selected
 
 Elaborating entity <UART_TX> (architecture <Behavioral>) with generics from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\UART_TX.vhd" Line 145. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\UART_TX.vhd" Line 147. Case statement is complete. others clause is never selected
 
 Elaborating entity <UART_RX> (architecture <Behavioral>) with generics from library <work>.
 INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\UART_RX.vhd" Line 155. Case statement is complete. others clause is never selected
@@ -135,7 +135,6 @@ INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\UART
 
 Synthesizing Unit <MECHANICAL_CLOCK>.
     Related source file is "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd".
-        g_CLKS_PER_BIT = 174
 WARNING:Xst:647 - Input <INPUT_DATA<7:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:3035 - Index value(s) does not match array range for signal <r_Payload_RX>, simulation mismatch.
     Found 17x8-bit dual-port RAM <Mram_r_Payload_RX> for signal <r_Payload_RX>.
@@ -161,6 +160,7 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <r_Paylo
     Found 5-bit register for signal <r_Index_TX>.
     Found 8-bit register for signal <r_Input_Byte>.
     Found 2-bit register for signal <r_Main_RX>.
+    Found 1-bit register for signal <LED_DEBUG>.
     Found 5-bit register for signal <r_Index_RX>.
     Found 2-bit register for signal <r_Main_TX>.
     Found finite state machine <FSM_0> for signal <r_Main_RX>.
@@ -186,7 +186,7 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <r_Paylo
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 5-bit adder for signal <r_Index_TX[4]_GND_4_o_add_4_OUT> created at line 153.
-    Found 5-bit adder for signal <r_Index_RX[4]_GND_4_o_add_56_OUT> created at line 194.
+    Found 5-bit adder for signal <r_Index_RX[4]_GND_4_o_add_56_OUT> created at line 195.
 INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <r_Payload_TX>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
     Found 8-bit 17-to-1 multiplexer for signal <r_Index_TX[4]_X_4_o_wide_mux_9_OUT> created at line 163.
     Found 5-bit comparator greater for signal <r_Index_TX[4]_PWR_4_o_LessThan_4_o> created at line 152
@@ -194,7 +194,7 @@ INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <r_Payload
     Summary:
 	inferred   1 RAM(s).
 	inferred   2 Adder/Subtractor(s).
-	inferred 156 D-type flip-flop(s).
+	inferred 157 D-type flip-flop(s).
 	inferred   2 Comparator(s).
 	inferred   2 Multiplexer(s).
 	inferred   2 Finite State Machine(s).
@@ -202,10 +202,10 @@ Unit <MECHANICAL_CLOCK> synthesized.
 
 Synthesizing Unit <UART_TX>.
     Related source file is "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\UART_TX.vhd".
-        g_CLKS_PER_BIT = 174
+        g_CLKS_PER_BIT = 2083
     Found 1-bit register for signal <o_TX_Serial>.
     Found 1-bit register for signal <r_TX_Done>.
-    Found 8-bit register for signal <r_Clk_Count>.
+    Found 12-bit register for signal <r_Clk_Count>.
     Found 3-bit register for signal <r_Bit_Index>.
     Found 8-bit register for signal <r_TX_Data>.
     Found 3-bit register for signal <r_SM_Main>.
@@ -221,14 +221,14 @@ Synthesizing Unit <UART_TX>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 3-bit adder for signal <r_Bit_Index[2]_GND_5_o_add_10_OUT> created at line 114.
-    Found 8-bit adder for signal <r_Clk_Count[7]_GND_5_o_add_17_OUT> created at line 129.
-    Found 1-bit 8-to-1 multiplexer for signal <r_Bit_Index[2]_r_TX_Data[7]_Mux_6_o> created at line 104.
-    Found 3-bit comparator greater for signal <r_Bit_Index[2]_PWR_5_o_LessThan_10_o> created at line 113
-    Found 8-bit comparator greater for signal <r_Clk_Count[7]_PWR_5_o_LessThan_17_o> created at line 128
+    Found 3-bit adder for signal <r_Bit_Index[2]_GND_5_o_add_10_OUT> created at line 116.
+    Found 12-bit adder for signal <r_Clk_Count[11]_GND_5_o_add_17_OUT> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <r_Bit_Index[2]_r_TX_Data[7]_Mux_6_o> created at line 106.
+    Found 3-bit comparator greater for signal <r_Bit_Index[2]_PWR_5_o_LessThan_10_o> created at line 115
+    Found 12-bit comparator greater for signal <r_Clk_Count[11]_PWR_5_o_LessThan_17_o> created at line 130
     Summary:
 	inferred   2 Adder/Subtractor(s).
-	inferred  22 D-type flip-flop(s).
+	inferred  26 D-type flip-flop(s).
 	inferred   2 Comparator(s).
 	inferred   8 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
@@ -236,14 +236,12 @@ Unit <UART_TX> synthesized.
 
 Synthesizing Unit <UART_RX>.
     Related source file is "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\UART_RX.vhd".
-        g_CLKS_PER_BIT = 174
-    Found 1-bit register for signal <r_RX_Data>.
-    Found 1-bit register for signal <r_RX_DV>.
-    Found 8-bit register for signal <r_Clk_Count>.
+        g_CLKS_PER_BIT = 2083
+    Found 12-bit register for signal <r_Clk_Count>.
     Found 3-bit register for signal <r_Bit_Index>.
     Found 3-bit register for signal <r_SM_Main>.
     Found 8-bit register for signal <r_RX_Byte>.
-    Found 1-bit register for signal <r_RX_Data_R>.
+    Found 1-bit register for signal <r_RX_DV>.
     Found finite state machine <FSM_3> for signal <r_SM_Main>.
     -----------------------------------------------------------------------
     | States             | 5                                              |
@@ -256,12 +254,12 @@ Synthesizing Unit <UART_RX>.
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 3-bit adder for signal <r_Bit_Index[2]_GND_6_o_add_11_OUT> created at line 127.
-    Found 8-bit adder for signal <r_Clk_Count[7]_GND_6_o_add_19_OUT> created at line 140.
+    Found 12-bit adder for signal <r_Clk_Count[11]_GND_6_o_add_19_OUT> created at line 140.
     Found 3-bit comparator greater for signal <r_Bit_Index[2]_PWR_6_o_LessThan_11_o> created at line 126
-    Found 8-bit comparator greater for signal <r_Clk_Count[7]_PWR_6_o_LessThan_19_o> created at line 139
+    Found 12-bit comparator greater for signal <r_Clk_Count[11]_PWR_6_o_LessThan_19_o> created at line 139
     Summary:
 	inferred   2 Adder/Subtractor(s).
-	inferred  22 D-type flip-flop(s).
+	inferred  24 D-type flip-flop(s).
 	inferred   2 Comparator(s).
 	inferred  14 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
@@ -274,25 +272,26 @@ Macro Statistics
 # RAMs                                                 : 1
  17x8-bit dual-port RAM                                : 1
 # Adders/Subtractors                                   : 6
+ 12-bit adder                                          : 2
  3-bit adder                                           : 2
  5-bit adder                                           : 2
- 8-bit adder                                           : 2
-# Registers                                            : 34
- 1-bit register                                        : 8
+# Registers                                            : 33
+ 1-bit register                                        : 7
+ 12-bit register                                       : 2
  3-bit register                                        : 2
  5-bit register                                        : 2
- 8-bit register                                        : 22
+ 8-bit register                                        : 20
 # Comparators                                          : 6
+ 12-bit comparator greater                             : 2
  3-bit comparator greater                              : 2
  5-bit comparator greater                              : 2
- 8-bit comparator greater                              : 2
 # Multiplexers                                         : 24
  1-bit 2-to-1 multiplexer                              : 10
  1-bit 8-to-1 multiplexer                              : 1
+ 12-bit 2-to-1 multiplexer                             : 7
  3-bit 2-to-1 multiplexer                              : 4
  5-bit 2-to-1 multiplexer                              : 1
  8-bit 17-to-1 multiplexer                             : 1
- 8-bit 2-to-1 multiplexer                              : 7
 # FSMs                                                 : 4
 
 =========================================================================
@@ -534,7 +533,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_r_Payload_RX> will be implemented on
     |     aspect ratio   | 17-word x 8-bit                     |          |
     |     clkA           | connected to signal <CLK>           | rise     |
     |     weA            | connected to internal node          | high     |
-    |     addrA          | connected to signal <INDEX_TX>      |          |
+    |     addrA          | connected to signal <INDEX_RX>      |          |
     |     diA            | connected to signal <r_Output_Byte> |          |
     -----------------------------------------------------------------------
     | Port B                                                              |
@@ -551,22 +550,22 @@ Macro Statistics
 # RAMs                                                 : 1
  17x8-bit dual-port distributed RAM                    : 1
 # Adders/Subtractors                                   : 4
+ 12-bit adder                                          : 2
  3-bit adder                                           : 2
- 8-bit adder                                           : 2
 # Counters                                             : 2
  5-bit up counter                                      : 2
-# Registers                                            : 190
- Flip-Flops                                            : 190
+# Registers                                            : 197
+ Flip-Flops                                            : 197
 # Comparators                                          : 6
+ 12-bit comparator greater                             : 2
  3-bit comparator greater                              : 2
  5-bit comparator greater                              : 2
- 8-bit comparator greater                              : 2
 # Multiplexers                                         : 23
  1-bit 2-to-1 multiplexer                              : 10
  1-bit 8-to-1 multiplexer                              : 1
+ 12-bit 2-to-1 multiplexer                             : 7
  3-bit 2-to-1 multiplexer                              : 4
  8-bit 17-to-1 multiplexer                             : 1
- 8-bit 2-to-1 multiplexer                              : 7
 # FSMs                                                 : 4
 
 =========================================================================
@@ -744,7 +743,7 @@ WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_16_5 hinder the c
    You should achieve better results by setting this init to 0.
 WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_16_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 1.
-WARNING:Xst:1293 - FF/Latch <r_Payload_TX_6_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_Payload_TX_7_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_8_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_8_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_8_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
@@ -787,17 +786,17 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_3_7> h
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_4_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_4_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_4_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_7_0> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_7_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_7_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_7_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_5_0> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_5_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_5_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_6_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <r_Payload_TX_0_0> in Unit <MECHANICAL_CLOCK> is equivalent to the following 51 FFs/Latches, which will be removed : <r_Payload_TX_0_6> <r_Payload_TX_1_1> <r_Payload_TX_1_6> <r_Payload_TX_2_0> <r_Payload_TX_2_1> <r_Payload_TX_2_6> <r_Payload_TX_3_2> <r_Payload_TX_3_6> <r_Payload_TX_4_0> <r_Payload_TX_4_2> <r_Payload_TX_4_6> <r_Payload_TX_7_3> <r_Payload_TX_7_6> <r_Payload_TX_5_1> <r_Payload_TX_5_2> <r_Payload_TX_5_6> <r_Payload_TX_6_0> <r_Payload_TX_6_1> <r_Payload_TX_6_2> <r_Payload_TX_6_6> <r_Payload_TX_8_0> <r_Payload_TX_8_3> <r_Payload_TX_8_6> <r_Payload_TX_9_1> <r_Payload_TX_9_3> <r_Payload_TX_9_6> <r_Payload_TX_10_0> <r_Payload_TX_10_1> <r_Payload_TX_10_3> <r_Payload_TX_10_6> <r_Payload_TX_11_2> <r_Payload_TX_11_3> <r_Payload_TX_11_6> <r_Payload_TX_12_0> <r_Payload_TX_12_2> <r_Payload_TX_12_3> <r_Payload_TX_12_6> <r_Payload_TX_13_1> <r_Payload_TX_13_2> <r_Payload_TX_13_3> <r_Payload_TX_13_6> <r_Payload_TX_14_0> <r_Payload_TX_14_1> <r_Payload_TX_14_6> <r_Payload_TX_15_0>
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_6_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_7_0> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_7_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_7_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <r_Payload_TX_0_4> in Unit <MECHANICAL_CLOCK> is equivalent to the following 32 FFs/Latches, which will be removed : <r_Payload_TX_0_5> <r_Payload_TX_1_4> <r_Payload_TX_1_5> <r_Payload_TX_2_4> <r_Payload_TX_2_5> <r_Payload_TX_3_4> <r_Payload_TX_3_5> <r_Payload_TX_4_4> <r_Payload_TX_4_5> <r_Payload_TX_5_4> <r_Payload_TX_5_5> <r_Payload_TX_6_4> <r_Payload_TX_6_5> <r_Payload_TX_7_4> <r_Payload_TX_7_5> <r_Payload_TX_8_4> <r_Payload_TX_8_5> <r_Payload_TX_9_4> <r_Payload_TX_9_5> <r_Payload_TX_10_4> <r_Payload_TX_10_5> <r_Payload_TX_11_4> <r_Payload_TX_11_5> <r_Payload_TX_12_4> <r_Payload_TX_12_5> <r_Payload_TX_13_4> <r_Payload_TX_13_5> <r_Payload_TX_14_5> <r_Payload_TX_15_4> <r_Payload_TX_15_5> <r_Payload_TX_16_4> <r_Payload_TX_16_5> 
+INFO:Xst:2261 - The FF/Latch <r_Payload_TX_0_0> in Unit <MECHANICAL_CLOCK> is equivalent to the following 51 FFs/Latches, which will be removed : <r_Payload_TX_0_6> <r_Payload_TX_1_1> <r_Payload_TX_1_6> <r_Payload_TX_2_0> <r_Payload_TX_2_1> <r_Payload_TX_2_6> <r_Payload_TX_3_2> <r_Payload_TX_3_6> <r_Payload_TX_4_0> <r_Payload_TX_4_2> <r_Payload_TX_4_6> <r_Payload_TX_5_1> <r_Payload_TX_5_2> <r_Payload_TX_5_6> <r_Payload_TX_6_0> <r_Payload_TX_6_1> <r_Payload_TX_6_2> <r_Payload_TX_6_6> <r_Payload_TX_7_3> <r_Payload_TX_7_6> <r_Payload_TX_8_0> <r_Payload_TX_8_3> <r_Payload_TX_8_6> <r_Payload_TX_9_1> <r_Payload_TX_9_3> <r_Payload_TX_9_6> <r_Payload_TX_10_0> <r_Payload_TX_10_1> <r_Payload_TX_10_3> <r_Payload_TX_10_6> <r_Payload_TX_11_2> <r_Payload_TX_11_3> <r_Payload_TX_11_6> <r_Payload_TX_12_0> <r_Payload_TX_12_2> <r_Payload_TX_12_3> <r_Payload_TX_12_6> <r_Payload_TX_13_1> <r_Payload_TX_13_2> <r_Payload_TX_13_3> <r_Payload_TX_13_6> <r_Payload_TX_14_0> <r_Payload_TX_14_1> <r_Payload_TX_14_6> <r_Payload_TX_15_0>
    <r_Payload_TX_15_2> <r_Payload_TX_15_6> <r_Payload_TX_16_0> <r_Payload_TX_16_1> <r_Payload_TX_16_2> <r_Payload_TX_16_6> 
-INFO:Xst:2261 - The FF/Latch <r_Payload_TX_0_4> in Unit <MECHANICAL_CLOCK> is equivalent to the following 32 FFs/Latches, which will be removed : <r_Payload_TX_0_5> <r_Payload_TX_1_4> <r_Payload_TX_1_5> <r_Payload_TX_2_4> <r_Payload_TX_2_5> <r_Payload_TX_3_4> <r_Payload_TX_3_5> <r_Payload_TX_4_4> <r_Payload_TX_4_5> <r_Payload_TX_7_4> <r_Payload_TX_7_5> <r_Payload_TX_5_4> <r_Payload_TX_5_5> <r_Payload_TX_6_4> <r_Payload_TX_6_5> <r_Payload_TX_8_4> <r_Payload_TX_8_5> <r_Payload_TX_9_4> <r_Payload_TX_9_5> <r_Payload_TX_10_4> <r_Payload_TX_10_5> <r_Payload_TX_11_4> <r_Payload_TX_11_5> <r_Payload_TX_12_4> <r_Payload_TX_12_5> <r_Payload_TX_13_4> <r_Payload_TX_13_5> <r_Payload_TX_14_5> <r_Payload_TX_15_4> <r_Payload_TX_15_5> <r_Payload_TX_16_4> <r_Payload_TX_16_5> 
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <FSM_0> on signal <r_Main_RX[1:2]> with user encoding.
 --------------------------
@@ -858,18 +857,12 @@ Found area constraint ratio of 100 (+ 5) on block MECHANICAL_CLOCK, actual ratio
 
 Final Macro Processing ...
 
-Processing Unit <MECHANICAL_CLOCK> :
-	Found 2-bit shift register for signal <Inst_UART_RX/r_RX_Data>.
-Unit <MECHANICAL_CLOCK> processed.
-
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 68
- Flip-Flops                                            : 68
-# Shift Registers                                      : 1
- 2-bit shift register                                  : 1
+# Registers                                            : 77
+ Flip-Flops                                            : 77
 
 =========================================================================
 
@@ -892,30 +885,31 @@ Top Level Output File Name         : MECHANICAL_CLOCK.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 121
+# BELS                             : 179
 #      GND                         : 1
-#      INV                         : 4
-#      LUT2                        : 10
-#      LUT3                        : 16
-#      LUT4                        : 20
-#      LUT5                        : 17
-#      LUT6                        : 49
-#      MUXF7                       : 3
+#      INV                         : 7
+#      LUT1                        : 22
+#      LUT2                        : 7
+#      LUT3                        : 17
+#      LUT4                        : 23
+#      LUT5                        : 10
+#      LUT6                        : 45
+#      MUXCY                       : 22
 #      VCC                         : 1
-# FlipFlops/Latches                : 69
-#      FD                          : 15
-#      FDE                         : 49
+#      XORCY                       : 24
+# FlipFlops/Latches                : 77
+#      FD                          : 12
+#      FDE                         : 59
+#      FDR                         : 1
 #      FDRE                        : 5
 # RAMS                             : 3
 #      RAM32M                      : 1
 #      RAM32X1D                    : 2
-# Shift Registers                  : 1
-#      SRLC16E                     : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 29
+# IO Buffers                       : 31
 #      IBUF                        : 7
-#      OBUF                        : 22
+#      OBUF                        : 24
 
 Device utilization summary:
 ---------------------------
@@ -924,23 +918,22 @@ Selected Device : 6slx9tqg144-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              69  out of  11440     0%  
- Number of Slice LUTs:                  125  out of   5720     2%  
-    Number used as Logic:               116  out of   5720     2%  
-    Number used as Memory:                9  out of   1440     0%  
+ Number of Slice Registers:              77  out of  11440     0%  
+ Number of Slice LUTs:                  139  out of   5720     2%  
+    Number used as Logic:               131  out of   5720     2%  
+    Number used as Memory:                8  out of   1440     0%  
        Number used as RAM:                8
-       Number used as SRL:                1
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    130
-   Number with an unused Flip Flop:      61  out of    130    46%  
-   Number with an unused LUT:             5  out of    130     3%  
-   Number of fully used LUT-FF pairs:    64  out of    130    49%  
-   Number of unique control sets:        11
+ Number of LUT Flip Flop pairs used:    146
+   Number with an unused Flip Flop:      69  out of    146    47%  
+   Number with an unused LUT:             7  out of    146     4%  
+   Number of fully used LUT-FF pairs:    70  out of    146    47%  
+   Number of unique control sets:        14
 
 IO Utilization: 
- Number of IOs:                          33
- Number of bonded IOBs:                  30  out of    102    29%  
+ Number of IOs:                          35
+ Number of bonded IOBs:                  32  out of    102    31%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -966,7 +959,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 73    |
+CLK                                | BUFGP                  | 80    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -977,8 +970,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 4.087ns (Maximum Frequency: 244.675MHz)
-   Minimum input arrival time before clock: 3.538ns
+   Minimum period: 4.164ns (Maximum Frequency: 240.157MHz)
+   Minimum input arrival time before clock: 3.952ns
    Maximum output required time after clock: 4.070ns
    Maximum combinational path delay: 5.291ns
 
@@ -988,52 +981,50 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 4.087ns (frequency: 244.675MHz)
-  Total number of paths / destination ports: 1003 / 153
+  Clock period: 4.164ns (frequency: 240.157MHz)
+  Total number of paths / destination ports: 1415 / 172
 -------------------------------------------------------------------------
-Delay:               4.087ns (Levels of Logic = 3)
-  Source:            Inst_UART_RX/r_Clk_Count_2 (FF)
-  Destination:       Inst_UART_RX/r_SM_Main_FSM_FFd3 (FF)
+Delay:               4.164ns (Levels of Logic = 2)
+  Source:            Inst_UART_RX/r_Clk_Count_4 (FF)
+  Destination:       Inst_UART_RX/r_Clk_Count_11 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: Inst_UART_RX/r_Clk_Count_2 to Inst_UART_RX/r_SM_Main_FSM_FFd3
+  Data Path: Inst_UART_RX/r_Clk_Count_4 to Inst_UART_RX/r_Clk_Count_11
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              7   0.447   1.118  Inst_UART_RX/r_Clk_Count_2 (Inst_UART_RX/r_Clk_Count_2)
-     LUT6:I1->O           16   0.203   1.005  Inst_UART_RX/r_Clk_Count[7]_PWR_6_o_LessThan_19_o11 (Inst_UART_RX/r_Clk_Count[7]_PWR_6_o_LessThan_19_o1)
-     LUT3:I2->O            8   0.205   0.803  Inst_UART_RX/r_Clk_Count[7]_PWR_6_o_LessThan_19_o12 (Inst_UART_RX/r_Clk_Count[7]_PWR_6_o_LessThan_19_o)
-     LUT6:I5->O            1   0.205   0.000  Inst_UART_RX/Mmux__n008421 (Inst_UART_RX/_n0084<2>)
-     FDE:D                     0.102          Inst_UART_RX/r_Clk_Count_6
+     FDE:C->Q              3   0.447   0.995  Inst_UART_RX/r_Clk_Count_4 (Inst_UART_RX/r_Clk_Count_4)
+     LUT6:I1->O           15   0.203   1.086  Inst_UART_RX/GND_6_o_r_Clk_Count[11]_equal_2_o<11>1 (Inst_UART_RX/GND_6_o_r_Clk_Count[11]_equal_2_o<11>)
+     LUT6:I4->O           12   0.203   0.908  Inst_UART_RX/_n0081_inv1 (Inst_UART_RX/_n0081_inv)
+     FDE:CE                    0.322          Inst_UART_RX/r_Clk_Count_0
     ----------------------------------------
-    Total                      4.087ns (1.162ns logic, 2.925ns route)
-                                       (28.4% logic, 71.6% route)
+    Total                      4.164ns (1.175ns logic, 2.989ns route)
+                                       (28.2% logic, 71.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 14 / 14
+  Total number of paths / destination ports: 35 / 35
 -------------------------------------------------------------------------
-Offset:              3.538ns (Levels of Logic = 3)
-  Source:            SEND_BUTTON (PAD)
-  Destination:       r_Main_TX_FSM_FFd1 (FF)
+Offset:              3.952ns (Levels of Logic = 2)
+  Source:            RX (PAD)
+  Destination:       Inst_UART_RX/r_Clk_Count_11 (FF)
   Destination Clock: CLK rising
 
-  Data Path: SEND_BUTTON to r_Main_TX_FSM_FFd1
+  Data Path: RX to Inst_UART_RX/r_Clk_Count_11
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.864  SEND_BUTTON_IBUF (SEND_BUTTON_IBUF)
-     LUT6:I2->O            1   0.203   0.944  r_Main_TX_FSM_FFd1-In21 (r_Main_TX_FSM_FFd1-In2)
-     LUT6:I0->O            1   0.203   0.000  r_Main_TX_FSM_FFd1-In22 (r_Main_TX_FSM_FFd1-In)
-     FD:D                      0.102          r_Main_TX_FSM_FFd1
+     IBUF:I->O            13   1.222   1.297  RX_IBUF (RX_LED_OBUF)
+     LUT6:I0->O           12   0.203   0.908  Inst_UART_RX/_n0081_inv1 (Inst_UART_RX/_n0081_inv)
+     FDE:CE                    0.322          Inst_UART_RX/r_Clk_Count_0
     ----------------------------------------
-    Total                      3.538ns (1.730ns logic, 1.808ns route)
-                                       (48.9% logic, 51.1% route)
+    Total                      3.952ns (1.747ns logic, 2.205ns route)
+                                       (44.2% logic, 55.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 22 / 22
+  Total number of paths / destination ports: 23 / 23
 -------------------------------------------------------------------------
 Offset:              4.070ns (Levels of Logic = 1)
   Source:            Mram_r_Payload_RX1 (RAM)
@@ -1052,7 +1043,7 @@ Offset:              4.070ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 10 / 2
+  Total number of paths / destination ports: 11 / 3
 -------------------------------------------------------------------------
 Delay:               5.291ns (Levels of Logic = 3)
   Source:            INPUT_DATA<0> (PAD)
@@ -1079,14 +1070,14 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    4.087|         |         |         |
+CLK            |    4.164|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.73 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.92 secs
  
 --> 
 

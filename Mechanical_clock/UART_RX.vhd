@@ -27,6 +27,7 @@
 -- Example: 10 MHz Clock, 115200 baud UART
 -- (10000000)/(115200) = 87
 -- (20000000)/(115200) = 173.611 -> 174
+-- (20000000)/(57600) = 347.222 -> 347
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -42,7 +43,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity UART_RX is
   generic (
-    g_CLKS_PER_BIT : integer := 174     -- Needs to be set correctly
+    g_CLKS_PER_BIT : integer := 2083     -- Needs to be set correctly
     );
   port (
     i_Clk       : in  std_logic;
@@ -70,13 +71,13 @@ begin
   -- Purpose: Double-register the incoming data.
   -- This allows it to be used in the UART RX Clock Domain.
   -- (It removes problems caused by metastabiliy)
-  p_SAMPLE : process (i_Clk)
-  begin
-    if rising_edge(i_Clk) then
-      r_RX_Data_R <= i_RX_Serial;
-      r_RX_Data   <= r_RX_Data_R;
-    end if;
-  end process p_SAMPLE;
+  --p_SAMPLE : process (i_Clk)
+ --begin
+ --   if rising_edge(i_Clk) then
+ --     r_RX_Data_R <= i_RX_Serial;
+ --     r_RX_Data   <= r_RX_Data_R;
+ --  end if;
+ --end process p_SAMPLE;
    
  
   -- Purpose: Control RX state machine
@@ -91,7 +92,7 @@ begin
           r_Clk_Count <= 0;
           r_Bit_Index <= 0;
  
-          if r_RX_Data = '0' then       -- Start bit detected
+          if i_RX_Serial = '0' then       -- Start bit detected CHANGE r_RX_DATA
             r_SM_Main <= s_RX_Start_Bit;
           else
             r_SM_Main <= s_Idle;
@@ -101,7 +102,7 @@ begin
         -- Check middle of start bit to make sure it's still low
         when s_RX_Start_Bit =>
           if r_Clk_Count = (g_CLKS_PER_BIT-1)/2 then -- (g_CLKS_PER_BIT-1)/2
-            if r_RX_Data = '0' then
+            if i_RX_Serial = '0' then -- CHANGE r_RX_DATA
               r_Clk_Count <= 0;  -- reset counter since we found the middle
               r_SM_Main   <= s_RX_Data_Bits;
             else
@@ -120,8 +121,7 @@ begin
             r_SM_Main   <= s_RX_Data_Bits;
           else
             r_Clk_Count            <= 0;
-            r_RX_Byte(r_Bit_Index) <= r_RX_Data;
-             
+            r_RX_Byte(r_Bit_Index) <= i_RX_Serial; -- CHANGE r_RX_DATA          
             -- Check if we have sent out all bits
             if r_Bit_Index < 7 then
               r_Bit_Index <= r_Bit_Index + 1;

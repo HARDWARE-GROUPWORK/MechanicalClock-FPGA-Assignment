@@ -136,6 +136,7 @@ BEGIN
 	stim_proc2: process
 	variable mock_data : std_logic_vector(7 downto 0) := (others => '0');
 	variable onebit : std_logic := '0'; 
+	variable clk_bit: real := 104.15;
 	begin
 		
 		RX <= '1';
@@ -149,30 +150,30 @@ BEGIN
 			mock_data := std_logic_vector(to_unsigned(I, mock_data'length));
 		
 			RX <= '0';
-			wait for 8.7 us;
+			wait for  104.15 us;
 			-- 8 bits
 			RX <= mock_data(0);
-			wait for 8.7 us;
+			wait for 104.15 us;
 			RX <= mock_data(1);
-			wait for 8.7 us;
+			wait for 104.15 us;
 			RX <= mock_data(2);
-			wait for 8.7 us;
+			wait for 104.15 us;
 			RX <= mock_data(3);
-			wait for 8.7 us;
+			wait for 104.15 us;
 			RX <= mock_data(4);
-			wait for 8.7 us;
+			wait for 104.15 us;
 			RX <= mock_data(5);
-			wait for 8.7 us;
+			wait for 104.15 us;
 			RX <= mock_data(6);
-			wait for 8.7 us;
+			wait for 104.15 us;
 			RX <= mock_data(7);
-			wait for 8.7 us;
+			wait for 104.15 us;
 			-- stop bit
 			RX <= '1';
-			wait for 8.7 us;
+			wait for 104.15 us;
 		end loop;
 		
-		wait for 87 us;
+		wait for 100 us;
 		wait;
 	end process;
 
