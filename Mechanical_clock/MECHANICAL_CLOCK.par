@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-POP_COMPUTER::  Sat May 21 02:03:37 2022
+POP_COMPUTER::  Sat May 21 02:10:25 2022
 
 par -w -intstyle ise -ol high -mt off MECHANICAL_CLOCK_map.ncd
 MECHANICAL_CLOCK.ncd MECHANICAL_CLOCK.pcf 
@@ -32,11 +32,11 @@ Slice Logic Utilization:
     Number used as Latches:                     34
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        397 out of   5,720    6%
-    Number used as logic:                      383 out of   5,720    6%
-      Number using O6 output only:             272
+  Number of Slice LUTs:                        373 out of   5,720    6%
+    Number used as logic:                      361 out of   5,720    6%
+      Number using O6 output only:             256
       Number using O5 output only:              53
-      Number using O5 and O6:                   58
+      Number using O5 and O6:                   52
       Number used as ROM:                        0
     Number used as Memory:                       8 out of   1,440    1%
       Number used as Dual Port RAM:              8
@@ -45,18 +45,18 @@ Slice Logic Utilization:
         Number using O5 and O6:                  4
       Number used as Single Port RAM:            0
       Number used as Shift Register:             0
-    Number used exclusively as route-thrus:      6
-      Number with same-slice register load:      2
+    Number used exclusively as route-thrus:      4
+      Number with same-slice register load:      0
       Number with same-slice carry load:         4
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   181 out of   1,430   12%
+  Number of occupied Slices:                   178 out of   1,430   12%
   Number of MUXCYs used:                        64 out of   2,860    2%
-  Number of LUT Flip Flop pairs used:          438
-    Number with an unused Flip Flop:           219 out of     438   50%
-    Number with an unused LUT:                  41 out of     438    9%
-    Number of fully used LUT-FF pairs:         178 out of     438   40%
+  Number of LUT Flip Flop pairs used:          415
+    Number with an unused Flip Flop:           194 out of     415   46%
+    Number with an unused LUT:                  42 out of     415   10%
+    Number of fully used LUT-FF pairs:         179 out of     415   43%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -108,13 +108,13 @@ WARNING:Par:288 - The signal Mram_r_Payload_RX1_RAMD_D1_O has no load.  PAR will
 Starting Router
 
 
-Phase  1  : 2245 unrouted;      REAL time: 2 secs 
+Phase  1  : 2103 unrouted;      REAL time: 2 secs 
 
-Phase  2  : 2000 unrouted;      REAL time: 3 secs 
+Phase  2  : 1864 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 729 unrouted;      REAL time: 3 secs 
+Phase  3  : 649 unrouted;      REAL time: 3 secs 
 
-Phase  4  : 729 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  4  : 649 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
 Updating file: MECHANICAL_CLOCK.ncd with current fully routed design.
 
@@ -150,17 +150,17 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     3.605ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.355ns|            |       0|           0
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.260ns|     N/A|           0
+  t_DIV20M_1000/r_Clk                       | HOLD        |     0.425ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     3.180ns|     N/A|           0
-  t_DIV20M_1000/r_Clk                       | HOLD        |     0.478ns|            |       0|           0
+  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     3.479ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.319ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     5.298ns|     N/A|           0
-  t_DIV20M_2/r_Clk_BUFG                     | HOLD        |     0.418ns|            |       0|           0
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     4.509ns|     N/A|           0
+  t_DIV20M_2/r_Clk_BUFG                     | HOLD        |     0.441ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net r_C | SETUP       |         N/A|     5.367ns|     N/A|           0
-  lk_1_Hz_BUFG                              | HOLD        |     0.427ns|            |       0|           0
+  Autotimespec constraint for clock net r_C | SETUP       |         N/A|     4.981ns|     N/A|           0
+  lk_1_Hz_BUFG                              | HOLD        |     0.462ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 

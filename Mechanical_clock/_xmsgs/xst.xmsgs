@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 364: Assignment to <arg fmt="%s" index="1">r_hour_temp</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 364: Assignment to <arg fmt="%s" index="1">r_second</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd</arg>&quot; line <arg fmt="%d" index="2">204</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Inst_DIV20M_4</arg>&gt; of block &lt;<arg fmt="%s" index="4">DIV20M_X</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">MECHANICAL_CLOCK</arg>&gt;. Underlying logic will be removed.
@@ -913,15 +913,6 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_12_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_15_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_15_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_15_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_13_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
@@ -938,6 +929,15 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 </msg>
 
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_14_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_15_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_15_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_15_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_16_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1024,22 +1024,22 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_7_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_1_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">32 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;r_Payload_TX_1_5&gt; &lt;r_Payload_TX_0_4&gt; &lt;r_Payload_TX_0_5&gt; &lt;r_Payload_TX_2_4&gt; &lt;r_Payload_TX_2_5&gt; &lt;r_Payload_TX_3_4&gt; &lt;r_Payload_TX_3_5&gt; &lt;r_Payload_TX_4_4&gt; &lt;r_Payload_TX_4_5&gt; &lt;r_Payload_TX_5_4&gt; &lt;r_Payload_TX_5_5&gt; &lt;r_Payload_TX_6_4&gt; &lt;r_Payload_TX_6_5&gt; &lt;r_Payload_TX_7_4&gt; &lt;r_Payload_TX_7_5&gt; &lt;r_Payload_TX_10_4&gt; &lt;r_Payload_TX_10_5&gt; &lt;r_Payload_TX_8_4&gt; &lt;r_Payload_TX_8_5&gt; &lt;r_Payload_TX_9_4&gt; &lt;r_Payload_TX_9_5&gt; &lt;r_Payload_TX_11_4&gt; &lt;r_Payload_TX_11_5&gt; &lt;r_Payload_TX_12_4&gt; &lt;r_Payload_TX_12_5&gt; &lt;r_Payload_TX_15_4&gt; &lt;r_Payload_TX_15_5&gt; &lt;r_Payload_TX_13_4&gt; &lt;r_Payload_TX_13_5&gt; &lt;r_Payload_TX_14_5&gt; &lt;r_Payload_TX_16_4&gt; &lt;r_Payload_TX_16_5&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_1_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">51 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;r_Payload_TX_1_6&gt; &lt;r_Payload_TX_0_0&gt; &lt;r_Payload_TX_0_6&gt; &lt;r_Payload_TX_2_0&gt; &lt;r_Payload_TX_2_1&gt; &lt;r_Payload_TX_2_6&gt; &lt;r_Payload_TX_3_2&gt; &lt;r_Payload_TX_3_6&gt; &lt;r_Payload_TX_4_0&gt; &lt;r_Payload_TX_4_2&gt; &lt;r_Payload_TX_4_6&gt; &lt;r_Payload_TX_5_1&gt; &lt;r_Payload_TX_5_2&gt; &lt;r_Payload_TX_5_6&gt; &lt;r_Payload_TX_6_0&gt; &lt;r_Payload_TX_6_1&gt; &lt;r_Payload_TX_6_2&gt; &lt;r_Payload_TX_6_6&gt; &lt;r_Payload_TX_7_3&gt; &lt;r_Payload_TX_7_6&gt; &lt;r_Payload_TX_10_0&gt; &lt;r_Payload_TX_10_1&gt; &lt;r_Payload_TX_10_3&gt; &lt;r_Payload_TX_10_6&gt; &lt;r_Payload_TX_8_0&gt; &lt;r_Payload_TX_8_3&gt; &lt;r_Payload_TX_8_6&gt; &lt;r_Payload_TX_9_1&gt; &lt;r_Payload_TX_9_3&gt; &lt;r_Payload_TX_9_6&gt; &lt;r_Payload_TX_11_2&gt; &lt;r_Payload_TX_11_3&gt; &lt;r_Payload_TX_11_6&gt; &lt;r_Payload_TX_12_0&gt; &lt;r_Payload_TX_12_2&gt; &lt;r_Payload_TX_12_3&gt; &lt;r_Payload_TX_12_6&gt; &lt;r_Payload_TX_13_1&gt; &lt;r_Payload_TX_13_2&gt; &lt;r_Payload_TX_13_3&gt; &lt;r_Payload_TX_13_6&gt; &lt;r_Payload_TX_14_0&gt; &lt;r_Payload_TX_14_1&gt; &lt;r_Payload_TX_14_6&gt; &lt;r_Payload_TX_15_0&gt; &lt;r_Payload_TX_15_2&gt; &lt;r_Payload_TX_15_6&gt; &lt;r_Payload_TX_16_0&gt; &lt;r_Payload_TX_16_1&gt; &lt;r_Payload_TX_16_2&gt; &lt;r_Payload_TX_16_6&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_1_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">51 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;r_Payload_TX_1_6&gt; &lt;r_Payload_TX_0_0&gt; &lt;r_Payload_TX_0_6&gt; &lt;r_Payload_TX_2_0&gt; &lt;r_Payload_TX_2_1&gt; &lt;r_Payload_TX_2_6&gt; &lt;r_Payload_TX_3_2&gt; &lt;r_Payload_TX_3_6&gt; &lt;r_Payload_TX_4_0&gt; &lt;r_Payload_TX_4_2&gt; &lt;r_Payload_TX_4_6&gt; &lt;r_Payload_TX_5_1&gt; &lt;r_Payload_TX_5_2&gt; &lt;r_Payload_TX_5_6&gt; &lt;r_Payload_TX_6_0&gt; &lt;r_Payload_TX_6_1&gt; &lt;r_Payload_TX_6_2&gt; &lt;r_Payload_TX_6_6&gt; &lt;r_Payload_TX_7_3&gt; &lt;r_Payload_TX_7_6&gt; &lt;r_Payload_TX_10_0&gt; &lt;r_Payload_TX_10_1&gt; &lt;r_Payload_TX_10_3&gt; &lt;r_Payload_TX_10_6&gt; &lt;r_Payload_TX_8_0&gt; &lt;r_Payload_TX_8_3&gt; &lt;r_Payload_TX_8_6&gt; &lt;r_Payload_TX_9_1&gt; &lt;r_Payload_TX_9_3&gt; &lt;r_Payload_TX_9_6&gt; &lt;r_Payload_TX_11_2&gt; &lt;r_Payload_TX_11_3&gt; &lt;r_Payload_TX_11_6&gt; &lt;r_Payload_TX_12_0&gt; &lt;r_Payload_TX_12_2&gt; &lt;r_Payload_TX_12_3&gt; &lt;r_Payload_TX_12_6&gt; &lt;r_Payload_TX_15_0&gt; &lt;r_Payload_TX_15_2&gt; &lt;r_Payload_TX_15_6&gt; &lt;r_Payload_TX_13_1&gt; &lt;r_Payload_TX_13_2&gt; &lt;r_Payload_TX_13_3&gt; &lt;r_Payload_TX_13_6&gt; &lt;r_Payload_TX_14_0&gt; &lt;r_Payload_TX_14_1&gt; &lt;r_Payload_TX_14_6&gt; &lt;r_Payload_TX_16_0&gt; &lt;r_Payload_TX_16_1&gt; &lt;r_Payload_TX_16_2&gt; &lt;r_Payload_TX_16_6&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_1_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">32 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;r_Payload_TX_1_5&gt; &lt;r_Payload_TX_0_4&gt; &lt;r_Payload_TX_0_5&gt; &lt;r_Payload_TX_2_4&gt; &lt;r_Payload_TX_2_5&gt; &lt;r_Payload_TX_3_4&gt; &lt;r_Payload_TX_3_5&gt; &lt;r_Payload_TX_4_4&gt; &lt;r_Payload_TX_4_5&gt; &lt;r_Payload_TX_5_4&gt; &lt;r_Payload_TX_5_5&gt; &lt;r_Payload_TX_6_4&gt; &lt;r_Payload_TX_6_5&gt; &lt;r_Payload_TX_7_4&gt; &lt;r_Payload_TX_7_5&gt; &lt;r_Payload_TX_10_4&gt; &lt;r_Payload_TX_10_5&gt; &lt;r_Payload_TX_8_4&gt; &lt;r_Payload_TX_8_5&gt; &lt;r_Payload_TX_9_4&gt; &lt;r_Payload_TX_9_5&gt; &lt;r_Payload_TX_11_4&gt; &lt;r_Payload_TX_11_5&gt; &lt;r_Payload_TX_12_4&gt; &lt;r_Payload_TX_12_5&gt; &lt;r_Payload_TX_13_4&gt; &lt;r_Payload_TX_13_5&gt; &lt;r_Payload_TX_14_5&gt; &lt;r_Payload_TX_15_4&gt; &lt;r_Payload_TX_15_5&gt; &lt;r_Payload_TX_16_4&gt; &lt;r_Payload_TX_16_5&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">p_CALCULATION.v_Hour_Temp_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">p_CALCULATION.v_Second_Temp_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Input_Byte_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">p_CALCULATION.v_Minute_Temp_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">p_CALCULATION.v_Hour_Temp_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">p_CALCULATION.v_Second_Temp_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">p_CALCULATION.v_Minute_Temp_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="3002" delta="old" >This design contains one or more registers/latches that are directly

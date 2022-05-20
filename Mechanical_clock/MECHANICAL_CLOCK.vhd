@@ -232,75 +232,75 @@ begin
 				 -- NORMAL MODE
 				 if(r_Mode = '0') then
 					 case r_Counter_4_State is
-					 -- second (0)
+					 -- minute (0)
 					 when "00" =>
 						  SEGMENT_GROUNDS <= "1110";
 						  SEGMENT_DOT <= '0';						  
-						  r_Digit <= std_logic_vector(to_unsigned(r_Second mod 10, r_Digit'length));
-					 -- second (1)
+						  r_Digit <= std_logic_vector(to_unsigned(r_Minute mod 10, r_Digit'length));
+					 -- minute (1)
 					 when "01" =>
 						  SEGMENT_GROUNDS <= "1101"; 
 						  SEGMENT_DOT <= '0';
-						  r_Digit <= std_logic_vector(to_unsigned(r_Second / 10, r_Digit'length));
-					 -- minute (0)
+						  r_Digit <= std_logic_vector(to_unsigned(r_Minute / 10, r_Digit'length));
+					 -- hour (0)
 					 when "10" =>
 						  SEGMENT_GROUNDS <= "1011"; 
 						  SEGMENT_DOT <= r_Dot;
-						  r_Digit <= std_logic_vector(to_unsigned(r_Minute mod 10, r_Digit'length));
-					 -- minute (1)
+						  r_Digit <= std_logic_vector(to_unsigned(r_Hour_Temp mod 10, r_Digit'length));
+					 -- hour (1)
 					 when others => -- "11"
 						  SEGMENT_GROUNDS <= "0111"; 
 						  SEGMENT_DOT <= '0';
-						  r_Digit <= std_logic_vector(to_unsigned(r_Minute / 10, r_Digit'length));
+						  r_Digit <= std_logic_vector(to_unsigned(r_Hour_Temp / 10, r_Digit'length));
 					 end case;
 				
 				-- EDIT MODE
 				elsif(r_Mode = '1' and r_Mode_Edit = '0') then
 		
 					 case r_Counter_4_State is
-					 -- second (0)
+					 -- minute (0)
 					 when "00" =>
 						  SEGMENT_GROUNDS <= "1110";
 						  SEGMENT_DOT <= '0';						  
-						  r_Digit <= std_logic_vector(to_unsigned(r_Second_Temp mod 10, r_Digit'length));
-					 -- second (1)
+						  r_Digit <= std_logic_vector(to_unsigned(r_Minute_Temp mod 10, r_Digit'length));
+					 -- minute (1)
 					 when "01" =>
 						  SEGMENT_GROUNDS <= "1101"; 
 						  SEGMENT_DOT <= '0';
-						  r_Digit <= std_logic_vector(to_unsigned(r_Second_Temp / 10, r_Digit'length));
-					 -- minute (0)
+						  r_Digit <= std_logic_vector(to_unsigned(r_Minute_Temp / 10, r_Digit'length));
+					 -- hour (0)
 					 when "10" =>
 						  SEGMENT_GROUNDS <= "1011"; 
 						  SEGMENT_DOT <= r_Dot;
-						  r_Digit <= std_logic_vector(to_unsigned(r_Minute_Temp mod 10, r_Digit'length));
-					 -- minute (1)
+						  r_Digit <= std_logic_vector(to_unsigned(r_Hour_Temp mod 10, r_Digit'length));
+					 -- hour (1)
 					 when others => -- "11"
 						  SEGMENT_GROUNDS <= "0111"; 
 						  SEGMENT_DOT <= r_Dot;
-						  r_Digit <= std_logic_vector(to_unsigned(r_Minute_Temp / 10, r_Digit'length));
+						  r_Digit <= std_logic_vector(to_unsigned(r_Hour_Temp / 10, r_Digit'length));
 					 end case;
 				elsif(r_Mode = '1' and r_Mode_Edit = '1') then
 					case r_Counter_4_State is
-					 -- second (0)
+					 -- minute (0)
 					 when "00" =>
 						  SEGMENT_GROUNDS <= "1110";
 						  SEGMENT_DOT <= r_Dot;						  
-						  r_Digit <= std_logic_vector(to_unsigned(r_Second_Temp mod 10, r_Digit'length));
-					 -- second (1)
+						  r_Digit <= std_logic_vector(to_unsigned(r_Minute_Temp mod 10, r_Digit'length));
+					 -- minute (1)
 					 when "01" =>
 						  SEGMENT_GROUNDS <= "1101"; 
 						  SEGMENT_DOT <= r_Dot;
-						  r_Digit <= std_logic_vector(to_unsigned(r_Second_Temp / 10, r_Digit'length));
-					 -- minute (0)
+						  r_Digit <= std_logic_vector(to_unsigned(r_Minute_Temp / 10, r_Digit'length));
+					 -- hour (0)
 					 when "10" =>
 						  SEGMENT_GROUNDS <= "1011"; 
 						  SEGMENT_DOT <= '0';
-						  r_Digit <= std_logic_vector(to_unsigned(r_Minute_Temp mod 10, r_Digit'length));
-					 -- minute (1)
+						  r_Digit <= std_logic_vector(to_unsigned(r_Hour_Temp mod 10, r_Digit'length));
+					 -- hour (1)
 					 when others => -- "11"
 						  SEGMENT_GROUNDS <= "0111"; 
 						  SEGMENT_DOT <= '0';
-						  r_Digit <= std_logic_vector(to_unsigned(r_Minute_Temp / 10, r_Digit'length));
+						  r_Digit <= std_logic_vector(to_unsigned(r_Hour_Temp / 10, r_Digit'length));
 					 end case;
 				end if;
 			end if;
@@ -388,18 +388,18 @@ begin
 				if(MINUS_BUTTON = '1' and r_Mode = '1') then
 					-- hour
 					if(r_Mode_Edit = '0') then
-						v_Minute_Temp := v_Minute_Temp - 1;
+						v_Hour_Temp := v_Hour_Temp - 1;
 					-- minute
 					elsif(r_Mode_Edit = '1') then
-						v_Second_Temp := v_Second_Temp - 1;
+						v_Minute_Temp := v_Minute_Temp - 1;
 					end if;
 				elsif (PLUS_BUTTON = '1' and r_Mode = '1') then
 					-- hour
 					if(r_Mode_Edit = '0') then
-						v_Minute_Temp := v_Minute_Temp + 1;
+						v_Hour_Temp := v_Hour_Temp + 1;
 					-- minute
 					elsif(r_Mode_Edit = '1') then
-						v_Second_Temp := v_Second_Temp + 1;
+						v_Minute_Temp := v_Minute_Temp + 1;
 					end if;
 				end if;
 				

@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sat May 21 02:03:50 2022
+Sat May 21 02:10:39 2022
 
 drc -z MECHANICAL_CLOCK.ncd MECHANICAL_CLOCK.pcf
 
@@ -74,71 +74,71 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    pin. This is not good design practice. Use the CE pin to control the loading
    of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Hour[1]_AND_73_o is sourced by a combinatorial pin.
+   r_Mode_p_CALCULATION.v_Hour[1]_AND_49_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Minute[2]_AND_49_o is sourced by a combinatorial pin.
+   r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Second[0]_AND_65_o is sourced by a combinatorial pin.
+   r_Mode_p_CALCULATION.v_Second[0]_AND_75_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Second[5]_AND_55_o is sourced by a combinatorial pin.
+   r_Mode_p_CALCULATION.v_Second[5]_AND_65_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Hour[2]_AND_71_o is sourced by a combinatorial pin.
+   r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Minute[0]_AND_54_o is sourced by a combinatorial pin.
+   r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Minute[1]_AND_51_o is sourced by a combinatorial pin.
+   r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Minute[3]_AND_48_o is sourced by a combinatorial pin.
+   r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Minute[4]_AND_46_o is sourced by a combinatorial pin.
+   r_Mode_p_CALCULATION.v_Minute[4]_AND_56_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Minute[5]_AND_43_o is sourced by a combinatorial pin.
+   r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Second[1]_AND_64_o is sourced by a combinatorial pin.
+   r_Mode_p_CALCULATION.v_Second[1]_AND_74_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Hour[3]_AND_69_o is sourced by a combinatorial pin.
+   r_Mode_p_CALCULATION.v_Second[4]_AND_67_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Second[2]_AND_62_o is sourced by a combinatorial pin.
+   r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Second[3]_AND_60_o is sourced by a combinatorial pin.
+   r_Mode_p_CALCULATION.v_Second[2]_AND_72_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Hour[4]_AND_67_o is sourced by a combinatorial pin.
+   r_Mode_p_CALCULATION.v_Second[3]_AND_70_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Hour[0]_AND_75_o is sourced by a combinatorial pin.
+   r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Second[4]_AND_57_o is sourced by a combinatorial pin.
+   r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal <Mram_r_Payload_RX1_RAMD_D1_O> is
