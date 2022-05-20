@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -140,9 +140,9 @@ Elaborating entity <DIV20M_X> (architecture <Behavioral>) with generics from lib
 Elaborating entity <DIV20M_X> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <BCD_7SEGMENT> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 364: Assignment to r_second ignored, since the identifier is never used
-INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 584. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 619. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 364: Assignment to r_second_temp ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 576. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 611. Case statement is complete. others clause is never selected
 WARNING:Xst:2972 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" line 204. All outputs of instance <Inst_DIV20M_4> of block <DIV20M_X> are unconnected in block <MECHANICAL_CLOCK>. Underlying logic will be removed.
 
 =========================================================================
@@ -151,11 +151,11 @@ WARNING:Xst:2972 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANIC
 
 Synthesizing Unit <MECHANICAL_CLOCK>.
     Related source file is "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd".
-WARNING:Xst:647 - Input <INPUT_DATA<7:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <INPUT_DATA<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 INFO:Xst:3210 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" line 204: Output port <o_Newclk> of the instance <Inst_DIV20M_4> is unconnected or connected to loadless signal.
 WARNING:Xst:2935 - Signal 'LED_DEBUG', unconnected in block 'MECHANICAL_CLOCK', is tied to its initial value (0).
 WARNING:Xst:3035 - Index value(s) does not match array range for signal <r_Payload_RX>, simulation mismatch.
-    Found 17x8-bit dual-port RAM <Mram_r_Payload_RX> for signal <r_Payload_RX>.
+    Found 9x8-bit dual-port RAM <Mram_r_Payload_RX> for signal <r_Payload_RX>.
     Found 1-bit register for signal <SEGMENT_DOT>.
     Found 4-bit register for signal <r_Digit>.
     Found 2-bit register for signal <r_Counter_4>.
@@ -177,18 +177,10 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <r_Paylo
     Found 8-bit register for signal <r_Payload_TX<6>>.
     Found 8-bit register for signal <r_Payload_TX<7>>.
     Found 8-bit register for signal <r_Payload_TX<8>>.
-    Found 8-bit register for signal <r_Payload_TX<9>>.
-    Found 8-bit register for signal <r_Payload_TX<10>>.
-    Found 8-bit register for signal <r_Payload_TX<11>>.
-    Found 8-bit register for signal <r_Payload_TX<12>>.
-    Found 8-bit register for signal <r_Payload_TX<13>>.
-    Found 8-bit register for signal <r_Payload_TX<14>>.
-    Found 8-bit register for signal <r_Payload_TX<15>>.
-    Found 8-bit register for signal <r_Payload_TX<16>>.
-    Found 5-bit register for signal <r_Index_TX>.
+    Found 4-bit register for signal <r_Index_TX>.
     Found 8-bit register for signal <r_Input_Byte>.
     Found 2-bit register for signal <r_Main_RX>.
-    Found 5-bit register for signal <r_Index_RX>.
+    Found 4-bit register for signal <r_Index_RX>.
     Found 4-bit register for signal <SEGMENT_GROUNDS>.
     Found 1-bit register for signal <p_CALCULATION.v_Hour_Temp<5>>.
     Found 1-bit register for signal <p_CALCULATION.v_Hour_Temp<4>>.
@@ -256,27 +248,32 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <r_Paylo
     Found 6-bit adder for signal <p_CALCULATION.v_Minute[5]_GND_4_o_add_64_OUT> created at line 452.
     Found 5-bit adder for signal <p_CALCULATION.v_Hour[4]_GND_4_o_add_68_OUT> created at line 458.
     Found 5-bit adder for signal <p_CALCULATION.v_Hour[4]_GND_4_o_add_72_OUT> created at line 464.
-    Found 5-bit adder for signal <r_Index_TX[4]_GND_4_o_add_88_OUT> created at line 572.
-    Found 5-bit adder for signal <r_Index_RX[4]_GND_4_o_add_140_OUT> created at line 613.
+    Found 7-bit adder for signal <n0494[6:0]> created at line 552.
+    Found 7-bit adder for signal <n0496[6:0]> created at line 553.
+    Found 7-bit adder for signal <n0498[6:0]> created at line 554.
+    Found 7-bit adder for signal <n0500[6:0]> created at line 555.
+    Found 7-bit adder for signal <n0502[6:0]> created at line 556.
+    Found 7-bit adder for signal <n0504[6:0]> created at line 557.
+    Found 4-bit adder for signal <r_Index_TX[3]_GND_4_o_add_100_OUT> created at line 564.
+    Found 4-bit adder for signal <r_Index_RX[3]_GND_4_o_add_136_OUT> created at line 605.
     Found 6-bit subtractor for signal <p_CALCULATION.v_Hour_Temp[5]_GND_4_o_sub_34_OUT<5:0>> created at line 391.
     Found 7-bit subtractor for signal <p_CALCULATION.v_Minute_Temp[6]_GND_4_o_sub_35_OUT<6:0>> created at line 394.
     Found 4x4-bit Read Only RAM for signal <r_Counter_4_State[1]_GND_4_o_wide_mux_18_OUT>
-INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <r_Payload_TX>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
     Found 4-bit 4-to-1 multiplexer for signal <r_Counter_4_State[1]_r_Hour_Temp[4]_wide_mux_7_OUT> created at line 234.
     Found 4-bit 4-to-1 multiplexer for signal <r_Counter_4_State[1]_r_Hour_Temp[4]_wide_mux_19_OUT> created at line 283.
-    Found 8-bit 17-to-1 multiplexer for signal <r_Index_TX[4]_X_4_o_wide_mux_93_OUT> created at line 582.
+    Found 8-bit 9-to-1 multiplexer for signal <r_Index_TX[3]_X_4_o_wide_mux_105_OUT> created at line 574.
     Found 7-bit comparator lessequal for signal <n0070> created at line 408
     Found 7-bit comparator lessequal for signal <n0072> created at line 410
     Found 7-bit comparator lessequal for signal <n0076> created at line 415
     Found 7-bit comparator lessequal for signal <n0078> created at line 417
     Found 6-bit comparator lessequal for signal <n0082> created at line 422
     Found 6-bit comparator lessequal for signal <n0084> created at line 424
-    Found 5-bit comparator greater for signal <r_Index_TX[4]_PWR_4_o_LessThan_88_o> created at line 571
-    Found 5-bit comparator greater for signal <r_Index_RX[4]_PWR_4_o_LessThan_140_o> created at line 612
+    Found 4-bit comparator greater for signal <r_Index_TX[3]_PWR_4_o_LessThan_100_o> created at line 563
+    Found 4-bit comparator greater for signal <r_Index_RX[3]_PWR_4_o_LessThan_136_o> created at line 604
     Summary:
 	inferred   2 RAM(s).
-	inferred   9 Adder/Subtractor(s).
-	inferred 210 D-type flip-flop(s).
+	inferred  15 Adder/Subtractor(s).
+	inferred 144 D-type flip-flop(s).
 	inferred   8 Comparator(s).
 	inferred  50 Multiplexer(s).
 	inferred   2 Finite State Machine(s).
@@ -435,11 +432,17 @@ Unit <div_6u_4u> synthesized.
 
 Synthesizing Unit <mod_5u_4u>.
     Related source file is "".
+    Found 9-bit adder for signal <n0133> created at line 0.
     Found 9-bit adder for signal <GND_14_o_b[3]_add_1_OUT> created at line 0.
+    Found 8-bit adder for signal <n0137> created at line 0.
     Found 8-bit adder for signal <GND_14_o_b[3]_add_3_OUT> created at line 0.
+    Found 7-bit adder for signal <n0141> created at line 0.
     Found 7-bit adder for signal <GND_14_o_b[3]_add_5_OUT> created at line 0.
+    Found 6-bit adder for signal <n0145> created at line 0.
     Found 6-bit adder for signal <GND_14_o_b[3]_add_7_OUT> created at line 0.
+    Found 5-bit adder for signal <n0149> created at line 0.
     Found 5-bit adder for signal <a[4]_b[3]_add_9_OUT> created at line 0.
+    Found 5-bit adder for signal <n0153> created at line 0.
     Found 5-bit adder for signal <a[4]_GND_14_o_add_11_OUT> created at line 0.
     Found 9-bit comparator lessequal for signal <BUS_0001> created at line 0
     Found 8-bit comparator lessequal for signal <BUS_0002> created at line 0
@@ -448,17 +451,22 @@ Synthesizing Unit <mod_5u_4u>.
     Found 5-bit comparator lessequal for signal <BUS_0005> created at line 0
     Found 5-bit comparator lessequal for signal <BUS_0006> created at line 0
     Summary:
-	inferred   6 Adder/Subtractor(s).
+	inferred  12 Adder/Subtractor(s).
 	inferred   6 Comparator(s).
 	inferred  26 Multiplexer(s).
 Unit <mod_5u_4u> synthesized.
 
 Synthesizing Unit <div_5u_4u>.
     Related source file is "".
+    Found 9-bit adder for signal <n0133> created at line 0.
     Found 9-bit adder for signal <GND_15_o_b[3]_add_1_OUT> created at line 0.
+    Found 8-bit adder for signal <n0137> created at line 0.
     Found 8-bit adder for signal <GND_15_o_b[3]_add_3_OUT> created at line 0.
+    Found 7-bit adder for signal <n0141> created at line 0.
     Found 7-bit adder for signal <GND_15_o_b[3]_add_5_OUT> created at line 0.
+    Found 6-bit adder for signal <n0145> created at line 0.
     Found 6-bit adder for signal <GND_15_o_b[3]_add_7_OUT> created at line 0.
+    Found 5-bit adder for signal <n0149> created at line 0.
     Found 5-bit adder for signal <a[4]_b[3]_add_9_OUT[4:0]> created at line 0.
     Found 9-bit comparator lessequal for signal <BUS_0001> created at line 0
     Found 8-bit comparator lessequal for signal <BUS_0002> created at line 0
@@ -467,7 +475,7 @@ Synthesizing Unit <div_5u_4u>.
     Found 5-bit comparator lessequal for signal <BUS_0005> created at line 0
     Found 5-bit comparator lessequal for signal <BUS_0006> created at line 0
     Summary:
-	inferred   5 Adder/Subtractor(s).
+	inferred  10 Adder/Subtractor(s).
 	inferred   6 Comparator(s).
 	inferred  17 Multiplexer(s).
 Unit <div_5u_4u> synthesized.
@@ -478,52 +486,52 @@ HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 3
  16x7-bit single-port Read Only RAM                    : 1
- 17x8-bit dual-port RAM                                : 1
  4x4-bit single-port Read Only RAM                     : 1
-# Adders/Subtractors                                   : 78
- 10-bit adder                                          : 8
+ 9x8-bit dual-port RAM                                 : 1
+# Adders/Subtractors                                   : 143
+ 10-bit adder                                          : 12
  12-bit adder                                          : 2
  2-bit adder                                           : 1
  24-bit adder                                          : 2
  3-bit adder                                           : 2
- 5-bit adder                                           : 7
- 6-bit adder                                           : 24
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 14
+ 6-bit adder                                           : 40
  6-bit addsub                                          : 1
- 7-bit adder                                           : 10
+ 7-bit adder                                           : 26
  7-bit addsub                                          : 1
- 8-bit adder                                           : 10
- 9-bit adder                                           : 10
-# Registers                                            : 83
+ 8-bit adder                                           : 20
+ 9-bit adder                                           : 20
+# Registers                                            : 75
  1-bit register                                        : 52
  12-bit register                                       : 2
  2-bit register                                        : 1
  24-bit register                                       : 2
  3-bit register                                        : 2
- 4-bit register                                        : 2
- 5-bit register                                        : 2
- 8-bit register                                        : 20
-# Comparators                                          : 52
- 10-bit comparator lessequal                           : 4
+ 4-bit register                                        : 4
+ 8-bit register                                        : 12
+# Comparators                                          : 78
+ 10-bit comparator lessequal                           : 6
  12-bit comparator greater                             : 2
  3-bit comparator greater                              : 2
- 5-bit comparator greater                              : 2
- 5-bit comparator lessequal                            : 4
- 6-bit comparator lessequal                            : 16
- 7-bit comparator lessequal                            : 10
- 8-bit comparator lessequal                            : 6
- 9-bit comparator lessequal                            : 6
-# Multiplexers                                         : 232
- 1-bit 2-to-1 multiplexer                              : 181
+ 4-bit comparator greater                              : 2
+ 5-bit comparator lessequal                            : 8
+ 6-bit comparator lessequal                            : 24
+ 7-bit comparator lessequal                            : 14
+ 8-bit comparator lessequal                            : 10
+ 9-bit comparator lessequal                            : 10
+# Multiplexers                                         : 333
+ 1-bit 2-to-1 multiplexer                              : 275
  1-bit 8-to-1 multiplexer                              : 1
  12-bit 2-to-1 multiplexer                             : 7
  24-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 4
- 4-bit 2-to-1 multiplexer                              : 4
+ 4-bit 2-to-1 multiplexer                              : 7
  4-bit 4-to-1 multiplexer                              : 2
- 5-bit 2-to-1 multiplexer                              : 5
- 6-bit 2-to-1 multiplexer                              : 16
+ 5-bit 2-to-1 multiplexer                              : 6
+ 6-bit 2-to-1 multiplexer                              : 19
  7-bit 2-to-1 multiplexer                              : 10
- 8-bit 17-to-1 multiplexer                             : 1
+ 8-bit 9-to-1 multiplexer                              : 1
 # FSMs                                                 : 4
 
 =========================================================================
@@ -533,73 +541,17 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_0_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_0_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_0_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_0_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_1_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_1_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_1_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_1_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_2_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_2_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_2_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_2_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_2_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_3_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_3_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_3_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_3_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_4_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_4_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_4_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_4_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_4_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_5_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_5_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_5_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_5_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_5_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_6_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_6_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_6_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_6_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
 WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_6_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 0.
 WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_6_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_7_3 hinder the constant cleaning in the block MECHANICAL_CLOCK.
+WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_7_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_7_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_7_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 0.
@@ -609,7 +561,9 @@ WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_7_6 hinder the co
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_8_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_8_3 hinder the constant cleaning in the block MECHANICAL_CLOCK.
+WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_8_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_8_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_8_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 0.
@@ -617,143 +571,21 @@ WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_8_5 hinder the co
    You should achieve better results by setting this init to 0.
 WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_8_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_9_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_9_3 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_9_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_9_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_9_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_10_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_10_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_10_3 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_10_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_10_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_10_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_11_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_11_3 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_11_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_11_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_11_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_12_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_12_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_12_3 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_12_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_12_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_12_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_13_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_13_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_13_3 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_13_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_13_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_13_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_14_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_14_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_14_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_14_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_15_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_15_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_15_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_15_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_15_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_16_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_16_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_16_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_16_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_16_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_16_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1293 - FF/Latch <r_Payload_TX_7_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_8_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_8_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_8_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_9_0> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_9_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_9_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_10_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_10_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_13_0> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_13_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_11_0> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_11_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_11_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_12_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_12_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_14_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_14_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_14_4> has a constant value of 1 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_14_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_15_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_15_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_15_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_16_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_16_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_0_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_0_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_0_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_0_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_1_0> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_1_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_1_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_1_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_4_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_4_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_4_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_2_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_2_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_2_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_3_0> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_3_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_3_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_3_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_5_0> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_5_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_5_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_Payload_TX_6_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_6_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_6_4> has a constant value of 1 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_6_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_7_0> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_7_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_7_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_7_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_7_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_8_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_8_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_0_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_1_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_4_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_2_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_3_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_5_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <BCD_7SEGMENT>.
 INFO:Xst:3231 - The small RAM <Mram_o_Segment> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
@@ -797,14 +629,14 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_r_Payload_RX> will be implemented on
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 17-word x 8-bit                     |          |
+    |     aspect ratio   | 9-word x 8-bit                      |          |
     |     clkA           | connected to signal <CLK>           | rise     |
     |     weA            | connected to internal node          | high     |
     |     addrA          | connected to signal <INDEX_RX>      |          |
     |     diA            | connected to signal <r_Output_Byte> |          |
     -----------------------------------------------------------------------
     | Port B                                                              |
-    |     aspect ratio   | 17-word x 8-bit                     |          |
+    |     aspect ratio   | 9-word x 8-bit                      |          |
     |     addrB          | connected to signal <INPUT_DATA>    |          |
     |     doB            | connected to signal <OUTPUT_DATA>   |          |
     -----------------------------------------------------------------------
@@ -816,45 +648,46 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 3
  16x7-bit single-port distributed Read Only RAM        : 1
- 17x8-bit dual-port distributed RAM                    : 1
  4x4-bit single-port distributed Read Only RAM         : 1
-# Adders/Subtractors                                   : 47
+ 9x8-bit dual-port distributed RAM                     : 1
+# Adders/Subtractors                                   : 77
  12-bit adder                                          : 2
  3-bit adder                                           : 2
- 4-bit adder                                           : 1
- 4-bit adder carry in                                  : 2
- 5-bit adder                                           : 12
+ 4-bit adder carry in                                  : 5
+ 5-bit adder                                           : 2
+ 5-bit adder carry in                                  : 20
  6-bit adder                                           : 2
- 6-bit adder carry in                                  : 24
+ 6-bit adder carry in                                  : 36
  6-bit addsub                                          : 1
+ 7-bit adder                                           : 6
  7-bit addsub                                          : 1
 # Counters                                             : 5
  2-bit up counter                                      : 1
  24-bit up counter                                     : 2
- 5-bit up counter                                      : 2
-# Registers                                            : 250
- Flip-Flops                                            : 250
-# Comparators                                          : 52
- 10-bit comparator lessequal                           : 4
+ 4-bit up counter                                      : 2
+# Registers                                            : 186
+ Flip-Flops                                            : 186
+# Comparators                                          : 78
+ 10-bit comparator lessequal                           : 6
  12-bit comparator greater                             : 2
  3-bit comparator greater                              : 2
- 5-bit comparator greater                              : 2
- 5-bit comparator lessequal                            : 4
- 6-bit comparator lessequal                            : 16
- 7-bit comparator lessequal                            : 10
- 8-bit comparator lessequal                            : 6
- 9-bit comparator lessequal                            : 6
-# Multiplexers                                         : 230
- 1-bit 2-to-1 multiplexer                              : 181
+ 4-bit comparator greater                              : 2
+ 5-bit comparator lessequal                            : 8
+ 6-bit comparator lessequal                            : 24
+ 7-bit comparator lessequal                            : 14
+ 8-bit comparator lessequal                            : 10
+ 9-bit comparator lessequal                            : 10
+# Multiplexers                                         : 331
+ 1-bit 2-to-1 multiplexer                              : 275
  1-bit 8-to-1 multiplexer                              : 1
  12-bit 2-to-1 multiplexer                             : 7
  3-bit 2-to-1 multiplexer                              : 4
- 4-bit 2-to-1 multiplexer                              : 4
+ 4-bit 2-to-1 multiplexer                              : 6
  4-bit 4-to-1 multiplexer                              : 2
- 5-bit 2-to-1 multiplexer                              : 4
- 6-bit 2-to-1 multiplexer                              : 16
+ 5-bit 2-to-1 multiplexer                              : 6
+ 6-bit 2-to-1 multiplexer                              : 19
  7-bit 2-to-1 multiplexer                              : 10
- 8-bit 17-to-1 multiplexer                             : 1
+ 8-bit 9-to-1 multiplexer                              : 1
 # FSMs                                                 : 4
 
 =========================================================================
@@ -862,73 +695,17 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_0_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_0_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_0_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_0_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_1_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_1_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_1_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_1_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_2_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_2_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_2_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_2_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_2_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_3_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_3_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_3_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_3_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_4_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_4_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_4_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_4_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_4_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_5_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_5_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_5_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_5_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_5_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_6_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_6_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_6_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_6_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
 WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_6_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 0.
 WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_6_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_7_3 hinder the constant cleaning in the block MECHANICAL_CLOCK.
+WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_7_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_7_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_7_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 0.
@@ -938,7 +715,9 @@ WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_7_6 hinder the co
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_8_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_8_3 hinder the constant cleaning in the block MECHANICAL_CLOCK.
+WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_8_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_8_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_8_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 0.
@@ -946,146 +725,23 @@ WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_8_5 hinder the co
    You should achieve better results by setting this init to 0.
 WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_8_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
    You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_9_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_9_3 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_9_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_9_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_9_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_10_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_10_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_10_3 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_10_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_10_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_10_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_11_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_11_3 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_11_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_11_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_11_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_12_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_12_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_12_3 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_12_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_12_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_12_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_13_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_13_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_13_3 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_13_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_13_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_13_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_14_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_14_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_14_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_14_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_15_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_15_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_15_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_15_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_15_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_16_0 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_16_1 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_16_2 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_16_4 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_16_5 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch r_Payload_TX_16_6 hinder the constant cleaning in the block MECHANICAL_CLOCK.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1293 - FF/Latch <r_Payload_TX_7_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_10_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_10_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_8_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_8_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_8_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_9_0> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_9_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_9_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_11_0> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_11_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_11_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_12_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_12_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_13_0> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_13_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_14_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_14_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_14_4> has a constant value of 1 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_14_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_15_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_15_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_15_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_16_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_16_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_1_0> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_1_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_1_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_1_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_0_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_0_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_0_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_0_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_2_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_2_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_2_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_3_0> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_3_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_3_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_3_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_4_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_4_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_4_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_5_0> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_5_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_5_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_Payload_TX_6_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_6_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_6_4> has a constant value of 1 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_6_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_7_0> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_7_1> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_7_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <r_Payload_TX_1_1> in Unit <MECHANICAL_CLOCK> is equivalent to the following 51 FFs/Latches, which will be removed : <r_Payload_TX_1_6> <r_Payload_TX_0_0> <r_Payload_TX_0_6> <r_Payload_TX_2_0> <r_Payload_TX_2_1> <r_Payload_TX_2_6> <r_Payload_TX_3_2> <r_Payload_TX_3_6> <r_Payload_TX_4_0> <r_Payload_TX_4_2> <r_Payload_TX_4_6> <r_Payload_TX_5_1> <r_Payload_TX_5_2> <r_Payload_TX_5_6> <r_Payload_TX_6_0> <r_Payload_TX_6_1> <r_Payload_TX_6_2> <r_Payload_TX_6_6> <r_Payload_TX_7_3> <r_Payload_TX_7_6> <r_Payload_TX_10_0> <r_Payload_TX_10_1> <r_Payload_TX_10_3> <r_Payload_TX_10_6> <r_Payload_TX_8_0> <r_Payload_TX_8_3> <r_Payload_TX_8_6> <r_Payload_TX_9_1> <r_Payload_TX_9_3> <r_Payload_TX_9_6> <r_Payload_TX_11_2> <r_Payload_TX_11_3> <r_Payload_TX_11_6> <r_Payload_TX_12_0> <r_Payload_TX_12_2> <r_Payload_TX_12_3> <r_Payload_TX_12_6> <r_Payload_TX_13_1> <r_Payload_TX_13_2> <r_Payload_TX_13_3> <r_Payload_TX_13_6> <r_Payload_TX_14_0> <r_Payload_TX_14_1> <r_Payload_TX_14_6> <r_Payload_TX_15_0>
-   <r_Payload_TX_15_2> <r_Payload_TX_15_6> <r_Payload_TX_16_0> <r_Payload_TX_16_1> <r_Payload_TX_16_2> <r_Payload_TX_16_6> 
-INFO:Xst:2261 - The FF/Latch <r_Payload_TX_1_4> in Unit <MECHANICAL_CLOCK> is equivalent to the following 32 FFs/Latches, which will be removed : <r_Payload_TX_1_5> <r_Payload_TX_0_4> <r_Payload_TX_0_5> <r_Payload_TX_2_4> <r_Payload_TX_2_5> <r_Payload_TX_3_4> <r_Payload_TX_3_5> <r_Payload_TX_4_4> <r_Payload_TX_4_5> <r_Payload_TX_5_4> <r_Payload_TX_5_5> <r_Payload_TX_6_4> <r_Payload_TX_6_5> <r_Payload_TX_7_4> <r_Payload_TX_7_5> <r_Payload_TX_10_4> <r_Payload_TX_10_5> <r_Payload_TX_8_4> <r_Payload_TX_8_5> <r_Payload_TX_9_4> <r_Payload_TX_9_5> <r_Payload_TX_11_4> <r_Payload_TX_11_5> <r_Payload_TX_12_4> <r_Payload_TX_12_5> <r_Payload_TX_13_4> <r_Payload_TX_13_5> <r_Payload_TX_14_5> <r_Payload_TX_15_4> <r_Payload_TX_15_5> <r_Payload_TX_16_4> <r_Payload_TX_16_5> 
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_7_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_7_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_8_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_8_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_4_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_5_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_1_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_0_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_2_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_3_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <r_Payload_TX_6_5> in Unit <MECHANICAL_CLOCK> is equivalent to the following 4 FFs/Latches, which will be removed : <r_Payload_TX_7_4> <r_Payload_TX_7_5> <r_Payload_TX_8_4> <r_Payload_TX_8_5> 
+INFO:Xst:2261 - The FF/Latch <r_Payload_TX_6_0> in Unit <MECHANICAL_CLOCK> is equivalent to the following 9 FFs/Latches, which will be removed : <r_Payload_TX_6_1> <r_Payload_TX_6_6> <r_Payload_TX_7_0> <r_Payload_TX_7_2> <r_Payload_TX_7_6> <r_Payload_TX_8_0> <r_Payload_TX_8_1> <r_Payload_TX_8_2> <r_Payload_TX_8_6> 
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <FSM_1> on signal <r_Main_RX[1:2]> with user encoding.
 --------------------------
@@ -1129,6 +785,28 @@ Optimizing FSM <Inst_UART_RX/FSM_3> on signal <r_SM_Main[1:3]> with user encodin
 ----------------------------
 WARNING:Xst:1293 - FF/Latch <p_CALCULATION.v_Second_Temp_6> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Input_Byte_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_3_6> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_3_5> has a constant value of 1 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_3_4> has a constant value of 1 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_2_6> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_2_5> has a constant value of 1 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_2_4> has a constant value of 1 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_2_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_0_6> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_0_5> has a constant value of 1 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_0_4> has a constant value of 1 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_0_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_0_2> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_1_6> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_1_5> has a constant value of 1 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_1_4> has a constant value of 1 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_5_6> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_5_5> has a constant value of 1 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_5_4> has a constant value of 1 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_4_6> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_4_5> has a constant value of 1 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_4_4> has a constant value of 1 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Payload_TX_4_3> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <p_CALCULATION.v_Hour_Temp_5> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <p_CALCULATION.v_Minute_Temp_6> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
@@ -1168,26 +846,26 @@ WARNING:Xst:3002 - This design contains one or more registers/latches that are d
     p_CALCULATION.v_Minute_3 in unit <MECHANICAL_CLOCK>
     p_CALCULATION.v_Second_0 in unit <MECHANICAL_CLOCK>
     p_CALCULATION.v_Second_1 in unit <MECHANICAL_CLOCK>
-    p_CALCULATION.v_Second_2 in unit <MECHANICAL_CLOCK>
     p_CALCULATION.v_Second_3 in unit <MECHANICAL_CLOCK>
     p_CALCULATION.v_Second_4 in unit <MECHANICAL_CLOCK>
+    p_CALCULATION.v_Second_2 in unit <MECHANICAL_CLOCK>
     p_CALCULATION.v_Second_Temp_0 in unit <MECHANICAL_CLOCK>
     p_CALCULATION.v_Second_Temp_1 in unit <MECHANICAL_CLOCK>
-    p_CALCULATION.v_Second_Temp_3 in unit <MECHANICAL_CLOCK>
-    p_CALCULATION.v_Second_Temp_4 in unit <MECHANICAL_CLOCK>
     p_CALCULATION.v_Second_Temp_2 in unit <MECHANICAL_CLOCK>
+    p_CALCULATION.v_Second_Temp_4 in unit <MECHANICAL_CLOCK>
     p_CALCULATION.v_Second_Temp_5 in unit <MECHANICAL_CLOCK>
+    p_CALCULATION.v_Second_Temp_3 in unit <MECHANICAL_CLOCK>
+    p_CALCULATION.v_Minute_Temp_0 in unit <MECHANICAL_CLOCK>
     p_CALCULATION.v_Minute_Temp_1 in unit <MECHANICAL_CLOCK>
     p_CALCULATION.v_Minute_Temp_2 in unit <MECHANICAL_CLOCK>
-    p_CALCULATION.v_Minute_Temp_0 in unit <MECHANICAL_CLOCK>
     p_CALCULATION.v_Minute_Temp_3 in unit <MECHANICAL_CLOCK>
     p_CALCULATION.v_Minute_Temp_4 in unit <MECHANICAL_CLOCK>
     p_CALCULATION.v_Hour_Temp_0 in unit <MECHANICAL_CLOCK>
     p_CALCULATION.v_Minute_Temp_5 in unit <MECHANICAL_CLOCK>
     p_CALCULATION.v_Hour_Temp_1 in unit <MECHANICAL_CLOCK>
     p_CALCULATION.v_Hour_Temp_2 in unit <MECHANICAL_CLOCK>
-    p_CALCULATION.v_Hour_Temp_3 in unit <MECHANICAL_CLOCK>
     p_CALCULATION.v_Hour_Temp_4 in unit <MECHANICAL_CLOCK>
+    p_CALCULATION.v_Hour_Temp_3 in unit <MECHANICAL_CLOCK>
 
 
 Optimizing unit <MECHANICAL_CLOCK> ...
@@ -1196,8 +874,7 @@ Optimizing unit <UART_TX> ...
 
 Optimizing unit <UART_RX> ...
 WARNING:Xst:1293 - FF/Latch <Inst_UART_TX/r_TX_Data_7> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_Input_Byte_5> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_DIV20M_2/r_Clk_count_23> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_DIV20M_2/r_Clk_count_23> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_DIV20M_1000/r_Clk_count_14> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_DIV20M_1000/r_Clk_count_15> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_DIV20M_1000/r_Clk_count_16> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
@@ -1208,13 +885,11 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_DIV20M_1000/r_
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_DIV20M_1000/r_Clk_count_21> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_DIV20M_1000/r_Clk_count_22> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_DIV20M_1000/r_Clk_count_23> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_UART_TX/r_TX_Data_5> has a constant value of 0 in block <MECHANICAL_CLOCK>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <Inst_UART_RX/r_SM_Main_FSM_FFd1> in Unit <MECHANICAL_CLOCK> is equivalent to the following FF/Latch, which will be removed : <Inst_UART_RX/r_RX_DV> 
-INFO:Xst:3203 - The FF/Latch <r_Payload_TX_1_1> in Unit <MECHANICAL_CLOCK> is the opposite to the following FF/Latch, which will be removed : <r_Payload_TX_1_4> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block MECHANICAL_CLOCK, actual ratio is 8.
+Found area constraint ratio of 100 (+ 5) on block MECHANICAL_CLOCK, actual ratio is 9.
 FlipFlop r_Mode has been replicated 1 time(s)
 
 Final Macro Processing ...
@@ -1223,8 +898,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 201
- Flip-Flops                                            : 201
+# Registers                                            : 222
+ Flip-Flops                                            : 222
 
 =========================================================================
 
@@ -1247,37 +922,37 @@ Top Level Output File Name         : MECHANICAL_CLOCK.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 552
+# BELS                             : 576
 #      GND                         : 1
 #      INV                         : 13
 #      LUT1                        : 57
 #      LUT2                        : 48
-#      LUT3                        : 51
-#      LUT4                        : 35
-#      LUT5                        : 80
-#      LUT6                        : 142
+#      LUT3                        : 52
+#      LUT4                        : 38
+#      LUT5                        : 85
+#      LUT6                        : 153
 #      MUXCY                       : 57
-#      MUXF7                       : 6
+#      MUXF7                       : 10
 #      VCC                         : 1
 #      XORCY                       : 61
-# FlipFlops/Latches                : 235
-#      FD                          : 44
+# FlipFlops/Latches                : 256
+#      FD                          : 43
 #      FDC                         : 35
-#      FDE                         : 65
+#      FDE                         : 88
 #      FDP                         : 34
 #      FDR                         : 18
-#      FDRE                        : 5
+#      FDRE                        : 4
 #      LDC                         : 28
 #      LDP                         : 6
 # RAMS                             : 3
+#      RAM16X1D                    : 2
 #      RAM32M                      : 1
-#      RAM32X1D                    : 2
 # Clock Buffers                    : 3
 #      BUFG                        : 2
 #      BUFGP                       : 1
-# IO Buffers                       : 49
-#      IBUF                        : 12
-#      OBUF                        : 37
+# IO Buffers                       : 46
+#      IBUF                        : 11
+#      OBUF                        : 35
 
 Device utilization summary:
 ---------------------------
@@ -1286,22 +961,22 @@ Selected Device : 6slx9tqg144-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             235  out of  11440     2%  
- Number of Slice LUTs:                  434  out of   5720     7%  
-    Number used as Logic:               426  out of   5720     7%  
+ Number of Slice Registers:             256  out of  11440     2%  
+ Number of Slice LUTs:                  454  out of   5720     7%  
+    Number used as Logic:               446  out of   5720     7%  
     Number used as Memory:                8  out of   1440     0%  
        Number used as RAM:                8
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    507
-   Number with an unused Flip Flop:     272  out of    507    53%  
-   Number with an unused LUT:            73  out of    507    14%  
-   Number of fully used LUT-FF pairs:   162  out of    507    31%  
-   Number of unique control sets:       119
+ Number of LUT Flip Flop pairs used:    542
+   Number with an unused Flip Flop:     286  out of    542    52%  
+   Number with an unused LUT:            88  out of    542    16%  
+   Number of fully used LUT-FF pairs:   168  out of    542    30%  
+   Number of unique control sets:       120
 
 IO Utilization: 
- Number of IOs:                          53
- Number of bonded IOBs:                  50  out of    102    49%  
+ Number of IOs:                          51
+ Number of bonded IOBs:                  47  out of    102    46%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
@@ -1327,30 +1002,30 @@ Clock Information:
 -------------------------------------------------------------------------------------------------+--------------------------------------------+-------+
 Clock Signal                                                                                     | Clock buffer(FF name)                      | Load  |
 -------------------------------------------------------------------------------------------------+--------------------------------------------+-------+
+CLK                                                                                              | BUFGP                                      | 144   |
 Inst_DIV20M_2/r_Clk                                                                              | BUFG                                       | 36    |
-CLK                                                                                              | BUFGP                                      | 123   |
 Inst_DIV20M_1000/r_Clk                                                                           | NONE(SEGMENT_GROUNDS_0)                    | 11    |
-r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o(r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o1:O)              | NONE(*)(p_CALCULATION.v_Hour_Temp_4_LDC)   | 1     |
 r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o(r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o1:O)              | NONE(*)(p_CALCULATION.v_Hour_Temp_3_LDC)   | 1     |
+r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o(r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o1:O)              | NONE(*)(p_CALCULATION.v_Hour_Temp_4_LDC)   | 1     |
 r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o(r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o1:O)              | NONE(*)(p_CALCULATION.v_Hour_Temp_2_LDC)   | 1     |
 r_Mode_p_CALCULATION.v_Hour[1]_AND_49_o(r_Mode_p_CALCULATION.v_Hour[1]_AND_49_o1:O)              | NONE(*)(p_CALCULATION.v_Hour_Temp_1_LDC)   | 1     |
 r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o(r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o1:O)          | NONE(*)(p_CALCULATION.v_Minute_Temp_5_LDC) | 1     |
 r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o(r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o1:O)              | NONE(*)(p_CALCULATION.v_Hour_Temp_0_LDC)   | 1     |
 r_Mode_p_CALCULATION.v_Minute[4]_AND_56_o(r_Mode_p_CALCULATION.v_Minute[4]_AND_56_o1:O)          | NONE(*)(p_CALCULATION.v_Minute_Temp_4_LDC1)| 1     |
 r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o(r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o1:O)          | NONE(*)(p_CALCULATION.v_Minute_Temp_3_LDC1)| 1     |
-r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o(r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o1:O)          | NONE(*)(p_CALCULATION.v_Minute_Temp_0_LDC1)| 1     |
 r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o(r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o1:O)          | NONE(*)(p_CALCULATION.v_Minute_Temp_2_LDC) | 1     |
 r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o(r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o1:O)          | NONE(*)(p_CALCULATION.v_Minute_Temp_1_LDC) | 1     |
-r_Mode_p_CALCULATION.v_Second[5]_AND_65_o(r_Mode_p_CALCULATION.v_Second[5]_AND_65_o1:O)          | NONE(*)(p_CALCULATION.v_Second_Temp_5_LDC) | 1     |
-r_Mode_p_CALCULATION.v_Second[2]_AND_72_o(r_Mode_p_CALCULATION.v_Second[2]_AND_72_o1:O)          | NONE(*)(p_CALCULATION.v_Second_Temp_2_LDC1)| 1     |
-r_Mode_p_CALCULATION.v_Second[4]_AND_67_o(r_Mode_p_CALCULATION.v_Second[4]_AND_67_o1:O)          | NONE(*)(p_CALCULATION.v_Second_Temp_4_LDC) | 1     |
+r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o(r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o1:O)          | NONE(*)(p_CALCULATION.v_Minute_Temp_0_LDC1)| 1     |
 r_Mode_p_CALCULATION.v_Second[3]_AND_70_o(r_Mode_p_CALCULATION.v_Second[3]_AND_70_o1:O)          | NONE(*)(p_CALCULATION.v_Second_Temp_3_LDC1)| 1     |
+r_Mode_p_CALCULATION.v_Second[5]_AND_65_o(r_Mode_p_CALCULATION.v_Second[5]_AND_65_o1:O)          | NONE(*)(p_CALCULATION.v_Second_Temp_5_LDC) | 1     |
+r_Mode_p_CALCULATION.v_Second[4]_AND_67_o(r_Mode_p_CALCULATION.v_Second[4]_AND_67_o1:O)          | NONE(*)(p_CALCULATION.v_Second_Temp_4_LDC) | 1     |
+r_Mode_p_CALCULATION.v_Second[2]_AND_72_o(r_Mode_p_CALCULATION.v_Second[2]_AND_72_o1:O)          | NONE(*)(p_CALCULATION.v_Second_Temp_2_LDC1)| 1     |
 r_Mode_p_CALCULATION.v_Second[1]_AND_74_o(r_Mode_p_CALCULATION.v_Second[1]_AND_74_o1:O)          | NONE(*)(p_CALCULATION.v_Second_Temp_1_LDC1)| 1     |
 r_Mode_p_CALCULATION.v_Second[0]_AND_75_o(r_Mode_p_CALCULATION.v_Second[0]_AND_75_o1:O)          | NONE(*)(p_CALCULATION.v_Second_Temp_0_LDC) | 1     |
-r_Mode_p_CALCULATION.v_Second_Temp[4]_AND_79_o(r_Mode_p_CALCULATION.v_Second_Temp[4]_AND_79_o1:O)| NONE(*)(p_CALCULATION.v_Second_4_LDC)      | 1     |
-r_Clk_1_Hz                                                                                       | BUFG                                       | 34    |
-r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_81_o(r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_81_o1:O)| NONE(*)(p_CALCULATION.v_Second_3_LDC)      | 1     |
 r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_83_o(r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_83_o1:O)| NONE(*)(p_CALCULATION.v_Second_2_LDC)      | 1     |
+r_Clk_1_Hz                                                                                       | BUFG                                       | 34    |
+r_Mode_p_CALCULATION.v_Second_Temp[4]_AND_79_o(r_Mode_p_CALCULATION.v_Second_Temp[4]_AND_79_o1:O)| NONE(*)(p_CALCULATION.v_Second_4_LDC)      | 1     |
+r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_81_o(r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_81_o1:O)| NONE(*)(p_CALCULATION.v_Second_3_LDC)      | 1     |
 r_Mode_p_CALCULATION.v_Second_Temp[1]_AND_85_o(r_Mode_p_CALCULATION.v_Second_Temp[1]_AND_85_o1:O)| NONE(*)(p_CALCULATION.v_Second_1_LDC)      | 1     |
 r_Mode_p_CALCULATION.v_Second_Temp[0]_AND_87_o(r_Mode_p_CALCULATION.v_Second_Temp[0]_AND_87_o1:O)| NONE(*)(p_CALCULATION.v_Second_0_LDC)      | 1     |
 r_Mode_p_CALCULATION.v_Minute_Temp[3]_AND_93_o(r_Mode_p_CALCULATION.v_Minute_Temp[3]_AND_93_o1:O)| NONE(*)(p_CALCULATION.v_Minute_3_LDC)      | 1     |
@@ -1381,7 +1056,7 @@ Speed Grade: -3
 
    Minimum period: 4.715ns (Maximum Frequency: 212.080MHz)
    Minimum input arrival time before clock: 5.678ns
-   Maximum output required time after clock: 4.882ns
+   Maximum output required time after clock: 4.875ns
    Maximum combinational path delay: 5.291ns
 
 Timing Details:
@@ -1389,34 +1064,9 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'Inst_DIV20M_2/r_Clk'
-  Clock period: 4.679ns (frequency: 213.703MHz)
-  Total number of paths / destination ports: 542 / 36
--------------------------------------------------------------------------
-Delay:               4.679ns (Levels of Logic = 4)
-  Source:            p_CALCULATION.v_Minute_Temp_0_C_0 (FF)
-  Destination:       p_CALCULATION.v_Minute_Temp_3_C_3 (FF)
-  Source Clock:      Inst_DIV20M_2/r_Clk rising
-  Destination Clock: Inst_DIV20M_2/r_Clk rising
-
-  Data Path: p_CALCULATION.v_Minute_Temp_0_C_0 to p_CALCULATION.v_Minute_Temp_3_C_3
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              3   0.447   0.755  p_CALCULATION.v_Minute_Temp_0_C_0 (p_CALCULATION.v_Minute_Temp_0_C_0)
-     LUT3:I1->O            4   0.203   0.788  p_CALCULATION.v_Minute_Temp_01 (p_CALCULATION.v_Minute_Temp_0)
-     LUT6:I4->O            9   0.203   0.830  Mmux_p_CALCULATION.v_Minute_Temp[6]_p_CALCULATION.v_Minute_Temp[6]_mux_46_OUT_rs_cy<1>111 (Mmux_p_CALCULATION.v_Minute_Temp[6]_p_CALCULATION.v_Minute_Temp[6]_mux_46_OUT_rs_cy<1>)
-     LUT6:I5->O            1   0.205   0.944  Mmux_p_CALCULATION.v_Minute_Temp[6]_GND_4_o_mux_54_OUT41_SW0 (N111)
-     LUT6:I0->O            2   0.203   0.000  Mmux_p_CALCULATION.v_Minute_Temp[6]_GND_4_o_mux_54_OUT41 (p_CALCULATION.v_Minute_Temp[6]_GND_4_o_mux_54_OUT<3>)
-     FDC:D                     0.102          p_CALCULATION.v_Minute_Temp_3_C_3
-    ----------------------------------------
-    Total                      4.679ns (1.363ns logic, 3.316ns route)
-                                       (29.1% logic, 70.9% route)
-
-=========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 4.715ns (frequency: 212.080MHz)
-  Total number of paths / destination ports: 2611 / 230
+  Total number of paths / destination ports: 2672 / 247
 -------------------------------------------------------------------------
 Delay:               4.715ns (Levels of Logic = 4)
   Source:            Inst_DIV20M_2/r_Clk_count_1 (FF)
@@ -1439,51 +1089,77 @@ Delay:               4.715ns (Levels of Logic = 4)
                                        (28.9% logic, 71.1% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'Inst_DIV20M_1000/r_Clk'
-  Clock period: 2.743ns (frequency: 364.591MHz)
-  Total number of paths / destination ports: 23 / 11
+Timing constraint: Default period analysis for Clock 'Inst_DIV20M_2/r_Clk'
+  Clock period: 4.679ns (frequency: 213.703MHz)
+  Total number of paths / destination ports: 542 / 36
 -------------------------------------------------------------------------
-Delay:               2.743ns (Levels of Logic = 2)
-  Source:            r_Counter_4_1 (FF)
-  Destination:       SEGMENT_DOT (FF)
-  Source Clock:      Inst_DIV20M_1000/r_Clk rising
-  Destination Clock: Inst_DIV20M_1000/r_Clk rising
+Delay:               4.679ns (Levels of Logic = 4)
+  Source:            p_CALCULATION.v_Minute_Temp_0_C_0 (FF)
+  Destination:       p_CALCULATION.v_Minute_Temp_3_C_3 (FF)
+  Source Clock:      Inst_DIV20M_2/r_Clk rising
+  Destination Clock: Inst_DIV20M_2/r_Clk rising
 
-  Data Path: r_Counter_4_1 to SEGMENT_DOT
+  Data Path: p_CALCULATION.v_Minute_Temp_0_C_0 to p_CALCULATION.v_Minute_Temp_3_C_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              10   0.447   1.104  r_Counter_4_1 (r_Counter_4_1)
-     LUT4:I0->O            1   0.203   0.684  _n05841 (_n0584)
-     LUT2:I0->O            1   0.203   0.000  SEGMENT_DOT_rstpot1 (SEGMENT_DOT_rstpot1)
-     FD:D                      0.102          SEGMENT_DOT
+     FDC:C->Q              3   0.447   0.755  p_CALCULATION.v_Minute_Temp_0_C_0 (p_CALCULATION.v_Minute_Temp_0_C_0)
+     LUT3:I1->O            4   0.203   0.788  p_CALCULATION.v_Minute_Temp_01 (p_CALCULATION.v_Minute_Temp_0)
+     LUT6:I4->O            9   0.203   0.830  Mmux_p_CALCULATION.v_Minute_Temp[6]_p_CALCULATION.v_Minute_Temp[6]_mux_46_OUT_rs_cy<1>111 (Mmux_p_CALCULATION.v_Minute_Temp[6]_p_CALCULATION.v_Minute_Temp[6]_mux_46_OUT_rs_cy<1>)
+     LUT6:I5->O            1   0.205   0.944  Mmux_p_CALCULATION.v_Minute_Temp[6]_GND_4_o_mux_54_OUT41_SW0 (N153)
+     LUT6:I0->O            2   0.203   0.000  Mmux_p_CALCULATION.v_Minute_Temp[6]_GND_4_o_mux_54_OUT41 (p_CALCULATION.v_Minute_Temp[6]_GND_4_o_mux_54_OUT<3>)
+     FDC:D                     0.102          p_CALCULATION.v_Minute_Temp_3_C_3
     ----------------------------------------
-    Total                      2.743ns (0.955ns logic, 1.788ns route)
-                                       (34.8% logic, 65.2% route)
+    Total                      4.679ns (1.363ns logic, 3.316ns route)
+                                       (29.1% logic, 70.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_DIV20M_1000/r_Clk'
+  Clock period: 3.012ns (frequency: 332.038MHz)
+  Total number of paths / destination ports: 26 / 11
+-------------------------------------------------------------------------
+Delay:               3.012ns (Levels of Logic = 3)
+  Source:            r_Counter_4_0 (FF)
+  Destination:       r_Digit_0 (FF)
+  Source Clock:      Inst_DIV20M_1000/r_Clk rising
+  Destination Clock: Inst_DIV20M_1000/r_Clk rising
+
+  Data Path: r_Counter_4_0 to r_Digit_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              13   0.447   1.297  r_Counter_4_0 (r_Counter_4_0)
+     LUT6:I0->O            2   0.203   0.617  Mmux_r_Digit[3]_r_Counter_4_State[1]_mux_25_OUT23 (Mmux_r_Digit[3]_r_Counter_4_State[1]_mux_25_OUT22)
+     LUT6:I5->O            1   0.205   0.000  Mmux_r_Digit[3]_r_Counter_4_State[1]_mux_25_OUT24_G (N296)
+     MUXF7:I1->O           1   0.140   0.000  Mmux_r_Digit[3]_r_Counter_4_State[1]_mux_25_OUT24 (r_Digit[3]_r_Counter_4_State[1]_mux_25_OUT<0>)
+     FDE:D                     0.102          r_Digit_0
+    ----------------------------------------
+    Total                      3.012ns (1.097ns logic, 1.915ns route)
+                                       (36.4% logic, 63.6% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'r_Clk_1_Hz'
-  Clock period: 4.165ns (frequency: 240.119MHz)
+  Clock period: 4.177ns (frequency: 239.435MHz)
   Total number of paths / destination ports: 1012 / 34
 -------------------------------------------------------------------------
-Delay:               4.165ns (Levels of Logic = 3)
-  Source:            p_CALCULATION.v_Minute_0_C_0 (FF)
+Delay:               4.177ns (Levels of Logic = 3)
+  Source:            p_CALCULATION.v_Minute_2_C_2 (FF)
   Destination:       p_CALCULATION.v_Minute_5_C_5 (FF)
   Source Clock:      r_Clk_1_Hz rising
   Destination Clock: r_Clk_1_Hz rising
 
-  Data Path: p_CALCULATION.v_Minute_0_C_0 to p_CALCULATION.v_Minute_5_C_5
+  Data Path: p_CALCULATION.v_Minute_2_C_2 to p_CALCULATION.v_Minute_5_C_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              4   0.447   0.788  p_CALCULATION.v_Minute_0_C_0 (p_CALCULATION.v_Minute_0_C_0)
-     LUT3:I1->O           17   0.203   1.256  p_CALCULATION.v_Minute_01 (p_CALCULATION.v_Minute_0)
+     FDC:C->Q              3   0.447   0.755  p_CALCULATION.v_Minute_2_C_2 (p_CALCULATION.v_Minute_2_C_2)
+     LUT3:I1->O           19   0.203   1.300  p_CALCULATION.v_Minute_21 (p_CALCULATION.v_Minute_2)
      LUT6:I3->O            2   0.205   0.961  Madd_p_CALCULATION.v_Minute[5]_GND_4_o_add_64_OUT_cy<3>11 (Madd_p_CALCULATION.v_Minute[5]_GND_4_o_add_64_OUT_cy<3>)
      LUT6:I1->O            2   0.203   0.000  Mmux_p_CALCULATION.v_Minute[5]_GND_4_o_mux_73_OUT61 (p_CALCULATION.v_Minute[5]_GND_4_o_mux_73_OUT<5>)
      FDC:D                     0.102          p_CALCULATION.v_Minute_5_C_5
     ----------------------------------------
-    Total                      4.165ns (1.160ns logic, 3.005ns route)
-                                       (27.9% logic, 72.1% route)
+    Total                      4.177ns (1.160ns logic, 3.016ns route)
+                                       (27.8% logic, 72.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_DIV20M_2/r_Clk'
@@ -1500,7 +1176,7 @@ Offset:              5.221ns (Levels of Logic = 4)
     ----------------------------------------  ------------
      IBUF:I->O            18   1.222   1.297  MINUS_BUTTON_IBUF (MINUS_BUTTON_IBUF)
      LUT5:I1->O            4   0.203   1.048  Mmux_p_CALCULATION.v_Minute_Temp[6]_p_CALCULATION.v_Minute_Temp[6]_mux_46_OUT_rs_lut<3>1 (Mmux_p_CALCULATION.v_Minute_Temp[6]_p_CALCULATION.v_Minute_Temp[6]_mux_46_OUT_rs_lut<3>)
-     LUT6:I0->O            1   0.203   0.944  Mmux_p_CALCULATION.v_Minute_Temp[6]_GND_4_o_mux_54_OUT41_SW0 (N111)
+     LUT6:I0->O            1   0.203   0.944  Mmux_p_CALCULATION.v_Minute_Temp[6]_GND_4_o_mux_54_OUT41_SW0 (N153)
      LUT6:I0->O            2   0.203   0.000  Mmux_p_CALCULATION.v_Minute_Temp[6]_GND_4_o_mux_54_OUT41 (p_CALCULATION.v_Minute_Temp[6]_GND_4_o_mux_54_OUT<3>)
      FDC:D                     0.102          p_CALCULATION.v_Minute_Temp_3_C_3
     ----------------------------------------
@@ -1509,7 +1185,7 @@ Offset:              5.221ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 138 / 66
+  Total number of paths / destination ports: 136 / 64
 -------------------------------------------------------------------------
 Offset:              5.678ns (Levels of Logic = 4)
   Source:            RESET_BUTTON (PAD)
@@ -1521,33 +1197,13 @@ Offset:              5.678ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            34   1.222   1.665  RESET_BUTTON_IBUF (RESET_BUTTON_IBUF)
-     LUT5:I0->O            1   0.203   0.924  Inst_DIV20M_2/GND_7_o_r_Clk_count[23]_equal_2_o<23>5_SW1 (N117)
+     LUT5:I0->O            1   0.203   0.924  Inst_DIV20M_2/GND_7_o_r_Clk_count[23]_equal_2_o<23>5_SW1 (N159)
      LUT6:I1->O           23   0.203   1.154  Inst_DIV20M_2/GND_7_o_r_Clk_count[23]_equal_2_o_01 (Inst_DIV20M_2/GND_7_o_r_Clk_count[23]_equal_2_o_0)
      LUT2:I1->O            1   0.205   0.000  Inst_DIV20M_2/r_Clk_count_0_rstpot (Inst_DIV20M_2/r_Clk_count_0_rstpot)
      FD:D                      0.102          Inst_DIV20M_2/r_Clk_count_0
     ----------------------------------------
     Total                      5.678ns (1.935ns logic, 3.743ns route)
                                        (34.1% logic, 65.9% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              3.794ns (Levels of Logic = 2)
-  Source:            RESET_BUTTON (PAD)
-  Destination:       p_CALCULATION.v_Hour_Temp_4_LDC (LATCH)
-  Destination Clock: r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o falling
-
-  Data Path: RESET_BUTTON to p_CALCULATION.v_Hour_Temp_4_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            34   1.222   1.321  RESET_BUTTON_IBUF (RESET_BUTTON_IBUF)
-     LUT6:I5->O            2   0.205   0.616  r_Mode_p_CALCULATION.v_Hour[4]_AND_44_o1 (r_Mode_p_CALCULATION.v_Hour[4]_AND_44_o)
-     LDC:CLR                   0.430          p_CALCULATION.v_Hour_Temp_4_LDC
-    ----------------------------------------
-    Total                      3.794ns (1.857ns logic, 1.937ns route)
-                                       (48.9% logic, 51.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o'
@@ -1565,6 +1221,26 @@ Offset:              3.794ns (Levels of Logic = 2)
      IBUF:I->O            34   1.222   1.321  RESET_BUTTON_IBUF (RESET_BUTTON_IBUF)
      LUT6:I5->O            2   0.205   0.616  r_Mode_p_CALCULATION.v_Hour[3]_AND_46_o1 (r_Mode_p_CALCULATION.v_Hour[3]_AND_46_o)
      LDC:CLR                   0.430          p_CALCULATION.v_Hour_Temp_3_LDC
+    ----------------------------------------
+    Total                      3.794ns (1.857ns logic, 1.937ns route)
+                                       (48.9% logic, 51.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.794ns (Levels of Logic = 2)
+  Source:            RESET_BUTTON (PAD)
+  Destination:       p_CALCULATION.v_Hour_Temp_4_LDC (LATCH)
+  Destination Clock: r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o falling
+
+  Data Path: RESET_BUTTON to p_CALCULATION.v_Hour_Temp_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            34   1.222   1.321  RESET_BUTTON_IBUF (RESET_BUTTON_IBUF)
+     LUT6:I5->O            2   0.205   0.616  r_Mode_p_CALCULATION.v_Hour[4]_AND_44_o1 (r_Mode_p_CALCULATION.v_Hour[4]_AND_44_o)
+     LDC:CLR                   0.430          p_CALCULATION.v_Hour_Temp_4_LDC
     ----------------------------------------
     Total                      3.794ns (1.857ns logic, 1.937ns route)
                                        (48.9% logic, 51.1% route)
@@ -1692,27 +1368,6 @@ Offset:              5.166ns (Levels of Logic = 3)
                                        (39.8% logic, 60.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o'
-  Total number of paths / destination ports: 2 / 1
--------------------------------------------------------------------------
-Offset:              5.166ns (Levels of Logic = 3)
-  Source:            RESET_BUTTON (PAD)
-  Destination:       p_CALCULATION.v_Minute_Temp_0_LDC1 (LATCH)
-  Destination Clock: r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o falling
-
-  Data Path: RESET_BUTTON to p_CALCULATION.v_Minute_Temp_0_LDC1
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            34   1.222   1.568  RESET_BUTTON_IBUF (RESET_BUTTON_IBUF)
-     LUT6:I2->O            2   0.203   0.961  r_Mode_p_CALCULATION.v_Minute[0]_AND_63_o1 (r_Mode_p_CALCULATION.v_Minute[0]_AND_63_o)
-     LUT5:I0->O            1   0.203   0.579  p_CALCULATION.v_Minute_Temp_0_LDC (p_CALCULATION.v_Minute_Temp_0_LDC)
-     LDP:PRE                   0.430          p_CALCULATION.v_Minute_Temp_0_LDC1
-    ----------------------------------------
-    Total                      5.166ns (2.058ns logic, 3.108ns route)
-                                       (39.8% logic, 60.2% route)
-
-=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
@@ -1753,6 +1408,47 @@ Offset:              3.794ns (Levels of Logic = 2)
                                        (48.9% logic, 51.1% route)
 
 =========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.166ns (Levels of Logic = 3)
+  Source:            RESET_BUTTON (PAD)
+  Destination:       p_CALCULATION.v_Minute_Temp_0_LDC1 (LATCH)
+  Destination Clock: r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o falling
+
+  Data Path: RESET_BUTTON to p_CALCULATION.v_Minute_Temp_0_LDC1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            34   1.222   1.568  RESET_BUTTON_IBUF (RESET_BUTTON_IBUF)
+     LUT6:I2->O            2   0.203   0.961  r_Mode_p_CALCULATION.v_Minute[0]_AND_63_o1 (r_Mode_p_CALCULATION.v_Minute[0]_AND_63_o)
+     LUT5:I0->O            1   0.203   0.579  p_CALCULATION.v_Minute_Temp_0_LDC (p_CALCULATION.v_Minute_Temp_0_LDC)
+     LDP:PRE                   0.430          p_CALCULATION.v_Minute_Temp_0_LDC1
+    ----------------------------------------
+    Total                      5.166ns (2.058ns logic, 3.108ns route)
+                                       (39.8% logic, 60.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'r_Mode_p_CALCULATION.v_Second[3]_AND_70_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              3.794ns (Levels of Logic = 2)
+  Source:            RESET_BUTTON (PAD)
+  Destination:       p_CALCULATION.v_Second_Temp_3_LDC1 (LATCH)
+  Destination Clock: r_Mode_p_CALCULATION.v_Second[3]_AND_70_o falling
+
+  Data Path: RESET_BUTTON to p_CALCULATION.v_Second_Temp_3_LDC1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            34   1.222   1.321  RESET_BUTTON_IBUF (RESET_BUTTON_IBUF)
+     LUT5:I4->O            2   0.205   0.616  r_Mode_p_CALCULATION.v_Second[3]_AND_69_o1 (p_CALCULATION.v_Second_Temp_3_LDC)
+     LDP:PRE                   0.430          p_CALCULATION.v_Second_Temp_3_LDC1
+    ----------------------------------------
+    Total                      3.794ns (1.857ns logic, 1.937ns route)
+                                       (48.9% logic, 51.1% route)
+
+=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'r_Mode_p_CALCULATION.v_Second[5]_AND_65_o'
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
@@ -1772,26 +1468,6 @@ Offset:              4.948ns (Levels of Logic = 3)
     ----------------------------------------
     Total                      4.948ns (2.058ns logic, 2.890ns route)
                                        (41.6% logic, 58.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'r_Mode_p_CALCULATION.v_Second[2]_AND_72_o'
-  Total number of paths / destination ports: 2 / 1
--------------------------------------------------------------------------
-Offset:              3.794ns (Levels of Logic = 2)
-  Source:            RESET_BUTTON (PAD)
-  Destination:       p_CALCULATION.v_Second_Temp_2_LDC1 (LATCH)
-  Destination Clock: r_Mode_p_CALCULATION.v_Second[2]_AND_72_o falling
-
-  Data Path: RESET_BUTTON to p_CALCULATION.v_Second_Temp_2_LDC1
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            34   1.222   1.321  RESET_BUTTON_IBUF (RESET_BUTTON_IBUF)
-     LUT5:I4->O            2   0.205   0.616  r_Mode_p_CALCULATION.v_Second[2]_AND_71_o1 (p_CALCULATION.v_Second_Temp_2_LDC)
-     LDP:PRE                   0.430          p_CALCULATION.v_Second_Temp_2_LDC1
-    ----------------------------------------
-    Total                      3.794ns (1.857ns logic, 1.937ns route)
-                                       (48.9% logic, 51.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'r_Mode_p_CALCULATION.v_Second[4]_AND_67_o'
@@ -1815,21 +1491,21 @@ Offset:              4.948ns (Levels of Logic = 3)
                                        (41.6% logic, 58.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'r_Mode_p_CALCULATION.v_Second[3]_AND_70_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'r_Mode_p_CALCULATION.v_Second[2]_AND_72_o'
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
 Offset:              3.794ns (Levels of Logic = 2)
   Source:            RESET_BUTTON (PAD)
-  Destination:       p_CALCULATION.v_Second_Temp_3_LDC1 (LATCH)
-  Destination Clock: r_Mode_p_CALCULATION.v_Second[3]_AND_70_o falling
+  Destination:       p_CALCULATION.v_Second_Temp_2_LDC1 (LATCH)
+  Destination Clock: r_Mode_p_CALCULATION.v_Second[2]_AND_72_o falling
 
-  Data Path: RESET_BUTTON to p_CALCULATION.v_Second_Temp_3_LDC1
+  Data Path: RESET_BUTTON to p_CALCULATION.v_Second_Temp_2_LDC1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            34   1.222   1.321  RESET_BUTTON_IBUF (RESET_BUTTON_IBUF)
-     LUT5:I4->O            2   0.205   0.616  r_Mode_p_CALCULATION.v_Second[3]_AND_69_o1 (p_CALCULATION.v_Second_Temp_3_LDC)
-     LDP:PRE                   0.430          p_CALCULATION.v_Second_Temp_3_LDC1
+     LUT5:I4->O            2   0.205   0.616  r_Mode_p_CALCULATION.v_Second[2]_AND_71_o1 (p_CALCULATION.v_Second_Temp_2_LDC)
+     LDP:PRE                   0.430          p_CALCULATION.v_Second_Temp_2_LDC1
     ----------------------------------------
     Total                      3.794ns (1.857ns logic, 1.937ns route)
                                        (48.9% logic, 51.1% route)
@@ -1876,6 +1552,46 @@ Offset:              4.948ns (Levels of Logic = 3)
                                        (41.6% logic, 58.4% route)
 
 =========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_83_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.096ns (Levels of Logic = 2)
+  Source:            SEND_BUTTON (PAD)
+  Destination:       p_CALCULATION.v_Second_2_LDC (LATCH)
+  Destination Clock: r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_83_o falling
+
+  Data Path: SEND_BUTTON to p_CALCULATION.v_Second_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            38   1.222   1.624  SEND_BUTTON_IBUF (SEND_BUTTON_IBUF)
+     LUT5:I1->O            2   0.203   0.616  r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_84_o1 (r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_84_o)
+     LDC:CLR                   0.430          p_CALCULATION.v_Second_2_LDC
+    ----------------------------------------
+    Total                      4.096ns (1.855ns logic, 2.241ns route)
+                                       (45.3% logic, 54.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'r_Clk_1_Hz'
+  Total number of paths / destination ports: 34 / 34
+-------------------------------------------------------------------------
+Offset:              4.096ns (Levels of Logic = 2)
+  Source:            SEND_BUTTON (PAD)
+  Destination:       p_CALCULATION.v_Second_2_C_2 (FF)
+  Destination Clock: r_Clk_1_Hz rising
+
+  Data Path: SEND_BUTTON to p_CALCULATION.v_Second_2_C_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            38   1.222   1.624  SEND_BUTTON_IBUF (SEND_BUTTON_IBUF)
+     LUT5:I1->O            2   0.203   0.616  r_Mode_p_CALCULATION.v_Second_Temp[5]_AND_77_o1 (r_Mode_p_CALCULATION.v_Second_Temp[5]_AND_77_o)
+     FDP:PRE                   0.430          p_CALCULATION.v_Second_5_P_5
+    ----------------------------------------
+    Total                      4.096ns (1.855ns logic, 2.241ns route)
+                                       (45.3% logic, 54.7% route)
+
+=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'r_Mode_p_CALCULATION.v_Second_Temp[4]_AND_79_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
@@ -1896,26 +1612,6 @@ Offset:              4.096ns (Levels of Logic = 2)
                                        (45.3% logic, 54.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'r_Clk_1_Hz'
-  Total number of paths / destination ports: 34 / 34
--------------------------------------------------------------------------
-Offset:              4.096ns (Levels of Logic = 2)
-  Source:            SEND_BUTTON (PAD)
-  Destination:       p_CALCULATION.v_Second_4_C_4 (FF)
-  Destination Clock: r_Clk_1_Hz rising
-
-  Data Path: SEND_BUTTON to p_CALCULATION.v_Second_4_C_4
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            38   1.222   1.624  SEND_BUTTON_IBUF (SEND_BUTTON_IBUF)
-     LUT5:I1->O            2   0.203   0.616  r_Mode_p_CALCULATION.v_Second_Temp[5]_AND_77_o1 (r_Mode_p_CALCULATION.v_Second_Temp[5]_AND_77_o)
-     FDP:PRE                   0.430          p_CALCULATION.v_Second_5_P_5
-    ----------------------------------------
-    Total                      4.096ns (1.855ns logic, 2.241ns route)
-                                       (45.3% logic, 54.7% route)
-
-=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_81_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
@@ -1931,26 +1627,6 @@ Offset:              4.096ns (Levels of Logic = 2)
      IBUF:I->O            38   1.222   1.624  SEND_BUTTON_IBUF (SEND_BUTTON_IBUF)
      LUT5:I1->O            2   0.203   0.616  r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_82_o1 (r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_82_o)
      LDC:CLR                   0.430          p_CALCULATION.v_Second_3_LDC
-    ----------------------------------------
-    Total                      4.096ns (1.855ns logic, 2.241ns route)
-                                       (45.3% logic, 54.7% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_83_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.096ns (Levels of Logic = 2)
-  Source:            SEND_BUTTON (PAD)
-  Destination:       p_CALCULATION.v_Second_2_LDC (LATCH)
-  Destination Clock: r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_83_o falling
-
-  Data Path: SEND_BUTTON to p_CALCULATION.v_Second_2_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            38   1.222   1.624  SEND_BUTTON_IBUF (SEND_BUTTON_IBUF)
-     LUT5:I1->O            2   0.203   0.616  r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_84_o1 (r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_84_o)
-     LDC:CLR                   0.430          p_CALCULATION.v_Second_2_LDC
     ----------------------------------------
     Total                      4.096ns (1.855ns logic, 2.241ns route)
                                        (45.3% logic, 54.7% route)
@@ -2237,9 +1913,9 @@ Offset:              4.096ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 23 / 23
+  Total number of paths / destination ports: 21 / 21
 -------------------------------------------------------------------------
-Offset:              4.882ns (Levels of Logic = 1)
+Offset:              4.875ns (Levels of Logic = 1)
   Source:            r_Mode (FF)
   Destination:       MODE_LED (PAD)
   Source Clock:      CLK rising
@@ -2248,11 +1924,11 @@ Offset:              4.882ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             98   0.447   1.864  r_Mode (r_Mode)
+     FDR:C->Q             97   0.447   1.857  r_Mode (r_Mode)
      OBUF:I->O                 2.571          MODE_LED_OBUF (MODE_LED)
     ----------------------------------------
-    Total                      4.882ns (3.018ns logic, 1.864ns route)
-                                       (61.8% logic, 38.2% route)
+    Total                      4.875ns (3.018ns logic, 1.857ns route)
+                                       (61.9% logic, 38.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_DIV20M_1000/r_Clk'
@@ -2276,7 +1952,7 @@ Offset:              4.821ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 11 / 3
+  Total number of paths / destination ports: 9 / 3
 -------------------------------------------------------------------------
 Delay:               5.291ns (Levels of Logic = 3)
   Source:            INPUT_DATA<0> (PAD)
@@ -2287,8 +1963,8 @@ Delay:               5.291ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             5   1.222   0.714  INPUT_DATA_0_IBUF (INPUT_DATA_0_IBUF)
-     RAM32X1D:DPRA0->DPO    1   0.205   0.579  Mram_r_Payload_RX21 (OUTPUT_DATA_6_OBUF)
-     OBUF:I->O                 2.571          OUTPUT_DATA_6_OBUF (OUTPUT_DATA<6>)
+     RAM16X1D:DPRA0->DPO    1   0.205   0.579  Mram_r_Payload_RX22 (OUTPUT_DATA_7_OBUF)
+     OBUF:I->O                 2.571          OUTPUT_DATA_7_OBUF (OUTPUT_DATA<7>)
     ----------------------------------------
     Total                      5.291ns (3.998ns logic, 1.293ns route)
                                        (75.6% logic, 24.4% route)
@@ -2299,39 +1975,57 @@ Cross Clock Domains Report:
 --------------------------
 
 Clock to Setup on destination clock CLK
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-CLK            |    4.715|         |         |         |
----------------+---------+---------+---------+---------+
+----------------------------------------------+---------+---------+---------+---------+
+                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------+---------+---------+---------+---------+
+CLK                                           |    4.715|         |         |         |
+r_Clk_1_Hz                                    |    5.384|         |         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[0]_AND_109_o |         |    1.717|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[1]_AND_107_o |         |    2.887|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[2]_AND_105_o |         |    3.910|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[3]_AND_103_o |         |    3.990|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[4]_AND_101_o |         |    2.995|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[0]_AND_99_o|         |    1.717|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[1]_AND_97_o|         |    4.599|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95_o|         |    5.433|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[3]_AND_93_o|         |    5.536|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[4]_AND_91_o|         |    5.458|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[5]_AND_89_o|         |    5.561|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[0]_AND_87_o|         |    1.717|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[1]_AND_85_o|         |    4.091|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_83_o|         |    3.813|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_81_o|         |    5.036|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[4]_AND_79_o|         |    5.119|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[5]_AND_77_o|         |    4.096|         |         |
+----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Inst_DIV20M_1000/r_Clk
 ----------------------------------------------+---------+---------+---------+---------+
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |    3.993|         |         |         |
-Inst_DIV20M_1000/r_Clk                        |    2.743|         |         |         |
-Inst_DIV20M_2/r_Clk                           |    5.148|         |         |         |
-r_Clk_1_Hz                                    |    5.984|         |         |         |
-r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o       |         |    1.874|         |         |
-r_Mode_p_CALCULATION.v_Hour[1]_AND_49_o       |         |    3.789|         |         |
-r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o       |         |    3.737|         |         |
-r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o       |         |    3.737|         |         |
-r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o       |         |    3.866|         |         |
-r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o     |         |    2.806|         |         |
-r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o     |         |    4.882|         |         |
-r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o     |         |    5.026|         |         |
-r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o     |         |    5.325|         |         |
-r_Mode_p_CALCULATION.v_Minute[4]_AND_56_o     |         |    5.269|         |         |
-r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o     |         |    5.286|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[0]_AND_99_o|         |    3.080|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[1]_AND_97_o|         |    5.618|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95_o|         |    5.892|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[3]_AND_93_o|         |    5.715|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[4]_AND_91_o|         |    5.783|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[5]_AND_89_o|         |    6.161|         |         |
+CLK                                           |    3.916|         |         |         |
+Inst_DIV20M_1000/r_Clk                        |    3.012|         |         |         |
+Inst_DIV20M_2/r_Clk                           |    6.166|         |         |         |
+r_Clk_1_Hz                                    |    7.026|         |         |         |
+r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o       |         |    1.848|         |         |
+r_Mode_p_CALCULATION.v_Hour[1]_AND_49_o       |         |    3.022|         |         |
+r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o       |         |    3.633|         |         |
+r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o       |         |    3.759|         |         |
+r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o       |         |    3.531|         |         |
+r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o     |         |    3.637|         |         |
+r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o     |         |    4.991|         |         |
+r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o     |         |    5.107|         |         |
+r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o     |         |    6.155|         |         |
+r_Mode_p_CALCULATION.v_Minute[4]_AND_56_o     |         |    6.343|         |         |
+r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o     |         |    6.125|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[0]_AND_99_o|         |    3.934|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[1]_AND_97_o|         |    6.240|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95_o|         |    7.074|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[3]_AND_93_o|         |    7.177|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[4]_AND_91_o|         |    7.099|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[5]_AND_89_o|         |    7.203|         |         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Inst_DIV20M_2/r_Clk
@@ -2339,43 +2033,43 @@ Clock to Setup on destination clock Inst_DIV20M_2/r_Clk
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |    5.358|         |         |         |
+CLK                                           |    5.351|         |         |         |
 Inst_DIV20M_2/r_Clk                           |    4.679|         |         |         |
-r_Clk_1_Hz                                    |    3.776|         |         |         |
+r_Clk_1_Hz                                    |    3.888|         |         |         |
 r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o       |         |    3.823|         |         |
 r_Mode_p_CALCULATION.v_Hour[1]_AND_49_o       |         |    3.785|         |         |
-r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o       |         |    3.066|         |         |
-r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o       |         |    3.086|         |         |
-r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o       |         |    2.964|         |         |
+r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o       |         |    3.088|         |         |
+r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o       |         |    3.108|         |         |
+r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o       |         |    2.991|         |         |
 r_Mode_p_CALCULATION.v_Hour_Temp[0]_AND_109_o |         |    2.678|         |         |
-r_Mode_p_CALCULATION.v_Hour_Temp[1]_AND_107_o |         |    2.678|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[1]_AND_107_o |         |    2.739|         |         |
 r_Mode_p_CALCULATION.v_Hour_Temp[2]_AND_105_o |         |    2.646|         |         |
-r_Mode_p_CALCULATION.v_Hour_Temp[3]_AND_103_o |         |    2.646|         |         |
-r_Mode_p_CALCULATION.v_Hour_Temp[4]_AND_101_o |         |    2.646|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[3]_AND_103_o |         |    2.678|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[4]_AND_101_o |         |    2.678|         |         |
 r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o     |         |    4.856|         |         |
-r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o     |         |    4.816|         |         |
-r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o     |         |    4.272|         |         |
-r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o     |         |    4.149|         |         |
-r_Mode_p_CALCULATION.v_Minute[4]_AND_56_o     |         |    4.269|         |         |
-r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o     |         |    4.152|         |         |
+r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o     |         |    4.848|         |         |
+r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o     |         |    4.295|         |         |
+r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o     |         |    4.167|         |         |
+r_Mode_p_CALCULATION.v_Minute[4]_AND_56_o     |         |    4.292|         |         |
+r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o     |         |    4.184|         |         |
 r_Mode_p_CALCULATION.v_Minute_Temp[0]_AND_99_o|         |    2.678|         |         |
 r_Mode_p_CALCULATION.v_Minute_Temp[1]_AND_97_o|         |    2.739|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95_o|         |    2.678|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[3]_AND_93_o|         |    2.768|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[4]_AND_91_o|         |    2.739|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[5]_AND_89_o|         |    2.709|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95_o|         |    2.646|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[3]_AND_93_o|         |    2.709|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[4]_AND_91_o|         |    2.709|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[5]_AND_89_o|         |    2.739|         |         |
 r_Mode_p_CALCULATION.v_Second[0]_AND_75_o     |         |    2.811|         |         |
 r_Mode_p_CALCULATION.v_Second[1]_AND_74_o     |         |    2.811|         |         |
 r_Mode_p_CALCULATION.v_Second[2]_AND_72_o     |         |    2.882|         |         |
 r_Mode_p_CALCULATION.v_Second[3]_AND_70_o     |         |    2.865|         |         |
 r_Mode_p_CALCULATION.v_Second[4]_AND_67_o     |         |    2.739|         |         |
 r_Mode_p_CALCULATION.v_Second[5]_AND_65_o     |         |    2.637|         |         |
-r_Mode_p_CALCULATION.v_Second_Temp[0]_AND_87_o|         |    3.953|         |         |
-r_Mode_p_CALCULATION.v_Second_Temp[1]_AND_85_o|         |    3.920|         |         |
-r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_83_o|         |    3.891|         |         |
-r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_81_o|         |    3.857|         |         |
-r_Mode_p_CALCULATION.v_Second_Temp[4]_AND_79_o|         |    3.857|         |         |
-r_Mode_p_CALCULATION.v_Second_Temp[5]_AND_77_o|         |    3.857|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[0]_AND_87_o|         |    3.981|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[1]_AND_85_o|         |    4.065|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_83_o|         |    4.032|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_81_o|         |    4.025|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[4]_AND_79_o|         |    4.005|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[5]_AND_77_o|         |    4.005|         |         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Clk_1_Hz
@@ -2383,43 +2077,43 @@ Clock to Setup on destination clock r_Clk_1_Hz
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |    3.905|         |         |         |
-Inst_DIV20M_2/r_Clk                           |    2.515|         |         |         |
-r_Clk_1_Hz                                    |    4.165|         |         |         |
+CLK                                           |    3.898|         |         |         |
+Inst_DIV20M_2/r_Clk                           |    2.545|         |         |         |
+r_Clk_1_Hz                                    |    4.177|         |         |         |
 r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o       |         |    2.661|         |         |
 r_Mode_p_CALCULATION.v_Hour[1]_AND_49_o       |         |    2.661|         |         |
-r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o       |         |    2.661|         |         |
-r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o       |         |    2.661|         |         |
+r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o       |         |    2.629|         |         |
+r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o       |         |    2.629|         |         |
 r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o       |         |    2.629|         |         |
-r_Mode_p_CALCULATION.v_Hour_Temp[0]_AND_109_o |         |    3.977|         |         |
-r_Mode_p_CALCULATION.v_Hour_Temp[1]_AND_107_o |         |    4.109|         |         |
-r_Mode_p_CALCULATION.v_Hour_Temp[2]_AND_105_o |         |    4.173|         |         |
-r_Mode_p_CALCULATION.v_Hour_Temp[3]_AND_103_o |         |    4.158|         |         |
-r_Mode_p_CALCULATION.v_Hour_Temp[4]_AND_101_o |         |    4.223|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[0]_AND_109_o |         |    4.349|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[1]_AND_107_o |         |    4.126|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[2]_AND_105_o |         |    4.189|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[3]_AND_103_o |         |    4.293|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[4]_AND_101_o |         |    4.281|         |         |
 r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o     |         |    2.629|         |         |
-r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o     |         |    2.629|         |         |
+r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o     |         |    2.722|         |         |
 r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o     |         |    2.661|         |         |
-r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o     |         |    2.692|         |         |
+r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o     |         |    2.661|         |         |
 r_Mode_p_CALCULATION.v_Minute[4]_AND_56_o     |         |    2.629|         |         |
-r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o     |         |    2.629|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[0]_AND_99_o|         |    4.342|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[1]_AND_97_o|         |    4.152|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95_o|         |    4.238|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[3]_AND_93_o|         |    4.169|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[4]_AND_91_o|         |    4.057|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[5]_AND_89_o|         |    4.222|         |         |
+r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o     |         |    2.661|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[0]_AND_99_o|         |    4.238|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[1]_AND_97_o|         |    4.290|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95_o|         |    4.354|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[3]_AND_93_o|         |    4.295|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[4]_AND_91_o|         |    4.275|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[5]_AND_89_o|         |    4.228|         |         |
 r_Mode_p_CALCULATION.v_Second[0]_AND_75_o     |         |    2.629|         |         |
 r_Mode_p_CALCULATION.v_Second[1]_AND_74_o     |         |    2.629|         |         |
 r_Mode_p_CALCULATION.v_Second[2]_AND_72_o     |         |    2.661|         |         |
 r_Mode_p_CALCULATION.v_Second[3]_AND_70_o     |         |    2.661|         |         |
 r_Mode_p_CALCULATION.v_Second[4]_AND_67_o     |         |    2.661|         |         |
 r_Mode_p_CALCULATION.v_Second[5]_AND_65_o     |         |    2.661|         |         |
-r_Mode_p_CALCULATION.v_Second_Temp[0]_AND_87_o|         |    4.025|         |         |
-r_Mode_p_CALCULATION.v_Second_Temp[1]_AND_85_o|         |    4.095|         |         |
-r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_83_o|         |    4.191|         |         |
-r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_81_o|         |    4.174|         |         |
-r_Mode_p_CALCULATION.v_Second_Temp[4]_AND_79_o|         |    4.291|         |         |
-r_Mode_p_CALCULATION.v_Second_Temp[5]_AND_77_o|         |    4.271|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[0]_AND_87_o|         |    4.171|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[1]_AND_85_o|         |    3.892|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_83_o|         |    3.962|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_81_o|         |    4.080|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[4]_AND_79_o|         |    4.175|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[5]_AND_77_o|         |    4.078|         |         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o
@@ -2427,7 +2121,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o
                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------+---------+---------+---------+---------+
-CLK                                          |         |         |    3.925|         |
+CLK                                          |         |         |    3.918|         |
 r_Clk_1_Hz                                   |         |         |    2.610|         |
 r_Mode_p_CALCULATION.v_Hour_Temp[0]_AND_109_o|         |         |    2.678|         |
 ---------------------------------------------+---------+---------+---------+---------+
@@ -2437,9 +2131,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour[1]_AND_49_o
                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------+---------+---------+---------+---------+
-CLK                                          |         |         |    3.925|         |
-r_Clk_1_Hz                                   |         |         |    2.610|         |
-r_Mode_p_CALCULATION.v_Hour_Temp[1]_AND_107_o|         |         |    2.678|         |
+CLK                                          |         |         |    3.918|         |
+r_Clk_1_Hz                                   |         |         |    2.671|         |
+r_Mode_p_CALCULATION.v_Hour_Temp[1]_AND_107_o|         |         |    2.739|         |
 ---------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o
@@ -2447,7 +2141,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o
                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------+---------+---------+---------+---------+
-CLK                                          |         |         |    3.925|         |
+CLK                                          |         |         |    3.918|         |
 r_Clk_1_Hz                                   |         |         |    2.578|         |
 r_Mode_p_CALCULATION.v_Hour_Temp[2]_AND_105_o|         |         |    2.646|         |
 ---------------------------------------------+---------+---------+---------+---------+
@@ -2457,9 +2151,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o
                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------+---------+---------+---------+---------+
-CLK                                          |         |         |    3.925|         |
-r_Clk_1_Hz                                   |         |         |    2.578|         |
-r_Mode_p_CALCULATION.v_Hour_Temp[3]_AND_103_o|         |         |    2.646|         |
+CLK                                          |         |         |    3.918|         |
+r_Clk_1_Hz                                   |         |         |    2.610|         |
+r_Mode_p_CALCULATION.v_Hour_Temp[3]_AND_103_o|         |         |    2.678|         |
 ---------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o
@@ -2467,9 +2161,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o
                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------+---------+---------+---------+---------+
-CLK                                          |         |         |    3.925|         |
-r_Clk_1_Hz                                   |         |         |    2.578|         |
-r_Mode_p_CALCULATION.v_Hour_Temp[4]_AND_101_o|         |         |    2.646|         |
+CLK                                          |         |         |    3.918|         |
+r_Clk_1_Hz                                   |         |         |    2.610|         |
+r_Mode_p_CALCULATION.v_Hour_Temp[4]_AND_101_o|         |         |    2.678|         |
 ---------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour_Temp[0]_AND_109_o
@@ -2477,7 +2171,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour_Temp[0]_AND_109_
                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------+---------+---------+---------+---------+
-CLK                                    |         |         |    3.905|         |
+CLK                                    |         |         |    3.898|         |
 Inst_DIV20M_2/r_Clk                    |         |         |    2.484|         |
 r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o|         |         |    2.661|         |
 ---------------------------------------+---------+---------+---------+---------+
@@ -2487,7 +2181,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour_Temp[1]_AND_107_
                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------+---------+---------+---------+---------+
-CLK                                    |         |         |    3.905|         |
+CLK                                    |         |         |    3.898|         |
 Inst_DIV20M_2/r_Clk                    |         |         |    2.484|         |
 r_Mode_p_CALCULATION.v_Hour[1]_AND_49_o|         |         |    2.661|         |
 ---------------------------------------+---------+---------+---------+---------+
@@ -2497,9 +2191,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour_Temp[2]_AND_105_
                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------+---------+---------+---------+---------+
-CLK                                    |         |         |    3.905|         |
-Inst_DIV20M_2/r_Clk                    |         |         |    2.484|         |
-r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o|         |         |    2.661|         |
+CLK                                    |         |         |    3.898|         |
+Inst_DIV20M_2/r_Clk                    |         |         |    2.452|         |
+r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o|         |         |    2.629|         |
 ---------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour_Temp[3]_AND_103_o
@@ -2507,9 +2201,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour_Temp[3]_AND_103_
                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------+---------+---------+---------+---------+
-CLK                                    |         |         |    3.905|         |
-Inst_DIV20M_2/r_Clk                    |         |         |    2.484|         |
-r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o|         |         |    2.661|         |
+CLK                                    |         |         |    3.898|         |
+Inst_DIV20M_2/r_Clk                    |         |         |    2.452|         |
+r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o|         |         |    2.629|         |
 ---------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour_Temp[4]_AND_101_o
@@ -2517,7 +2211,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour_Temp[4]_AND_101_
                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------+---------+---------+---------+---------+
-CLK                                    |         |         |    3.905|         |
+CLK                                    |         |         |    3.898|         |
 Inst_DIV20M_2/r_Clk                    |         |         |    2.452|         |
 r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o|         |         |    2.629|         |
 ---------------------------------------+---------+---------+---------+---------+
@@ -2527,9 +2221,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    5.032|         |
-r_Clk_1_Hz                                    |         |         |    3.781|         |
-r_Mode_p_CALCULATION.v_Minute_Temp[0]_AND_99_o|         |         |    3.958|         |
+CLK                                           |         |         |    5.025|         |
+r_Clk_1_Hz                                    |         |         |    3.803|         |
+r_Mode_p_CALCULATION.v_Minute_Temp[0]_AND_99_o|         |         |    3.980|         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o
@@ -2537,7 +2231,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    3.925|         |
+CLK                                           |         |         |    3.918|         |
 r_Clk_1_Hz                                    |         |         |    2.671|         |
 r_Mode_p_CALCULATION.v_Minute_Temp[1]_AND_97_o|         |         |    2.739|         |
 ----------------------------------------------+---------+---------+---------+---------+
@@ -2547,9 +2241,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    3.925|         |
-r_Clk_1_Hz                                    |         |         |    2.610|         |
-r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95_o|         |         |    2.678|         |
+CLK                                           |         |         |    3.918|         |
+r_Clk_1_Hz                                    |         |         |    2.578|         |
+r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95_o|         |         |    2.646|         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o
@@ -2557,9 +2251,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    5.032|         |
-r_Clk_1_Hz                                    |         |         |    3.701|         |
-r_Mode_p_CALCULATION.v_Minute_Temp[3]_AND_93_o|         |         |    3.878|         |
+CLK                                           |         |         |    5.025|         |
+r_Clk_1_Hz                                    |         |         |    3.668|         |
+r_Mode_p_CALCULATION.v_Minute_Temp[3]_AND_93_o|         |         |    3.845|         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute[4]_AND_56_o
@@ -2567,9 +2261,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute[4]_AND_56_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    5.032|         |
-r_Clk_1_Hz                                    |         |         |    3.672|         |
-r_Mode_p_CALCULATION.v_Minute_Temp[4]_AND_91_o|         |         |    3.849|         |
+CLK                                           |         |         |    5.025|         |
+r_Clk_1_Hz                                    |         |         |    3.642|         |
+r_Mode_p_CALCULATION.v_Minute_Temp[4]_AND_91_o|         |         |    3.819|         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o
@@ -2577,9 +2271,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    3.925|         |
-r_Clk_1_Hz                                    |         |         |    2.641|         |
-r_Mode_p_CALCULATION.v_Minute_Temp[5]_AND_89_o|         |         |    2.709|         |
+CLK                                           |         |         |    3.918|         |
+r_Clk_1_Hz                                    |         |         |    2.671|         |
+r_Mode_p_CALCULATION.v_Minute_Temp[5]_AND_89_o|         |         |    2.739|         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute_Temp[0]_AND_99_o
@@ -2587,7 +2281,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute_Temp[0]_AND_99
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.905|         |
+CLK                                      |         |         |    3.898|         |
 Inst_DIV20M_2/r_Clk                      |         |         |    2.452|         |
 r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o|         |         |    2.629|         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -2597,9 +2291,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute_Temp[1]_AND_97
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.905|         |
-Inst_DIV20M_2/r_Clk                      |         |         |    2.452|         |
-r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o|         |         |    2.629|         |
+CLK                                      |         |         |    3.898|         |
+Inst_DIV20M_2/r_Clk                      |         |         |    2.545|         |
+r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o|         |         |    2.722|         |
 -----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95_o
@@ -2607,7 +2301,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.905|         |
+CLK                                      |         |         |    3.898|         |
 Inst_DIV20M_2/r_Clk                      |         |         |    2.484|         |
 r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o|         |         |    2.661|         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -2617,9 +2311,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute_Temp[3]_AND_93
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.905|         |
-Inst_DIV20M_2/r_Clk                      |         |         |    2.515|         |
-r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o|         |         |    2.692|         |
+CLK                                      |         |         |    3.898|         |
+Inst_DIV20M_2/r_Clk                      |         |         |    2.484|         |
+r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o|         |         |    2.661|         |
 -----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute_Temp[4]_AND_91_o
@@ -2627,7 +2321,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute_Temp[4]_AND_91
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.905|         |
+CLK                                      |         |         |    3.898|         |
 Inst_DIV20M_2/r_Clk                      |         |         |    2.452|         |
 r_Mode_p_CALCULATION.v_Minute[4]_AND_56_o|         |         |    2.629|         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -2637,9 +2331,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute_Temp[5]_AND_89
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.905|         |
-Inst_DIV20M_2/r_Clk                      |         |         |    2.452|         |
-r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o|         |         |    2.629|         |
+CLK                                      |         |         |    3.898|         |
+Inst_DIV20M_2/r_Clk                      |         |         |    2.484|         |
+r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o|         |         |    2.661|         |
 -----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second[0]_AND_75_o
@@ -2647,7 +2341,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second[0]_AND_75_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    4.875|         |
+CLK                                           |         |         |    4.868|         |
 r_Clk_1_Hz                                    |         |         |    2.627|         |
 r_Mode_p_CALCULATION.v_Second_Temp[0]_AND_87_o|         |         |    2.775|         |
 ----------------------------------------------+---------+---------+---------+---------+
@@ -2657,9 +2351,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second[1]_AND_74_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    3.808|         |
-r_Clk_1_Hz                                    |         |         |    3.743|         |
-r_Mode_p_CALCULATION.v_Second_Temp[1]_AND_85_o|         |         |    3.920|         |
+CLK                                           |         |         |    3.801|         |
+r_Clk_1_Hz                                    |         |         |    3.888|         |
+r_Mode_p_CALCULATION.v_Second_Temp[1]_AND_85_o|         |         |    4.065|         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second[2]_AND_72_o
@@ -2667,9 +2361,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second[2]_AND_72_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    3.808|         |
-r_Clk_1_Hz                                    |         |         |    3.714|         |
-r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_83_o|         |         |    3.891|         |
+CLK                                           |         |         |    3.801|         |
+r_Clk_1_Hz                                    |         |         |    3.855|         |
+r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_83_o|         |         |    4.032|         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second[3]_AND_70_o
@@ -2677,9 +2371,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second[3]_AND_70_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    3.808|         |
-r_Clk_1_Hz                                    |         |         |    3.680|         |
-r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_81_o|         |         |    3.857|         |
+CLK                                           |         |         |    3.801|         |
+r_Clk_1_Hz                                    |         |         |    3.848|         |
+r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_81_o|         |         |    4.025|         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second[4]_AND_67_o
@@ -2687,9 +2381,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second[4]_AND_67_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    4.875|         |
-r_Clk_1_Hz                                    |         |         |    2.561|         |
-r_Mode_p_CALCULATION.v_Second_Temp[4]_AND_79_o|         |         |    2.709|         |
+CLK                                           |         |         |    4.868|         |
+r_Clk_1_Hz                                    |         |         |    2.595|         |
+r_Mode_p_CALCULATION.v_Second_Temp[4]_AND_79_o|         |         |    2.743|         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second[5]_AND_65_o
@@ -2697,9 +2391,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second[5]_AND_65_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    4.875|         |
-r_Clk_1_Hz                                    |         |         |    2.561|         |
-r_Mode_p_CALCULATION.v_Second_Temp[5]_AND_77_o|         |         |    2.709|         |
+CLK                                           |         |         |    4.868|         |
+r_Clk_1_Hz                                    |         |         |    2.595|         |
+r_Mode_p_CALCULATION.v_Second_Temp[5]_AND_77_o|         |         |    2.743|         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second_Temp[0]_AND_87_o
@@ -2707,7 +2401,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second_Temp[0]_AND_87
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.905|         |
+CLK                                      |         |         |    3.898|         |
 Inst_DIV20M_2/r_Clk                      |         |         |    2.452|         |
 r_Mode_p_CALCULATION.v_Second[0]_AND_75_o|         |         |    2.629|         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -2717,7 +2411,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second_Temp[1]_AND_85
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.905|         |
+CLK                                      |         |         |    3.898|         |
 Inst_DIV20M_2/r_Clk                      |         |         |    2.452|         |
 r_Mode_p_CALCULATION.v_Second[1]_AND_74_o|         |         |    2.629|         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -2727,7 +2421,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_83
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.905|         |
+CLK                                      |         |         |    3.898|         |
 Inst_DIV20M_2/r_Clk                      |         |         |    2.484|         |
 r_Mode_p_CALCULATION.v_Second[2]_AND_72_o|         |         |    2.661|         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -2737,7 +2431,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_81
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.905|         |
+CLK                                      |         |         |    3.898|         |
 Inst_DIV20M_2/r_Clk                      |         |         |    2.484|         |
 r_Mode_p_CALCULATION.v_Second[3]_AND_70_o|         |         |    2.661|         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -2747,7 +2441,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second_Temp[4]_AND_79
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.905|         |
+CLK                                      |         |         |    3.898|         |
 Inst_DIV20M_2/r_Clk                      |         |         |    2.484|         |
 r_Mode_p_CALCULATION.v_Second[4]_AND_67_o|         |         |    2.661|         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -2757,7 +2451,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second_Temp[5]_AND_77
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.905|         |
+CLK                                      |         |         |    3.898|         |
 Inst_DIV20M_2/r_Clk                      |         |         |    2.484|         |
 r_Mode_p_CALCULATION.v_Second[5]_AND_65_o|         |         |    2.661|         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -2766,13 +2460,13 @@ r_Mode_p_CALCULATION.v_Second[5]_AND_65_o|         |         |    2.661|        
 
 
 Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.86 secs
+Total CPU time to Xst completion: 9.70 secs
  
 --> 
 
 Total memory usage is 4503856 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  296 (   0 filtered)
-Number of infos    :   11 (   0 filtered)
+Number of warnings :  104 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
 

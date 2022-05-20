@@ -46,8 +46,8 @@ entity MECHANICAL_CLOCK is
 		
 
 		
-		INDEX_TX: OUT natural range 0 to 16;
-		INDEX_RX: OUT natural range 0 to 16;
+		INDEX_TX: OUT natural range 0 to 8; -- HERE HERE
+		INDEX_RX: OUT natural range 0 to 8; -- HERE HERE
 		
 		LED_DEBUG: OUT STD_LOGIC := '0';
 		
@@ -112,13 +112,13 @@ architecture Behavioral of MECHANICAL_CLOCK is
 	END COMPONENT;
 	
 	-- Payload
-	type t_Payload is array (0 to 16) of STD_LOGIC_VECTOR(7 downto 0);
+	type t_Payload is array (0 to 8) of STD_LOGIC_VECTOR(7 downto 0); -- HERE HERE
 	signal r_Payload_TX : t_Payload := (others => "00110000"); -- zero in hex is 0x30
 	signal r_Payload_RX : t_Payload := (others => "00110000"); -- zero in hex is 0x30
 	
 	-- TX
 	signal r_Input_Byte : STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
-	signal r_Index_TX : natural range 0 to 16 := 0;
+	signal r_Index_TX : natural range 0 to 8 := 0; -- HERE HERE
 	signal r_TX_EN: STD_LOGIC := '0';
 	signal r_TX_ACTIVE : STD_LOGIC := '0';
 	signal r_TX_DONE : STD_LOGIC := '0';
@@ -130,7 +130,7 @@ architecture Behavioral of MECHANICAL_CLOCK is
 	-- RX
 	signal r_Output_Byte : STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
 	signal r_RX_DONE: STD_LOGIC := '0';
-	signal r_Index_RX : natural range 0 to 16 := 0;
+	signal r_Index_RX : natural range 0 to 8 := 0; -- HERE HERE
 	
 	type t_Main_RX is (s_Idle_RX, s_Receive_RX, s_Done_RX);
 	signal r_Main_RX : t_Main_RX := s_Idle_RX;
@@ -549,26 +549,18 @@ begin
 						end if;
 						
 					when s_Get_TX => -- case Get (assign value to payload 17 bytes)
-						r_Payload_TX(0) <= x"41"; --A
-						r_Payload_TX(1) <= x"42"; --B
-						r_Payload_TX(2) <= x"43"; --C
-						r_Payload_TX(3) <= x"44"; --D
-						r_Payload_TX(4) <= x"45"; --E
-						r_Payload_TX(5) <= x"46"; --F
-						r_Payload_TX(6) <= x"47"; --G
-						r_Payload_TX(7) <= x"48"; --H
-						r_Payload_TX(8) <= x"49"; --I
-						r_Payload_TX(9) <= x"4A"; --J
-						r_Payload_TX(10) <= x"4B"; --K
-						r_Payload_TX(11) <= x"4C"; --L
-						r_Payload_TX(12) <= x"4D"; --M
-						r_Payload_TX(13) <= x"4E"; --N
-						r_Payload_TX(14) <= "01010011"; --S
-						r_Payload_TX(15) <= "01000101"; --E
-						r_Payload_TX(16) <= "01000111"; --G
+						r_Payload_TX(0) <= std_logic_vector(to_unsigned((r_Hour / 10)+48, r_Payload_TX(0)'length)); -- Hour (1)
+						r_Payload_TX(1) <= std_logic_vector(to_unsigned((r_Hour mod 10)+48, r_Payload_TX(1)'length)); -- Hour (0)
+						r_Payload_TX(2) <= std_logic_vector(to_unsigned((r_Minute / 10)+48, r_Payload_TX(2)'length)); -- Minute (1)
+						r_Payload_TX(3) <= std_logic_vector(to_unsigned((r_Minute mod 10)+48, r_Payload_TX(3)'length)); -- Minute (0)
+						r_Payload_TX(4) <= std_logic_vector(to_unsigned((r_Second / 10)+48, r_Payload_TX(4)'length)); -- Second (1)
+						r_Payload_TX(5) <= std_logic_vector(to_unsigned((r_Second mod 10)+48, r_Payload_TX(5)'length)); -- Second (0)
+						r_Payload_TX(6) <= "01010011"; --S
+						r_Payload_TX(7) <= "01000101"; --E
+						r_Payload_TX(8) <= "01000111"; --G
 						r_Main_TX <= s_Send_TX;
 						if r_TX_ACTIVE = '0' and r_TX_DONE = '1' then -- if finish transmition step 2
-							if r_Index_TX < 16 then -- during 17 bytes
+							if r_Index_TX < 8 then -- during 17 bytes -- HERE HERE
 								r_Index_TX <= r_Index_TX + 1; -- increment + 1
 							else
 								r_index_TX <= 0; -- reset index
@@ -609,7 +601,7 @@ begin
 						
 					when s_Done_RX =>
 						r_Payload_RX(r_Index_RX) <= r_Output_Byte; -- assign Output Byte to Payload (1 byte only at a time)
-						if r_Index_RX < 16 then -- during 17 bytes
+						if r_Index_RX < 8 then -- during 17 bytes -- HERE HERE
 							r_Index_RX <= r_Index_RX + 1; -- increment + 1
 						else
 							r_index_RX <= 0; -- reset index

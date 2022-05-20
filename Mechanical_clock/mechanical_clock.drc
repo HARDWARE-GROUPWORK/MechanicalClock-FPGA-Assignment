@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sat May 21 02:10:39 2022
+Sat May 21 02:39:35 2022
 
 drc -z MECHANICAL_CLOCK.ncd MECHANICAL_CLOCK.pcf
 
@@ -74,15 +74,15 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    pin. This is not good design practice. Use the CE pin to control the loading
    of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   r_Mode_p_CALCULATION.v_Second[0]_AND_75_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
    r_Mode_p_CALCULATION.v_Hour[1]_AND_49_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Second[0]_AND_75_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -118,10 +118,6 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   r_Mode_p_CALCULATION.v_Second[4]_AND_67_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
    r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
@@ -139,6 +135,10 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   r_Mode_p_CALCULATION.v_Second[4]_AND_67_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal <Mram_r_Payload_RX1_RAMD_D1_O> is
