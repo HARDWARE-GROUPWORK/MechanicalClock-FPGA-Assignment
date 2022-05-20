@@ -1,0 +1,3 @@
+vhdtdtfi -prj Mechanical_clock -o C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/DIV20M_1.vhi -module DIV20M_1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work DIV20M_1.vhd 
+vhdtdtfi -lib work DIV20M_1.vhd -prj Mechanical_clock -o DIV20M_1.spl -module DIV20M_1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 DIV20M_1.spl C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/DIV20M_1.sym 

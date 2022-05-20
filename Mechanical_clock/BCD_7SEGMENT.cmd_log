@@ -1,0 +1,1 @@
+vhdtdtfi -prj Mechanical_clock -o C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/BCD_7SEGMENT.vhi -module BCD_7SEGMENT -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work BCD_7SEGMENT.vhd 

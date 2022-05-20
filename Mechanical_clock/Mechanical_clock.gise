@@ -22,6 +22,16 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Mechanical_clock.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BCD_7SEGMENT.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="BCD_7SEGMENT.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="BCD_7SEGMENT.vhi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="BCD_7SEGMENT.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DIV20M_1.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="DIV20M_1.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="DIV20M_1.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="DIV20M_1.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="DIV20M_1.vhi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="DIV20M_1.xst"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="MECHANICAL_CLOCK.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MECHANICAL_CLOCK.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MECHANICAL_CLOCK.lso"/>
@@ -44,6 +54,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MECHANICAL_CLOCK.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="MECHANICAL_CLOCK_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="MECHANICAL_CLOCK_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MECHANICAL_CLOCK_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="MECHANICAL_CLOCK_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="MECHANICAL_CLOCK_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="MECHANICAL_CLOCK_map.ncd" xil_pn:subbranch="Map"/>
@@ -55,9 +66,10 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MECHANICAL_CLOCK_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="MECHANICAL_CLOCK_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="MECHANICAL_CLOCK_summary.xml"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MECHANICAL_CLOCK_tb_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MECHANICAL_CLOCK_tb2_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MECHANICAL_CLOCK_tb2_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="MECHANICAL_CLOCK_tb2_isim_beh.wdb"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MECHANICAL_CLOCK_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="MECHANICAL_CLOCK_tb_isim_beh.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MECHANICAL_CLOCK_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="MECHANICAL_CLOCK_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MECHANICAL_CLOCK_xst.xrpt"/>
@@ -78,6 +90,10 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="mechanical_clock.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="mechanical_clock.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_3"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_4"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_5"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -91,25 +107,28 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1652451991" xil_pn:in_ck="-7434496228822797405" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1652451991">
+    <transform xil_pn:end_ts="1653067200" xil_pn:in_ck="-5693542000755723746" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1653067200">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="BCD_7SEGMENT.vhd"/>
+      <outfile xil_pn:name="DIV20M_1.vhd"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK.vhd"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK_tb.vhd"/>
+      <outfile xil_pn:name="MECHANICAL_CLOCK_tb2.vhd"/>
       <outfile xil_pn:name="UART_RX.vhd"/>
       <outfile xil_pn:name="UART_TX.vhd"/>
       <outfile xil_pn:name="UART_TX_tb.vhd"/>
       <outfile xil_pn:name="hey.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1652452005" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4355712794681385893" xil_pn:start_ts="1652452005">
+    <transform xil_pn:end_ts="1653064022" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1591918489642903949" xil_pn:start_ts="1653064022">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1652452005" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4694284713382312231" xil_pn:start_ts="1652452005">
+    <transform xil_pn:end_ts="1653064022" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3189946026613766155" xil_pn:start_ts="1653064022">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -117,7 +136,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1652451991" xil_pn:in_ck="-7434496228822797405" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1652451991">
+    <transform xil_pn:end_ts="1653067200" xil_pn:in_ck="-5693542000755723746" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1653067200">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -125,14 +144,17 @@
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="BCD_7SEGMENT.vhd"/>
+      <outfile xil_pn:name="DIV20M_1.vhd"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK.vhd"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK_tb.vhd"/>
+      <outfile xil_pn:name="MECHANICAL_CLOCK_tb2.vhd"/>
       <outfile xil_pn:name="UART_RX.vhd"/>
       <outfile xil_pn:name="UART_TX.vhd"/>
       <outfile xil_pn:name="UART_TX_tb.vhd"/>
       <outfile xil_pn:name="hey.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1652452008" xil_pn:in_ck="-7434496228822797405" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1614083327852658570" xil_pn:start_ts="1652452005">
+    <transform xil_pn:end_ts="1653067203" xil_pn:in_ck="-5693542000755723746" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2607721398366952966" xil_pn:start_ts="1653067200">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -140,58 +162,56 @@
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="MECHANICAL_CLOCK_tb_beh.prj"/>
-      <outfile xil_pn:name="MECHANICAL_CLOCK_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="MECHANICAL_CLOCK_tb2_beh.prj"/>
+      <outfile xil_pn:name="MECHANICAL_CLOCK_tb2_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1652452009" xil_pn:in_ck="6252398243727063369" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3599786426822149757" xil_pn:start_ts="1652452008">
+    <transform xil_pn:end_ts="1653067204" xil_pn:in_ck="-5062310812816217906" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3581713036903484839" xil_pn:start_ts="1653067203">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="MECHANICAL_CLOCK_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="MECHANICAL_CLOCK_tb2_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
-    <transform xil_pn:end_ts="1652430457" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1652430457">
+    <transform xil_pn:end_ts="1653059769" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1653059769">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1652430457" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-3797219836761232719" xil_pn:start_ts="1652430457">
+    <transform xil_pn:end_ts="1653059769" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-3797219836761232719" xil_pn:start_ts="1653059769">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1652430457" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="3358290076719111489" xil_pn:start_ts="1652430457">
+    <transform xil_pn:end_ts="1653059769" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="3358290076719111489" xil_pn:start_ts="1653059769">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1652430457" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1652430457">
+    <transform xil_pn:end_ts="1653059769" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1653059769">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1652430457" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-7367824412059284941" xil_pn:start_ts="1652430457">
+    <transform xil_pn:end_ts="1653059769" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-7367824412059284941" xil_pn:start_ts="1653059769">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1652430457" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1652430457">
+    <transform xil_pn:end_ts="1653059769" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1653059769">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1652430457" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-253169215429606261" xil_pn:start_ts="1652430457">
+    <transform xil_pn:end_ts="1653059769" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-253169215429606261" xil_pn:start_ts="1653059769">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1652453602" xil_pn:in_ck="-7765750106579490430" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-2642059356140868646" xil_pn:start_ts="1652453591">
+    <transform xil_pn:end_ts="1653070217" xil_pn:in_ck="5769736651025097206" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-2642059356140868646" xil_pn:start_ts="1653070206">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK.lso"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK.ngc"/>
@@ -200,31 +220,30 @@
       <outfile xil_pn:name="MECHANICAL_CLOCK.stx"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK.syr"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK.xst"/>
-      <outfile xil_pn:name="MECHANICAL_CLOCK_tb_beh.prj"/>
+      <outfile xil_pn:name="MECHANICAL_CLOCK_tb2_beh.prj"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK_tb_stx_beh.prj"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1652448539" xil_pn:in_ck="2102759778751015484" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="7810689158164125448" xil_pn:start_ts="1652448539">
+    <transform xil_pn:end_ts="1653059781" xil_pn:in_ck="2102759778751015484" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="7810689158164125448" xil_pn:start_ts="1653059781">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1652453607" xil_pn:in_ck="2369383680250768946" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3580291431380191852" xil_pn:start_ts="1652453602">
+    <transform xil_pn:end_ts="1653070222" xil_pn:in_ck="2369383680250768946" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3580291431380191852" xil_pn:start_ts="1653070217">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK.bld"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK.ngd"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1652453616" xil_pn:in_ck="-1753469551690815309" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1652453607">
+    <transform xil_pn:end_ts="1653070231" xil_pn:in_ck="-1753469551690815309" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1653070222">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK.pcf"/>
@@ -237,11 +256,10 @@
       <outfile xil_pn:name="MECHANICAL_CLOCK_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1652453627" xil_pn:in_ck="4197066903455243724" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1652453616">
+    <transform xil_pn:end_ts="1653070241" xil_pn:in_ck="4197066903455243724" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1653070231">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK.ncd"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK.pad"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK.par"/>
@@ -253,11 +271,10 @@
       <outfile xil_pn:name="MECHANICAL_CLOCK_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1652453641" xil_pn:in_ck="2102759778751007859" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1652453633">
+    <transform xil_pn:end_ts="1653070252" xil_pn:in_ck="2102759778751007859" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1653070244">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="mechanical_clock.bgn"/>
@@ -267,10 +284,9 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1652453627" xil_pn:in_ck="7507578927021309487" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1652453623">
+    <transform xil_pn:end_ts="1653070241" xil_pn:in_ck="7507578927021309487" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1653070237">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK.twr"/>
       <outfile xil_pn:name="MECHANICAL_CLOCK.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
