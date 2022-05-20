@@ -60,6 +60,8 @@ entity MECHANICAL_CLOCK is
 		
 		MODE_BUTTON: IN STD_LOGIC;
 		SEND_BUTTON: IN STD_LOGIC;
+		MINUS_BUTTON: IN STD_LOGIC;
+		PLUS_BUTTON: IN STD_LOGIC;
 		
 		MODE_LED: OUT STD_LOGIC
 	);
@@ -323,6 +325,7 @@ begin
 			if(rising_edge(CLK)) then
 				case s_State is
 					when '0' =>
+						-- PRESS MODE BUTTON
 						if (MODE_BUTTON = '1') then
 							-- STATE 1 -> 2
 							if(r_Mode = '0') then
@@ -341,8 +344,15 @@ begin
 							end if;
 							s_State := '1';
 						end if;
+						
+						-- SPECIAL IF SEND AND SAVE
+						if (SEND_BUTTON = '1') then
+							r_Mode <= '0';
+							r_Mode_Edit <= '0';
+						end if;
+						
 					when others => -- '1'
-						if (MODE_BUTTON = '0') then
+						if (MODE_BUTTON = '0' and SEND_BUTTON = '0') then
 							s_State := '0';
 						end if;
 				end case;
@@ -357,9 +367,9 @@ begin
 		variable v_Minute: natural range 0 to 60 := 0;
 		variable v_Hour: natural range 0 to 24 := 0;
 		-- TEMP TIME
-		variable v_Second_Temp: natural range 0 to 60 := 14; -- may be change number later
-		variable v_Minute_Temp: natural range 0 to 60 := 25;
-		variable v_Hour_Temp: natural range 0 to 24 := 0;
+		variable v_Second_Temp: integer range -1 to 60 := 14; -- may be change number later
+		variable v_Minute_Temp: integer range -1 to 60 := 25;
+		variable v_Hour_Temp: integer range -1 to 24 := 0;
 		
 		variable v_Init_Edit: STD_LOGIC := '0';
 		
@@ -371,6 +381,49 @@ begin
 			if(rising_edge(r_Clk_2_Hz)) then
 					v_Dot := not v_Dot;
 					r_Clk_1_Hz <= v_Dot;
+			end if;
+			
+			-- ADD/SUB Minute
+			if(rising_edge(r_Clk_2_Hz)) then
+				if(MINUS_BUTTON = '1' and r_Mode = '1') then
+					-- hour
+					if(r_Mode_Edit = '0') then
+						v_Minute_Temp := v_Minute_Temp - 1;
+					-- minute
+					elsif(r_Mode_Edit = '1') then
+						v_Second_Temp := v_Second_Temp - 1;
+					end if;
+				elsif (PLUS_BUTTON = '1' and r_Mode = '1') then
+					-- hour
+					if(r_Mode_Edit = '0') then
+						v_Minute_Temp := v_Minute_Temp + 1;
+					-- minute
+					elsif(r_Mode_Edit = '1') then
+						v_Second_Temp := v_Second_Temp + 1;
+					end if;
+				end if;
+				
+				-- Check rules of Clock
+				-- second
+				if (v_Second_Temp >= 60) then
+					v_Second_Temp := 0;
+				elsif (v_Second_Temp <= -1) then
+					v_Second_Temp := 59;
+				end if;
+				
+				-- minute
+				if (v_Minute_Temp >= 60) then
+					v_Minute_Temp := 0;
+				elsif (v_Minute_Temp <= -1) then
+					v_Minute_Temp := 59;
+				end if;
+				
+				-- hour
+				if (v_Hour_Temp >= 24) then
+					v_Hour_Temp := 0;
+				elsif (v_Hour_Temp <= -1) then
+					v_Hour_Temp := 23;
+				end if;
 			end if;
 			
 
@@ -436,9 +489,15 @@ begin
 						-- ONLY CHANGE AT TEMP FOR NOW
 						v_Second_Temp := 0;
 				end if;
+				
+				-- SAVE TEMP TO NORMAL (No small pulse yet)
+				if (r_Mode = '1' and SEND_BUTTON = '1') then
+					v_Second := v_Second_Temp;
+					v_Minute := v_Minute_Temp;
+					v_Hour := v_Hour_Temp;
+				end if;
+				
 			end if;
-			
-		
 			
 			-- MAPPING REAL TIME
 			r_Second <= v_Second;
