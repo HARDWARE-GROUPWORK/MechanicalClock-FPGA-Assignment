@@ -37,8 +37,8 @@ Setup/Hold to clock CLK
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-MODE_BUTTON |    2.363(R)|      SLOW  |   -0.727(R)|      FAST  |CLK_BUFGP         |   0.000|
-RX          |    4.062(R)|      SLOW  |   -1.017(R)|      FAST  |CLK_BUFGP         |   0.000|
+MODE_BUTTON |    2.456(R)|      SLOW  |   -0.026(R)|      SLOW  |CLK_BUFGP         |   0.000|
+RX          |    4.583(R)|      SLOW  |   -1.122(R)|      FAST  |CLK_BUFGP         |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock CLK to Pad
@@ -46,27 +46,27 @@ Clock CLK to Pad
               |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 --------------+-----------------+------------+-----------------+------------+------------------+--------+
-INDEX_RX<0>   |         8.082(R)|      SLOW  |         4.202(R)|      FAST  |CLK_BUFGP         |   0.000|
-INDEX_RX<1>   |         8.123(R)|      SLOW  |         4.252(R)|      FAST  |CLK_BUFGP         |   0.000|
-INDEX_RX<2>   |         8.117(R)|      SLOW  |         4.246(R)|      FAST  |CLK_BUFGP         |   0.000|
-INDEX_RX<3>   |         7.936(R)|      SLOW  |         4.115(R)|      FAST  |CLK_BUFGP         |   0.000|
-INDEX_TX<0>   |         8.029(R)|      SLOW  |         4.213(R)|      FAST  |CLK_BUFGP         |   0.000|
-INDEX_TX<1>   |         7.728(R)|      SLOW  |         4.012(R)|      FAST  |CLK_BUFGP         |   0.000|
-INDEX_TX<2>   |         7.930(R)|      SLOW  |         4.244(R)|      FAST  |CLK_BUFGP         |   0.000|
-INDEX_TX<3>   |         8.425(R)|      SLOW  |         4.547(R)|      FAST  |CLK_BUFGP         |   0.000|
-MODE_LED      |         8.376(R)|      SLOW  |         4.500(R)|      FAST  |CLK_BUFGP         |   0.000|
-OUTPUT_DATA<0>|         7.890(R)|      SLOW  |         4.034(R)|      FAST  |CLK_BUFGP         |   0.000|
-OUTPUT_DATA<1>|         7.633(R)|      SLOW  |         3.873(R)|      FAST  |CLK_BUFGP         |   0.000|
-OUTPUT_DATA<2>|         7.711(R)|      SLOW  |         3.926(R)|      FAST  |CLK_BUFGP         |   0.000|
-OUTPUT_DATA<3>|         7.504(R)|      SLOW  |         3.785(R)|      FAST  |CLK_BUFGP         |   0.000|
-OUTPUT_DATA<4>|         7.534(R)|      SLOW  |         3.820(R)|      FAST  |CLK_BUFGP         |   0.000|
-OUTPUT_DATA<5>|         7.430(R)|      SLOW  |         3.720(R)|      FAST  |CLK_BUFGP         |   0.000|
-OUTPUT_DATA<6>|         7.408(R)|      SLOW  |         3.725(R)|      FAST  |CLK_BUFGP         |   0.000|
-OUTPUT_DATA<7>|         7.423(R)|      SLOW  |         3.722(R)|      FAST  |CLK_BUFGP         |   0.000|
-RX_EN         |         8.044(R)|      SLOW  |         4.197(R)|      FAST  |CLK_BUFGP         |   0.000|
-TX            |         9.051(R)|      SLOW  |         4.867(R)|      FAST  |CLK_BUFGP         |   0.000|
-TX_ACTIVE     |         8.736(R)|      SLOW  |         4.667(R)|      FAST  |CLK_BUFGP         |   0.000|
-TX_DONE       |         8.999(R)|      SLOW  |         4.820(R)|      FAST  |CLK_BUFGP         |   0.000|
+INDEX_RX<0>   |         8.116(R)|      SLOW  |         4.301(R)|      FAST  |CLK_BUFGP         |   0.000|
+INDEX_RX<1>   |         7.871(R)|      SLOW  |         4.089(R)|      FAST  |CLK_BUFGP         |   0.000|
+INDEX_RX<2>   |         8.252(R)|      SLOW  |         4.411(R)|      FAST  |CLK_BUFGP         |   0.000|
+INDEX_RX<3>   |         8.556(R)|      SLOW  |         4.618(R)|      FAST  |CLK_BUFGP         |   0.000|
+INDEX_TX<0>   |         8.467(R)|      SLOW  |         4.544(R)|      FAST  |CLK_BUFGP         |   0.000|
+INDEX_TX<1>   |         8.787(R)|      SLOW  |         4.817(R)|      FAST  |CLK_BUFGP         |   0.000|
+INDEX_TX<2>   |         8.665(R)|      SLOW  |         4.704(R)|      FAST  |CLK_BUFGP         |   0.000|
+INDEX_TX<3>   |         8.801(R)|      SLOW  |         4.815(R)|      FAST  |CLK_BUFGP         |   0.000|
+MODE_LED      |         8.267(R)|      SLOW  |         4.448(R)|      FAST  |CLK_BUFGP         |   0.000|
+OUTPUT_DATA<0>|         9.531(R)|      SLOW  |         4.285(R)|      FAST  |CLK_BUFGP         |   0.000|
+OUTPUT_DATA<1>|         9.735(R)|      SLOW  |         4.451(R)|      FAST  |CLK_BUFGP         |   0.000|
+OUTPUT_DATA<2>|         9.487(R)|      SLOW  |         4.469(R)|      FAST  |CLK_BUFGP         |   0.000|
+OUTPUT_DATA<3>|         9.603(R)|      SLOW  |         4.541(R)|      FAST  |CLK_BUFGP         |   0.000|
+OUTPUT_DATA<4>|         9.807(R)|      SLOW  |         4.580(R)|      FAST  |CLK_BUFGP         |   0.000|
+OUTPUT_DATA<5>|         9.637(R)|      SLOW  |         4.390(R)|      FAST  |CLK_BUFGP         |   0.000|
+OUTPUT_DATA<6>|         9.638(R)|      SLOW  |         4.398(R)|      FAST  |CLK_BUFGP         |   0.000|
+OUTPUT_DATA<7>|         9.123(R)|      SLOW  |         4.192(R)|      FAST  |CLK_BUFGP         |   0.000|
+RX_EN         |         8.009(R)|      SLOW  |         4.167(R)|      FAST  |CLK_BUFGP         |   0.000|
+TX            |         8.819(R)|      SLOW  |         4.716(R)|      FAST  |CLK_BUFGP         |   0.000|
+TX_ACTIVE     |         8.873(R)|      SLOW  |         4.752(R)|      FAST  |CLK_BUFGP         |   0.000|
+TX_DONE       |         9.439(R)|      SLOW  |         5.093(R)|      FAST  |CLK_BUFGP         |   0.000|
 --------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -74,10 +74,10 @@ Clock to Setup on destination clock CLK
                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------+---------+---------+---------+---------+
-CLK                |    4.361|         |         |         |
-RESET_BUTTON       |    6.595|    6.595|         |         |
-RESET_SECOND_BUTTON|    4.859|    4.859|         |         |
-SEND_BUTTON        |    3.362|    8.290|         |         |
+CLK                |    4.420|         |         |         |
+RESET_BUTTON       |    6.628|    6.628|         |         |
+RESET_SECOND_BUTTON|    5.335|    5.335|         |         |
+SEND_BUTTON        |    4.661|    8.689|         |         |
 -------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock RESET_BUTTON
@@ -85,10 +85,10 @@ Clock to Setup on destination clock RESET_BUTTON
                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------+---------+---------+---------+---------+
-CLK                |         |         |    2.873|         |
-RESET_BUTTON       |         |         |    1.595|    1.595|
-RESET_SECOND_BUTTON|         |         |    0.561|    0.561|
-SEND_BUTTON        |         |         |         |    2.020|
+CLK                |         |         |    3.051|         |
+RESET_BUTTON       |         |         |    1.813|    1.813|
+RESET_SECOND_BUTTON|         |         |    0.370|    0.370|
+SEND_BUTTON        |         |         |         |   -0.101|
 -------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock RESET_SECOND_BUTTON
@@ -96,10 +96,10 @@ Clock to Setup on destination clock RESET_SECOND_BUTTON
                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------+---------+---------+---------+---------+
-CLK                |         |         |    2.824|         |
-RESET_BUTTON       |         |         |    3.019|    3.019|
-RESET_SECOND_BUTTON|         |         |    1.937|    1.937|
-SEND_BUTTON        |         |         |         |    1.063|
+CLK                |         |         |    2.587|         |
+RESET_BUTTON       |         |         |    3.254|    3.254|
+RESET_SECOND_BUTTON|         |         |    1.184|    1.184|
+SEND_BUTTON        |         |         |         |   -0.101|
 -------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SEND_BUTTON
@@ -107,60 +107,60 @@ Clock to Setup on destination clock SEND_BUTTON
                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------+---------+---------+---------+---------+
-CLK                |         |         |    2.633|         |
-RESET_BUTTON       |         |         |         |    1.185|
-RESET_SECOND_BUTTON|         |         |         |   -2.039|
-SEND_BUTTON        |         |         |    1.716|    1.716|
+CLK                |         |         |    9.144|         |
+RESET_BUTTON       |         |         |         |    2.207|
+RESET_SECOND_BUTTON|         |         |         |   -1.123|
+SEND_BUTTON        |         |         |    1.016|    1.016|
 -------------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-INPUT_DATA<0>  |OUTPUT_DATA<0> |    8.828|
-INPUT_DATA<0>  |OUTPUT_DATA<1> |    8.569|
-INPUT_DATA<0>  |OUTPUT_DATA<2> |    8.459|
-INPUT_DATA<0>  |OUTPUT_DATA<3> |    8.229|
-INPUT_DATA<0>  |OUTPUT_DATA<4> |    8.286|
-INPUT_DATA<0>  |OUTPUT_DATA<5> |    8.134|
-INPUT_DATA<0>  |OUTPUT_DATA<6> |    8.011|
-INPUT_DATA<0>  |OUTPUT_DATA<7> |    8.189|
-INPUT_DATA<1>  |OUTPUT_DATA<0> |    8.768|
-INPUT_DATA<1>  |OUTPUT_DATA<1> |    8.509|
-INPUT_DATA<1>  |OUTPUT_DATA<2> |    8.602|
-INPUT_DATA<1>  |OUTPUT_DATA<3> |    8.372|
-INPUT_DATA<1>  |OUTPUT_DATA<4> |    8.518|
-INPUT_DATA<1>  |OUTPUT_DATA<5> |    8.366|
-INPUT_DATA<1>  |OUTPUT_DATA<6> |    8.087|
-INPUT_DATA<1>  |OUTPUT_DATA<7> |    7.849|
-INPUT_DATA<2>  |OUTPUT_DATA<0> |    8.643|
-INPUT_DATA<2>  |OUTPUT_DATA<1> |    8.384|
-INPUT_DATA<2>  |OUTPUT_DATA<2> |    8.580|
-INPUT_DATA<2>  |OUTPUT_DATA<3> |    8.350|
-INPUT_DATA<2>  |OUTPUT_DATA<4> |    8.126|
-INPUT_DATA<2>  |OUTPUT_DATA<5> |    7.974|
-INPUT_DATA<2>  |OUTPUT_DATA<6> |    7.752|
-INPUT_DATA<2>  |OUTPUT_DATA<7> |    8.062|
-INPUT_DATA<3>  |OUTPUT_DATA<0> |    8.674|
-INPUT_DATA<3>  |OUTPUT_DATA<1> |    8.415|
-INPUT_DATA<3>  |OUTPUT_DATA<2> |    8.743|
-INPUT_DATA<3>  |OUTPUT_DATA<3> |    8.513|
-INPUT_DATA<3>  |OUTPUT_DATA<4> |    8.541|
-INPUT_DATA<3>  |OUTPUT_DATA<5> |    8.389|
-INPUT_DATA<3>  |OUTPUT_DATA<6> |    7.875|
-INPUT_DATA<3>  |OUTPUT_DATA<7> |    7.859|
-RX             |RX_LED         |    9.126|
+INPUT_DATA<0>  |OUTPUT_DATA<0> |    8.763|
+INPUT_DATA<0>  |OUTPUT_DATA<1> |    8.544|
+INPUT_DATA<0>  |OUTPUT_DATA<2> |    8.672|
+INPUT_DATA<0>  |OUTPUT_DATA<3> |    8.713|
+INPUT_DATA<0>  |OUTPUT_DATA<4> |    8.580|
+INPUT_DATA<0>  |OUTPUT_DATA<5> |    8.163|
+INPUT_DATA<0>  |OUTPUT_DATA<6> |    8.637|
+INPUT_DATA<0>  |OUTPUT_DATA<7> |    8.583|
+INPUT_DATA<1>  |OUTPUT_DATA<0> |    9.710|
+INPUT_DATA<1>  |OUTPUT_DATA<1> |    9.716|
+INPUT_DATA<1>  |OUTPUT_DATA<2> |   10.050|
+INPUT_DATA<1>  |OUTPUT_DATA<3> |    9.955|
+INPUT_DATA<1>  |OUTPUT_DATA<4> |   10.058|
+INPUT_DATA<1>  |OUTPUT_DATA<5> |    9.887|
+INPUT_DATA<1>  |OUTPUT_DATA<6> |    9.861|
+INPUT_DATA<1>  |OUTPUT_DATA<7> |    9.633|
+INPUT_DATA<2>  |OUTPUT_DATA<0> |    9.394|
+INPUT_DATA<2>  |OUTPUT_DATA<1> |    9.607|
+INPUT_DATA<2>  |OUTPUT_DATA<2> |    9.487|
+INPUT_DATA<2>  |OUTPUT_DATA<3> |    9.522|
+INPUT_DATA<2>  |OUTPUT_DATA<4> |    9.393|
+INPUT_DATA<2>  |OUTPUT_DATA<5> |    9.091|
+INPUT_DATA<2>  |OUTPUT_DATA<6> |    9.337|
+INPUT_DATA<2>  |OUTPUT_DATA<7> |    9.427|
+INPUT_DATA<3>  |OUTPUT_DATA<0> |    8.855|
+INPUT_DATA<3>  |OUTPUT_DATA<1> |    8.755|
+INPUT_DATA<3>  |OUTPUT_DATA<2> |    8.735|
+INPUT_DATA<3>  |OUTPUT_DATA<3> |    8.479|
+INPUT_DATA<3>  |OUTPUT_DATA<4> |    8.260|
+INPUT_DATA<3>  |OUTPUT_DATA<5> |    8.571|
+INPUT_DATA<3>  |OUTPUT_DATA<6> |    8.036|
+INPUT_DATA<3>  |OUTPUT_DATA<7> |    8.072|
+RX             |RX_LED         |    9.253|
 ---------------+---------------+---------+
 
 
-Analysis completed Wed May 25 14:17:04 2022 
+Analysis completed Thu May 26 02:35:01 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4588 MB
+Peak Memory Usage: 4590 MB
 
 
 

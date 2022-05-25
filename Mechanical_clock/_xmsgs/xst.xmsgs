@@ -5,22 +5,19 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 365: Assignment to <arg fmt="%s" index="1">r_second_temp</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 372: Assignment to <arg fmt="%s" index="1">r_second_temp</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd</arg>&quot; line <arg fmt="%d" index="2">204</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Inst_DIV20M_4</arg>&gt; of block &lt;<arg fmt="%s" index="4">DIV20M_X</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">MECHANICAL_CLOCK</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd</arg>&quot; line <arg fmt="%d" index="2">211</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Inst_DIV20M_4</arg>&gt; of block &lt;<arg fmt="%s" index="4">DIV20M_X</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">MECHANICAL_CLOCK</arg>&gt;. Underlying logic will be removed.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INPUT_DATA&lt;7:4&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd</arg>&quot; line <arg fmt="%s" index="2">204</arg>: Output port &lt;<arg fmt="%s" index="3">o_Newclk</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_DIV20M_4</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd</arg>&quot; line <arg fmt="%s" index="2">211</arg>: Output port &lt;<arg fmt="%s" index="3">o_Newclk</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_DIV20M_4</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">LED_DEBUG</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">0</arg>).
-</msg>
-
-<msg type="warning" file="Xst" num="3035" delta="old" >Index value(s) does not match array range for signal &lt;<arg fmt="%s" index="1">r_Payload_RX</arg>&gt;, simulation mismatch.
 </msg>
 
 <msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -62,20 +59,8 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">r_Payload_TX_8_0</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>.
-You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">r_Payload_TX_8_1</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>.
-You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
-</msg>
-
 <msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">r_Payload_TX_8_2</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>.
 You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">r_Payload_TX_8_4</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>.
-You should achieve better results by setting this init to <arg fmt="%i" index="3">0</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">r_Payload_TX_8_5</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>.
@@ -86,7 +71,16 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_6_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_7_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_7_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_7_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_6_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_6_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -98,19 +92,13 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_6_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_7_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_7_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_7_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_8_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_8_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_2_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_0_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -119,13 +107,10 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_1_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_4_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_2_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_3_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_4_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_5_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -135,9 +120,6 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 </msg>
 
 <msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_r_Counter_4_State[1]_GND_4_o_wide_mux_18_OUT</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-</msg>
-
-<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_r_Payload_RX</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
 <msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">r_Payload_TX_6_0</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>.
@@ -176,20 +158,8 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">r_Payload_TX_8_0</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>.
-You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">r_Payload_TX_8_1</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>.
-You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
-</msg>
-
 <msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">r_Payload_TX_8_2</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>.
 You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">r_Payload_TX_8_4</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>.
-You should achieve better results by setting this init to <arg fmt="%i" index="3">0</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">r_Payload_TX_8_5</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>.
@@ -200,7 +170,16 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_6_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_7_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_7_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_7_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_6_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_6_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -210,15 +189,6 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 </msg>
 
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_6_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_7_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_7_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_7_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_8_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -245,10 +215,13 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_3_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_6_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;r_Payload_TX_7_4&gt; &lt;r_Payload_TX_7_5&gt; &lt;r_Payload_TX_8_4&gt; &lt;r_Payload_TX_8_5&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_7_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;r_Payload_TX_7_5&gt; &lt;r_Payload_TX_6_5&gt; &lt;r_Payload_TX_8_5&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_6_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">9 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;r_Payload_TX_6_1&gt; &lt;r_Payload_TX_6_6&gt; &lt;r_Payload_TX_7_0&gt; &lt;r_Payload_TX_7_2&gt; &lt;r_Payload_TX_7_6&gt; &lt;r_Payload_TX_8_0&gt; &lt;r_Payload_TX_8_1&gt; &lt;r_Payload_TX_8_2&gt; &lt;r_Payload_TX_8_6&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_7_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;r_Payload_TX_7_2&gt; &lt;r_Payload_TX_7_6&gt; &lt;r_Payload_TX_6_0&gt; &lt;r_Payload_TX_6_1&gt; &lt;r_Payload_TX_6_6&gt; &lt;r_Payload_TX_8_2&gt; &lt;r_Payload_TX_8_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_8_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;r_Payload_TX_8_1&gt; </arg>
 </msg>
 
 <msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">p_CALCULATION.v_Second_Temp_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MECHANICAL_CLOCK</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -389,8 +362,13 @@ Xilinx highly recommends one of the following:
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_UART_RX/r_SM_Main_FSM_FFd1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_UART_RX/r_RX_DV&gt; </arg>
 </msg>
 
+<msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_7_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;r_Payload_TX_7_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">r_Payload_TX_8_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MECHANICAL_CLOCK</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;r_Payload_TX_8_4&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>
-

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed May 25 14:16:53 2022
+// Written by: Map P.20131013 on Thu May 26 02:34:40 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -23,6 +23,7 @@ COMP "SEGMENT_DOT" LOCATE = SITE "P26" LEVEL 1;
 COMP "RX_LED" LOCATE = SITE "P81" LEVEL 1;
 COMP "MINUS_BUTTON" LOCATE = SITE "P47" LEVEL 1;
 COMP "RESET_SECOND_BUTTON" LOCATE = SITE "P55" LEVEL 1;
+COMP "INPUT_DATA<0>" LOCATE = SITE "P66" LEVEL 1;
 COMP "INPUT_DATA<1>" LOCATE = SITE "P62" LEVEL 1;
 COMP "INPUT_DATA<2>" LOCATE = SITE "P61" LEVEL 1;
 COMP "INPUT_DATA<3>" LOCATE = SITE "P59" LEVEL 1;

@@ -122,10 +122,10 @@ architecture Behavioral of MECHANICAL_CLOCK is
 	signal r_TX_EN: STD_LOGIC := '0';
 	signal r_TX_ACTIVE : STD_LOGIC := '0';
 	signal r_TX_DONE : STD_LOGIC := '0';
+	signal r_Is_Send : STD_LOGIC := '0';
 	
 	type t_Main_TX is (s_Idle_TX, s_Start_TX, s_Get_TX, s_Send_TX);
 	signal r_Main_TX : t_Main_TX := s_Idle_TX;
-	signal r_Is_Send : STD_LOGIC := '0';
 	
 	-- RX
 	signal r_Output_Byte : STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
@@ -164,6 +164,13 @@ architecture Behavioral of MECHANICAL_CLOCK is
 	signal r_Mode: STD_LOGIC := '0';
 	-- EDIT MODE
 	signal r_Mode_Edit: STD_LOGIC := '0';
+	
+	-- TX SEND
+	signal r_Send_All_TX : STD_LOGIC := '0';
+	signal r_Send_1_Min : STD_LOGIC := '0';
+	
+	-- RX RECIEVE
+	signal r_Receive_ALL_RX : STD_LOGIC := '0';
 
 begin
 
@@ -404,7 +411,7 @@ begin
 					end if;
 				end if;
 				
-				-- Check rules of Clock
+				-- Check rules of Clock TEMP TIME
 				-- second
 				if (v_Second_Temp >= 60) then
 					v_Second_Temp := 0;
@@ -445,14 +452,19 @@ begin
 			
 			end if;
 			
+			-- NORMAL CLOCK FLOW
 			if(rising_edge(r_Clk_1_Hz)) then -- if second clock rising
 				-- increment 1 second
 				v_Second := v_Second + 1;
+				r_Send_1_Min <= '0'; -- reset to 0 every 1 second
 				
 				-- increment 1 minute
 				if (v_Second = 60) then
 					v_Second := 0;
 					v_Minute := v_Minute + 1;
+					
+					-- SEND UPDATE TIME
+					r_Send_1_Min <= '1';
 				end if;
 				
 				-- increment 1 hour
@@ -462,9 +474,8 @@ begin
 				end if;
 				
 				-- 23:59:00 to 00:00:00
-				if (r_Hour = 24) then
-					v_Minute := 0;
-					v_Hour := v_Hour + 1;
+				if (v_Hour = 24) then
+					v_Hour := 0;
 				end if;
 			
 			end if;
@@ -500,6 +511,13 @@ begin
 					v_Hour := v_Hour_Temp;
 				end if;
 				
+				-- SET NEW TIME FROM ESP32
+				if (r_Receive_ALL_RX = '1' and r_Payload_RX(6) = x"52" and r_Payload_RX(7) = x"53" and r_Payload_RX(8) = x"54") then -- RST
+						v_Hour	:= ((to_integer(unsigned(r_Payload_RX(0)))-48) * 10) + (to_integer(unsigned(r_Payload_RX(1)))-48); -- Hour
+						v_Minute := ((to_integer(unsigned(r_Payload_RX(2)))-48) * 10) + (to_integer(unsigned(r_Payload_RX(3)))-48); -- Minute
+						v_Second := ((to_integer(unsigned(r_Payload_RX(4)))-48) * 10) + (to_integer(unsigned(r_Payload_RX(5)))-48); -- Second 
+				end if;
+				
 			end if;
 			
 			-- MAPPING REAL TIME
@@ -524,12 +542,13 @@ begin
   
 	-- UART TX ALL
 	p_SEND_DATA : process(CLK)
+	
 		begin
 			if rising_edge (CLK) then -- rising_edge clock every 50 ns (20MHz)
 			
 				case r_Main_TX is -- switch case 
 					when s_Idle_TX => -- case Idle  
-						if SEND_BUTTON = '1' then -- check if button is click
+						if r_Send_All_TX = '1' then -- check if button is click
 							if r_Is_Send = '0' then -- if never send something
 								r_Main_TX <= s_Get_TX; -- skip to Get state (starting first loop)
 								r_Is_Send <= '1';
@@ -558,15 +577,23 @@ begin
 						r_Payload_TX(3) <= std_logic_vector(to_unsigned((r_Minute mod 10)+48, r_Payload_TX(3)'length)); -- Minute (0)
 						r_Payload_TX(4) <= std_logic_vector(to_unsigned((r_Second / 10)+48, r_Payload_TX(4)'length)); -- Second (1)
 						r_Payload_TX(5) <= std_logic_vector(to_unsigned((r_Second mod 10)+48, r_Payload_TX(5)'length)); -- Second (0)
-						r_Payload_TX(6) <= "01010011"; --S
-						r_Payload_TX(7) <= "01000101"; --E
-						r_Payload_TX(8) <= "01000111"; --G
+						
+						if (SEND_BUTTON = '1') then
+							r_Payload_TX(6) <= "01010011"; --S
+							r_Payload_TX(7) <= "01000101"; --E
+							r_Payload_TX(8) <= "01010100"; --T
+						elsif (r_Send_1_Min = '1') then
+							r_Payload_TX(6) <= "01010011"; --S
+							r_Payload_TX(7) <= "01000101"; --E
+							r_Payload_TX(8) <= "01000111"; --G
+						end if;
+						
 						r_Main_TX <= s_Send_TX;
 						if r_TX_ACTIVE = '0' and r_TX_DONE = '1' then -- if finish transmition step 2
 							if r_Index_TX < 8 then -- during 17 bytes -- HERE HERE
 								r_Index_TX <= r_Index_TX + 1; -- increment + 1
 							else
-								r_index_TX <= 0; -- reset index
+								r_Index_TX <= 0; -- reset index
 								r_Main_TX <= s_Idle_TX; -- finish 17 bytes (Real End of Loop Sending 17 bytes)
 							end if;
 						end if;
@@ -593,6 +620,7 @@ begin
 							r_Main_RX <= s_Receive_RX;
 						else
 							r_Main_RX <= s_Idle_RX; -- stay idle
+							r_Receive_ALL_RX <= '0'; -- RESET
 						end if;
 					
 					when s_Receive_RX => -- case Receive
@@ -607,7 +635,10 @@ begin
 						if r_Index_RX < 8 then -- during 17 bytes -- HERE HERE
 							r_Index_RX <= r_Index_RX + 1; -- increment + 1
 						else
-							r_index_RX <= 0; -- reset index
+							-- SET NEW TIME FROM ESP32
+							r_Receive_ALL_RX <= '1'; -- DONE RECEIVE 9 BYTES
+			
+							r_Index_RX <= 0; -- reset index
 						end if;
 						r_Main_RX <= s_Idle_RX; -- go back to idle for get start bit (RX) as 0
 					
@@ -628,6 +659,9 @@ begin
 	TX_ACTIVE <= r_TX_ACTIVE;
 	TX_DONE <= r_TX_DONE;
 	INDEX_TX <= r_Index_TX;
+	
+	-- SEND EVERY 1 MIN or SEND BY BUTTON
+	r_Send_All_TX <= (SEND_BUTTON or r_Send_1_Min);
 	
 	-- RX signal update
 	OUTPUT_DATA <= r_Payload_RX(to_integer(signed(INPUT_DATA))); -- test by switch
