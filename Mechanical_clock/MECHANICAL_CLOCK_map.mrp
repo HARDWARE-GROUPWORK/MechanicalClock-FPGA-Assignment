@@ -11,7 +11,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Sat May 21 02:38:33 2022
+Mapped Date    : Wed May 25 14:16:47 2022
 
 Design Summary
 --------------
@@ -23,11 +23,11 @@ Slice Logic Utilization:
     Number used as Latches:                     34
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        392 out of   5,720    6%
-    Number used as logic:                      380 out of   5,720    6%
-      Number using O6 output only:             273
+  Number of Slice LUTs:                        393 out of   5,720    6%
+    Number used as logic:                      381 out of   5,720    6%
+      Number using O6 output only:             275
       Number using O5 output only:              53
-      Number using O5 and O6:                   54
+      Number using O5 and O6:                   53
       Number used as ROM:                        0
     Number used as Memory:                       8 out of   1,440    1%
       Number used as Dual Port RAM:              8
@@ -42,12 +42,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   193 out of   1,430   13%
+  Number of occupied Slices:                   189 out of   1,430   13%
   Number of MUXCYs used:                        64 out of   2,860    2%
-  Number of LUT Flip Flop pairs used:          442
-    Number with an unused Flip Flop:           200 out of     442   45%
-    Number with an unused LUT:                  50 out of     442   11%
-    Number of fully used LUT-FF pairs:         192 out of     442   43%
+  Number of LUT Flip Flop pairs used:          443
+    Number with an unused Flip Flop:           201 out of     443   45%
+    Number with an unused LUT:                  50 out of     443   11%
+    Number of fully used LUT-FF pairs:         192 out of     443   43%
     Number of unique control sets:             119
     Number of slice register sites lost
       to control set restrictions:             772 out of  11,440    6%

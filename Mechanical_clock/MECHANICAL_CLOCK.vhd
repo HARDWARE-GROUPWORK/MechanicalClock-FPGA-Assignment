@@ -246,12 +246,12 @@ begin
 					 when "10" =>
 						  SEGMENT_GROUNDS <= "1011"; 
 						  SEGMENT_DOT <= r_Dot;
-						  r_Digit <= std_logic_vector(to_unsigned(r_Hour_Temp mod 10, r_Digit'length));
+						  r_Digit <= std_logic_vector(to_unsigned(r_Hour mod 10, r_Digit'length));
 					 -- hour (1)
 					 when others => -- "11"
 						  SEGMENT_GROUNDS <= "0111"; 
 						  SEGMENT_DOT <= '0';
-						  r_Digit <= std_logic_vector(to_unsigned(r_Hour_Temp / 10, r_Digit'length));
+						  r_Digit <= std_logic_vector(to_unsigned(r_Hour / 10, r_Digit'length));
 					 end case;
 				
 				-- EDIT MODE
@@ -342,7 +342,8 @@ begin
 									r_Mode_Edit <= '0';
 								end if;
 							end if;
-							s_State := '1';
+							
+							s_State := '1'; -- force to state 1
 						end if;
 						
 						-- SPECIAL IF SEND AND SAVE
@@ -353,7 +354,7 @@ begin
 						
 					when others => -- '1'
 						if (MODE_BUTTON = '0' and SEND_BUTTON = '0') then
-							s_State := '0';
+							s_State := '0'; -- back to state 0
 						end if;
 				end case;
 			end if;
@@ -436,7 +437,9 @@ begin
 					v_Hour_Temp := v_Hour;
 					
 					v_Init_Edit := '1';
+					
 				elsif(r_Mode = '0' and v_Init_Edit = '1') then
+				
 					v_Init_Edit := '0';
 				end if;
 			

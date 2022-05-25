@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: MECHANICAL_CLOCK.prj
 
@@ -140,9 +140,9 @@ Elaborating entity <DIV20M_X> (architecture <Behavioral>) with generics from lib
 Elaborating entity <DIV20M_X> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <BCD_7SEGMENT> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 364: Assignment to r_second_temp ignored, since the identifier is never used
-INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 576. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 611. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 365: Assignment to r_second_temp ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 579. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 614. Case statement is complete. others clause is never selected
 WARNING:Xst:2972 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" line 204. All outputs of instance <Inst_DIV20M_4> of block <DIV20M_X> are unconnected in block <MECHANICAL_CLOCK>. Underlying logic will be removed.
 
 =========================================================================
@@ -242,34 +242,34 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <r_Paylo
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 2-bit adder for signal <r_Counter_4[1]_GND_4_o_add_28_OUT> created at line 314.
-    Found 6-bit adder for signal <p_CALCULATION.v_Hour_Temp[5]_GND_4_o_add_38_OUT> created at line 399.
-    Found 7-bit adder for signal <p_CALCULATION.v_Minute_Temp[6]_GND_4_o_add_39_OUT> created at line 402.
-    Found 6-bit adder for signal <p_CALCULATION.v_Second[5]_GND_4_o_add_62_OUT> created at line 447.
-    Found 6-bit adder for signal <p_CALCULATION.v_Minute[5]_GND_4_o_add_64_OUT> created at line 452.
-    Found 5-bit adder for signal <p_CALCULATION.v_Hour[4]_GND_4_o_add_68_OUT> created at line 458.
-    Found 5-bit adder for signal <p_CALCULATION.v_Hour[4]_GND_4_o_add_72_OUT> created at line 464.
-    Found 7-bit adder for signal <n0494[6:0]> created at line 552.
-    Found 7-bit adder for signal <n0496[6:0]> created at line 553.
-    Found 7-bit adder for signal <n0498[6:0]> created at line 554.
-    Found 7-bit adder for signal <n0500[6:0]> created at line 555.
-    Found 7-bit adder for signal <n0502[6:0]> created at line 556.
-    Found 7-bit adder for signal <n0504[6:0]> created at line 557.
-    Found 4-bit adder for signal <r_Index_TX[3]_GND_4_o_add_100_OUT> created at line 564.
-    Found 4-bit adder for signal <r_Index_RX[3]_GND_4_o_add_136_OUT> created at line 605.
-    Found 6-bit subtractor for signal <p_CALCULATION.v_Hour_Temp[5]_GND_4_o_sub_34_OUT<5:0>> created at line 391.
-    Found 7-bit subtractor for signal <p_CALCULATION.v_Minute_Temp[6]_GND_4_o_sub_35_OUT<6:0>> created at line 394.
+    Found 6-bit adder for signal <p_CALCULATION.v_Hour_Temp[5]_GND_4_o_add_38_OUT> created at line 400.
+    Found 7-bit adder for signal <p_CALCULATION.v_Minute_Temp[6]_GND_4_o_add_39_OUT> created at line 403.
+    Found 6-bit adder for signal <p_CALCULATION.v_Second[5]_GND_4_o_add_62_OUT> created at line 450.
+    Found 6-bit adder for signal <p_CALCULATION.v_Minute[5]_GND_4_o_add_64_OUT> created at line 455.
+    Found 5-bit adder for signal <p_CALCULATION.v_Hour[4]_GND_4_o_add_68_OUT> created at line 461.
+    Found 5-bit adder for signal <p_CALCULATION.v_Hour[4]_GND_4_o_add_72_OUT> created at line 467.
+    Found 7-bit adder for signal <n0494[6:0]> created at line 555.
+    Found 7-bit adder for signal <n0496[6:0]> created at line 556.
+    Found 7-bit adder for signal <n0498[6:0]> created at line 557.
+    Found 7-bit adder for signal <n0500[6:0]> created at line 558.
+    Found 7-bit adder for signal <n0502[6:0]> created at line 559.
+    Found 7-bit adder for signal <n0504[6:0]> created at line 560.
+    Found 4-bit adder for signal <r_Index_TX[3]_GND_4_o_add_100_OUT> created at line 567.
+    Found 4-bit adder for signal <r_Index_RX[3]_GND_4_o_add_136_OUT> created at line 608.
+    Found 6-bit subtractor for signal <p_CALCULATION.v_Hour_Temp[5]_GND_4_o_sub_34_OUT<5:0>> created at line 392.
+    Found 7-bit subtractor for signal <p_CALCULATION.v_Minute_Temp[6]_GND_4_o_sub_35_OUT<6:0>> created at line 395.
     Found 4x4-bit Read Only RAM for signal <r_Counter_4_State[1]_GND_4_o_wide_mux_18_OUT>
-    Found 4-bit 4-to-1 multiplexer for signal <r_Counter_4_State[1]_r_Hour_Temp[4]_wide_mux_7_OUT> created at line 234.
+    Found 4-bit 4-to-1 multiplexer for signal <r_Counter_4_State[1]_r_Hour[4]_wide_mux_7_OUT> created at line 234.
     Found 4-bit 4-to-1 multiplexer for signal <r_Counter_4_State[1]_r_Hour_Temp[4]_wide_mux_19_OUT> created at line 283.
-    Found 8-bit 9-to-1 multiplexer for signal <r_Index_TX[3]_X_4_o_wide_mux_105_OUT> created at line 574.
-    Found 7-bit comparator lessequal for signal <n0070> created at line 408
-    Found 7-bit comparator lessequal for signal <n0072> created at line 410
-    Found 7-bit comparator lessequal for signal <n0076> created at line 415
-    Found 7-bit comparator lessequal for signal <n0078> created at line 417
-    Found 6-bit comparator lessequal for signal <n0082> created at line 422
-    Found 6-bit comparator lessequal for signal <n0084> created at line 424
-    Found 4-bit comparator greater for signal <r_Index_TX[3]_PWR_4_o_LessThan_100_o> created at line 563
-    Found 4-bit comparator greater for signal <r_Index_RX[3]_PWR_4_o_LessThan_136_o> created at line 604
+    Found 8-bit 9-to-1 multiplexer for signal <r_Index_TX[3]_X_4_o_wide_mux_105_OUT> created at line 577.
+    Found 7-bit comparator lessequal for signal <n0070> created at line 409
+    Found 7-bit comparator lessequal for signal <n0072> created at line 411
+    Found 7-bit comparator lessequal for signal <n0076> created at line 416
+    Found 7-bit comparator lessequal for signal <n0078> created at line 418
+    Found 6-bit comparator lessequal for signal <n0082> created at line 423
+    Found 6-bit comparator lessequal for signal <n0084> created at line 425
+    Found 4-bit comparator greater for signal <r_Index_TX[3]_PWR_4_o_LessThan_100_o> created at line 566
+    Found 4-bit comparator greater for signal <r_Index_RX[3]_PWR_4_o_LessThan_136_o> created at line 607
     Summary:
 	inferred   2 RAM(s).
 	inferred  15 Adder/Subtractor(s).
@@ -922,17 +922,17 @@ Top Level Output File Name         : MECHANICAL_CLOCK.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 576
+# BELS                             : 578
 #      GND                         : 1
 #      INV                         : 13
 #      LUT1                        : 57
 #      LUT2                        : 48
-#      LUT3                        : 52
-#      LUT4                        : 38
-#      LUT5                        : 85
+#      LUT3                        : 53
+#      LUT4                        : 39
+#      LUT5                        : 83
 #      LUT6                        : 153
 #      MUXCY                       : 57
-#      MUXF7                       : 10
+#      MUXF7                       : 12
 #      VCC                         : 1
 #      XORCY                       : 61
 # FlipFlops/Latches                : 256
@@ -968,10 +968,10 @@ Slice Logic Utilization:
        Number used as RAM:                8
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    542
-   Number with an unused Flip Flop:     286  out of    542    52%  
-   Number with an unused LUT:            88  out of    542    16%  
-   Number of fully used LUT-FF pairs:   168  out of    542    30%  
+ Number of LUT Flip Flop pairs used:    543
+   Number with an unused Flip Flop:     287  out of    543    52%  
+   Number with an unused LUT:            89  out of    543    16%  
+   Number of fully used LUT-FF pairs:   167  out of    543    30%  
    Number of unique control sets:       120
 
 IO Utilization: 
@@ -1056,7 +1056,7 @@ Speed Grade: -3
 
    Minimum period: 4.715ns (Maximum Frequency: 212.080MHz)
    Minimum input arrival time before clock: 5.678ns
-   Maximum output required time after clock: 4.875ns
+   Maximum output required time after clock: 4.888ns
    Maximum combinational path delay: 5.291ns
 
 Timing Details:
@@ -1115,34 +1115,33 @@ Delay:               4.679ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Inst_DIV20M_1000/r_Clk'
-  Clock period: 3.012ns (frequency: 332.038MHz)
-  Total number of paths / destination ports: 26 / 11
+  Clock period: 2.941ns (frequency: 340.026MHz)
+  Total number of paths / destination ports: 28 / 11
 -------------------------------------------------------------------------
-Delay:               3.012ns (Levels of Logic = 3)
+Delay:               2.941ns (Levels of Logic = 2)
   Source:            r_Counter_4_0 (FF)
-  Destination:       r_Digit_0 (FF)
+  Destination:       r_Digit_1 (FF)
   Source Clock:      Inst_DIV20M_1000/r_Clk rising
   Destination Clock: Inst_DIV20M_1000/r_Clk rising
 
-  Data Path: r_Counter_4_0 to r_Digit_0
+  Data Path: r_Counter_4_0 to r_Digit_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              13   0.447   1.297  r_Counter_4_0 (r_Counter_4_0)
-     LUT6:I0->O            2   0.203   0.617  Mmux_r_Digit[3]_r_Counter_4_State[1]_mux_25_OUT23 (Mmux_r_Digit[3]_r_Counter_4_State[1]_mux_25_OUT22)
-     LUT6:I5->O            1   0.205   0.000  Mmux_r_Digit[3]_r_Counter_4_State[1]_mux_25_OUT24_G (N296)
-     MUXF7:I1->O           1   0.140   0.000  Mmux_r_Digit[3]_r_Counter_4_State[1]_mux_25_OUT24 (r_Digit[3]_r_Counter_4_State[1]_mux_25_OUT<0>)
-     FDE:D                     0.102          r_Digit_0
+     FD:C->Q              14   0.447   1.302  r_Counter_4_0 (r_Counter_4_0)
+     LUT5:I0->O            1   0.203   0.684  Mmux_r_Digit[3]_r_Counter_4_State[1]_mux_25_OUT43 (Mmux_r_Digit[3]_r_Counter_4_State[1]_mux_25_OUT42)
+     LUT5:I3->O            1   0.203   0.000  Mmux_r_Digit[3]_r_Counter_4_State[1]_mux_25_OUT45 (r_Digit[3]_r_Counter_4_State[1]_mux_25_OUT<1>)
+     FDE:D                     0.102          r_Digit_1
     ----------------------------------------
-    Total                      3.012ns (1.097ns logic, 1.915ns route)
-                                       (36.4% logic, 63.6% route)
+    Total                      2.941ns (0.955ns logic, 1.986ns route)
+                                       (32.5% logic, 67.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'r_Clk_1_Hz'
-  Clock period: 4.177ns (frequency: 239.435MHz)
+  Clock period: 4.196ns (frequency: 238.294MHz)
   Total number of paths / destination ports: 1012 / 34
 -------------------------------------------------------------------------
-Delay:               4.177ns (Levels of Logic = 3)
+Delay:               4.196ns (Levels of Logic = 3)
   Source:            p_CALCULATION.v_Minute_2_C_2 (FF)
   Destination:       p_CALCULATION.v_Minute_5_C_5 (FF)
   Source Clock:      r_Clk_1_Hz rising
@@ -1154,12 +1153,12 @@ Delay:               4.177ns (Levels of Logic = 3)
     ----------------------------------------  ------------
      FDC:C->Q              3   0.447   0.755  p_CALCULATION.v_Minute_2_C_2 (p_CALCULATION.v_Minute_2_C_2)
      LUT3:I1->O           19   0.203   1.300  p_CALCULATION.v_Minute_21 (p_CALCULATION.v_Minute_2)
-     LUT6:I3->O            2   0.205   0.961  Madd_p_CALCULATION.v_Minute[5]_GND_4_o_add_64_OUT_cy<3>11 (Madd_p_CALCULATION.v_Minute[5]_GND_4_o_add_64_OUT_cy<3>)
-     LUT6:I1->O            2   0.203   0.000  Mmux_p_CALCULATION.v_Minute[5]_GND_4_o_mux_73_OUT61 (p_CALCULATION.v_Minute[5]_GND_4_o_mux_73_OUT<5>)
+     LUT6:I3->O            2   0.205   0.981  Madd_p_CALCULATION.v_Minute[5]_GND_4_o_add_64_OUT_cy<3>11 (Madd_p_CALCULATION.v_Minute[5]_GND_4_o_add_64_OUT_cy<3>)
+     LUT6:I0->O            2   0.203   0.000  Mmux_p_CALCULATION.v_Minute[5]_GND_4_o_mux_73_OUT61 (p_CALCULATION.v_Minute[5]_GND_4_o_mux_73_OUT<5>)
      FDC:D                     0.102          p_CALCULATION.v_Minute_5_C_5
     ----------------------------------------
-    Total                      4.177ns (1.160ns logic, 3.016ns route)
-                                       (27.8% logic, 72.2% route)
+    Total                      4.196ns (1.160ns logic, 3.036ns route)
+                                       (27.6% logic, 72.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_DIV20M_2/r_Clk'
@@ -1915,7 +1914,7 @@ Offset:              4.096ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
   Total number of paths / destination ports: 21 / 21
 -------------------------------------------------------------------------
-Offset:              4.875ns (Levels of Logic = 1)
+Offset:              4.888ns (Levels of Logic = 1)
   Source:            r_Mode (FF)
   Destination:       MODE_LED (PAD)
   Source Clock:      CLK rising
@@ -1924,11 +1923,11 @@ Offset:              4.875ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             97   0.447   1.857  r_Mode (r_Mode)
+     FDR:C->Q             99   0.447   1.870  r_Mode (r_Mode)
      OBUF:I->O                 2.571          MODE_LED_OBUF (MODE_LED)
     ----------------------------------------
-    Total                      4.875ns (3.018ns logic, 1.857ns route)
-                                       (61.9% logic, 38.1% route)
+    Total                      4.888ns (3.018ns logic, 1.870ns route)
+                                       (61.7% logic, 38.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_DIV20M_1000/r_Clk'
@@ -1982,10 +1981,10 @@ Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Des
 CLK                                           |    4.715|         |         |         |
 r_Clk_1_Hz                                    |    5.384|         |         |         |
 r_Mode_p_CALCULATION.v_Hour_Temp[0]_AND_109_o |         |    1.717|         |         |
-r_Mode_p_CALCULATION.v_Hour_Temp[1]_AND_107_o |         |    2.887|         |         |
-r_Mode_p_CALCULATION.v_Hour_Temp[2]_AND_105_o |         |    3.910|         |         |
-r_Mode_p_CALCULATION.v_Hour_Temp[3]_AND_103_o |         |    3.990|         |         |
-r_Mode_p_CALCULATION.v_Hour_Temp[4]_AND_101_o |         |    2.995|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[1]_AND_107_o |         |    2.813|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[2]_AND_105_o |         |    3.007|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[3]_AND_103_o |         |    2.979|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[4]_AND_101_o |         |    3.086|         |         |
 r_Mode_p_CALCULATION.v_Minute_Temp[0]_AND_99_o|         |    1.717|         |         |
 r_Mode_p_CALCULATION.v_Minute_Temp[1]_AND_97_o|         |    4.599|         |         |
 r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95_o|         |    5.433|         |         |
@@ -2005,22 +2004,27 @@ Clock to Setup on destination clock Inst_DIV20M_1000/r_Clk
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |    3.916|         |         |         |
-Inst_DIV20M_1000/r_Clk                        |    3.012|         |         |         |
-Inst_DIV20M_2/r_Clk                           |    6.166|         |         |         |
+CLK                                           |    3.912|         |         |         |
+Inst_DIV20M_1000/r_Clk                        |    2.941|         |         |         |
+Inst_DIV20M_2/r_Clk                           |    5.042|         |         |         |
 r_Clk_1_Hz                                    |    7.026|         |         |         |
-r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o       |         |    1.848|         |         |
-r_Mode_p_CALCULATION.v_Hour[1]_AND_49_o       |         |    3.022|         |         |
-r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o       |         |    3.633|         |         |
-r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o       |         |    3.759|         |         |
-r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o       |         |    3.531|         |         |
-r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o     |         |    3.637|         |         |
-r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o     |         |    4.991|         |         |
-r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o     |         |    5.107|         |         |
-r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o     |         |    6.155|         |         |
-r_Mode_p_CALCULATION.v_Minute[4]_AND_56_o     |         |    6.343|         |         |
-r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o     |         |    6.125|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[0]_AND_99_o|         |    3.934|         |         |
+r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o       |         |    2.958|         |         |
+r_Mode_p_CALCULATION.v_Hour[1]_AND_49_o       |         |    3.789|         |         |
+r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o       |         |    4.105|         |         |
+r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o       |         |    3.882|         |         |
+r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o       |         |    4.137|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[0]_AND_109_o |         |    3.071|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[1]_AND_107_o |         |    3.994|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[2]_AND_105_o |         |    4.188|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[3]_AND_103_o |         |    4.106|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[4]_AND_101_o |         |    4.267|         |         |
+r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o     |         |    2.713|         |         |
+r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o     |         |    4.768|         |         |
+r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o     |         |    5.140|         |         |
+r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o     |         |    5.211|         |         |
+r_Mode_p_CALCULATION.v_Minute[4]_AND_56_o     |         |    5.219|         |         |
+r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o     |         |    5.202|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[0]_AND_99_o|         |    3.102|         |         |
 r_Mode_p_CALCULATION.v_Minute_Temp[1]_AND_97_o|         |    6.240|         |         |
 r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95_o|         |    7.074|         |         |
 r_Mode_p_CALCULATION.v_Minute_Temp[3]_AND_93_o|         |    7.177|         |         |
@@ -2033,25 +2037,25 @@ Clock to Setup on destination clock Inst_DIV20M_2/r_Clk
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |    5.351|         |         |         |
+CLK                                           |    5.365|         |         |         |
 Inst_DIV20M_2/r_Clk                           |    4.679|         |         |         |
 r_Clk_1_Hz                                    |    3.888|         |         |         |
 r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o       |         |    3.823|         |         |
 r_Mode_p_CALCULATION.v_Hour[1]_AND_49_o       |         |    3.785|         |         |
-r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o       |         |    3.088|         |         |
-r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o       |         |    3.108|         |         |
-r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o       |         |    2.991|         |         |
+r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o       |         |    3.066|         |         |
+r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o       |         |    3.086|         |         |
+r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o       |         |    2.964|         |         |
 r_Mode_p_CALCULATION.v_Hour_Temp[0]_AND_109_o |         |    2.678|         |         |
 r_Mode_p_CALCULATION.v_Hour_Temp[1]_AND_107_o |         |    2.739|         |         |
-r_Mode_p_CALCULATION.v_Hour_Temp[2]_AND_105_o |         |    2.646|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[2]_AND_105_o |         |    2.678|         |         |
 r_Mode_p_CALCULATION.v_Hour_Temp[3]_AND_103_o |         |    2.678|         |         |
 r_Mode_p_CALCULATION.v_Hour_Temp[4]_AND_101_o |         |    2.678|         |         |
 r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o     |         |    4.856|         |         |
-r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o     |         |    4.848|         |         |
-r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o     |         |    4.295|         |         |
-r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o     |         |    4.167|         |         |
-r_Mode_p_CALCULATION.v_Minute[4]_AND_56_o     |         |    4.292|         |         |
-r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o     |         |    4.184|         |         |
+r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o     |         |    4.816|         |         |
+r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o     |         |    4.272|         |         |
+r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o     |         |    4.149|         |         |
+r_Mode_p_CALCULATION.v_Minute[4]_AND_56_o     |         |    4.269|         |         |
+r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o     |         |    4.152|         |         |
 r_Mode_p_CALCULATION.v_Minute_Temp[0]_AND_99_o|         |    2.678|         |         |
 r_Mode_p_CALCULATION.v_Minute_Temp[1]_AND_97_o|         |    2.739|         |         |
 r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95_o|         |    2.646|         |         |
@@ -2077,43 +2081,43 @@ Clock to Setup on destination clock r_Clk_1_Hz
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |    3.898|         |         |         |
-Inst_DIV20M_2/r_Clk                           |    2.545|         |         |         |
-r_Clk_1_Hz                                    |    4.177|         |         |         |
-r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o       |         |    2.661|         |         |
+CLK                                           |    3.911|         |         |         |
+Inst_DIV20M_2/r_Clk                           |    2.515|         |         |         |
+r_Clk_1_Hz                                    |    4.196|         |         |         |
+r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o       |         |    2.629|         |         |
 r_Mode_p_CALCULATION.v_Hour[1]_AND_49_o       |         |    2.661|         |         |
-r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o       |         |    2.629|         |         |
-r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o       |         |    2.629|         |         |
+r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o       |         |    2.661|         |         |
+r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o       |         |    2.661|         |         |
 r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o       |         |    2.629|         |         |
-r_Mode_p_CALCULATION.v_Hour_Temp[0]_AND_109_o |         |    4.349|         |         |
-r_Mode_p_CALCULATION.v_Hour_Temp[1]_AND_107_o |         |    4.126|         |         |
-r_Mode_p_CALCULATION.v_Hour_Temp[2]_AND_105_o |         |    4.189|         |         |
-r_Mode_p_CALCULATION.v_Hour_Temp[3]_AND_103_o |         |    4.293|         |         |
-r_Mode_p_CALCULATION.v_Hour_Temp[4]_AND_101_o |         |    4.281|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[0]_AND_109_o |         |    4.358|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[1]_AND_107_o |         |    4.133|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[2]_AND_105_o |         |    4.201|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[3]_AND_103_o |         |    4.300|         |         |
+r_Mode_p_CALCULATION.v_Hour_Temp[4]_AND_101_o |         |    4.290|         |         |
 r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o     |         |    2.629|         |         |
-r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o     |         |    2.722|         |         |
+r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o     |         |    2.629|         |         |
 r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o     |         |    2.661|         |         |
-r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o     |         |    2.661|         |         |
+r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o     |         |    2.692|         |         |
 r_Mode_p_CALCULATION.v_Minute[4]_AND_56_o     |         |    2.629|         |         |
-r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o     |         |    2.661|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[0]_AND_99_o|         |    4.238|         |         |
+r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o     |         |    2.629|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[0]_AND_99_o|         |    4.258|         |         |
 r_Mode_p_CALCULATION.v_Minute_Temp[1]_AND_97_o|         |    4.290|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95_o|         |    4.354|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95_o|         |    4.373|         |         |
 r_Mode_p_CALCULATION.v_Minute_Temp[3]_AND_93_o|         |    4.295|         |         |
 r_Mode_p_CALCULATION.v_Minute_Temp[4]_AND_91_o|         |    4.275|         |         |
-r_Mode_p_CALCULATION.v_Minute_Temp[5]_AND_89_o|         |    4.228|         |         |
+r_Mode_p_CALCULATION.v_Minute_Temp[5]_AND_89_o|         |    4.245|         |         |
 r_Mode_p_CALCULATION.v_Second[0]_AND_75_o     |         |    2.629|         |         |
 r_Mode_p_CALCULATION.v_Second[1]_AND_74_o     |         |    2.629|         |         |
 r_Mode_p_CALCULATION.v_Second[2]_AND_72_o     |         |    2.661|         |         |
 r_Mode_p_CALCULATION.v_Second[3]_AND_70_o     |         |    2.661|         |         |
 r_Mode_p_CALCULATION.v_Second[4]_AND_67_o     |         |    2.661|         |         |
 r_Mode_p_CALCULATION.v_Second[5]_AND_65_o     |         |    2.661|         |         |
-r_Mode_p_CALCULATION.v_Second_Temp[0]_AND_87_o|         |    4.171|         |         |
-r_Mode_p_CALCULATION.v_Second_Temp[1]_AND_85_o|         |    3.892|         |         |
-r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_83_o|         |    3.962|         |         |
-r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_81_o|         |    4.080|         |         |
-r_Mode_p_CALCULATION.v_Second_Temp[4]_AND_79_o|         |    4.175|         |         |
-r_Mode_p_CALCULATION.v_Second_Temp[5]_AND_77_o|         |    4.078|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[0]_AND_87_o|         |    4.273|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[1]_AND_85_o|         |    3.994|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_83_o|         |    4.064|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_81_o|         |    4.182|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[4]_AND_79_o|         |    4.277|         |         |
+r_Mode_p_CALCULATION.v_Second_Temp[5]_AND_77_o|         |    4.180|         |         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o
@@ -2121,7 +2125,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o
                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------+---------+---------+---------+---------+
-CLK                                          |         |         |    3.918|         |
+CLK                                          |         |         |    3.931|         |
 r_Clk_1_Hz                                   |         |         |    2.610|         |
 r_Mode_p_CALCULATION.v_Hour_Temp[0]_AND_109_o|         |         |    2.678|         |
 ---------------------------------------------+---------+---------+---------+---------+
@@ -2131,7 +2135,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour[1]_AND_49_o
                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------+---------+---------+---------+---------+
-CLK                                          |         |         |    3.918|         |
+CLK                                          |         |         |    3.931|         |
 r_Clk_1_Hz                                   |         |         |    2.671|         |
 r_Mode_p_CALCULATION.v_Hour_Temp[1]_AND_107_o|         |         |    2.739|         |
 ---------------------------------------------+---------+---------+---------+---------+
@@ -2141,9 +2145,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o
                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------+---------+---------+---------+---------+
-CLK                                          |         |         |    3.918|         |
-r_Clk_1_Hz                                   |         |         |    2.578|         |
-r_Mode_p_CALCULATION.v_Hour_Temp[2]_AND_105_o|         |         |    2.646|         |
+CLK                                          |         |         |    3.931|         |
+r_Clk_1_Hz                                   |         |         |    2.610|         |
+r_Mode_p_CALCULATION.v_Hour_Temp[2]_AND_105_o|         |         |    2.678|         |
 ---------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o
@@ -2151,7 +2155,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o
                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------+---------+---------+---------+---------+
-CLK                                          |         |         |    3.918|         |
+CLK                                          |         |         |    3.931|         |
 r_Clk_1_Hz                                   |         |         |    2.610|         |
 r_Mode_p_CALCULATION.v_Hour_Temp[3]_AND_103_o|         |         |    2.678|         |
 ---------------------------------------------+---------+---------+---------+---------+
@@ -2161,7 +2165,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o
                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------+---------+---------+---------+---------+
-CLK                                          |         |         |    3.918|         |
+CLK                                          |         |         |    3.931|         |
 r_Clk_1_Hz                                   |         |         |    2.610|         |
 r_Mode_p_CALCULATION.v_Hour_Temp[4]_AND_101_o|         |         |    2.678|         |
 ---------------------------------------------+---------+---------+---------+---------+
@@ -2171,9 +2175,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour_Temp[0]_AND_109_
                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------+---------+---------+---------+---------+
-CLK                                    |         |         |    3.898|         |
-Inst_DIV20M_2/r_Clk                    |         |         |    2.484|         |
-r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o|         |         |    2.661|         |
+CLK                                    |         |         |    3.911|         |
+Inst_DIV20M_2/r_Clk                    |         |         |    2.452|         |
+r_Mode_p_CALCULATION.v_Hour[0]_AND_51_o|         |         |    2.629|         |
 ---------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour_Temp[1]_AND_107_o
@@ -2181,7 +2185,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour_Temp[1]_AND_107_
                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------+---------+---------+---------+---------+
-CLK                                    |         |         |    3.898|         |
+CLK                                    |         |         |    3.911|         |
 Inst_DIV20M_2/r_Clk                    |         |         |    2.484|         |
 r_Mode_p_CALCULATION.v_Hour[1]_AND_49_o|         |         |    2.661|         |
 ---------------------------------------+---------+---------+---------+---------+
@@ -2191,9 +2195,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour_Temp[2]_AND_105_
                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------+---------+---------+---------+---------+
-CLK                                    |         |         |    3.898|         |
-Inst_DIV20M_2/r_Clk                    |         |         |    2.452|         |
-r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o|         |         |    2.629|         |
+CLK                                    |         |         |    3.911|         |
+Inst_DIV20M_2/r_Clk                    |         |         |    2.484|         |
+r_Mode_p_CALCULATION.v_Hour[2]_AND_47_o|         |         |    2.661|         |
 ---------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour_Temp[3]_AND_103_o
@@ -2201,9 +2205,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour_Temp[3]_AND_103_
                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------+---------+---------+---------+---------+
-CLK                                    |         |         |    3.898|         |
-Inst_DIV20M_2/r_Clk                    |         |         |    2.452|         |
-r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o|         |         |    2.629|         |
+CLK                                    |         |         |    3.911|         |
+Inst_DIV20M_2/r_Clk                    |         |         |    2.484|         |
+r_Mode_p_CALCULATION.v_Hour[3]_AND_45_o|         |         |    2.661|         |
 ---------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour_Temp[4]_AND_101_o
@@ -2211,7 +2215,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Hour_Temp[4]_AND_101_
                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------+---------+---------+---------+---------+
-CLK                                    |         |         |    3.898|         |
+CLK                                    |         |         |    3.911|         |
 Inst_DIV20M_2/r_Clk                    |         |         |    2.452|         |
 r_Mode_p_CALCULATION.v_Hour[4]_AND_43_o|         |         |    2.629|         |
 ---------------------------------------+---------+---------+---------+---------+
@@ -2221,7 +2225,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    5.025|         |
+CLK                                           |         |         |    5.038|         |
 r_Clk_1_Hz                                    |         |         |    3.803|         |
 r_Mode_p_CALCULATION.v_Minute_Temp[0]_AND_99_o|         |         |    3.980|         |
 ----------------------------------------------+---------+---------+---------+---------+
@@ -2231,7 +2235,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    3.918|         |
+CLK                                           |         |         |    3.931|         |
 r_Clk_1_Hz                                    |         |         |    2.671|         |
 r_Mode_p_CALCULATION.v_Minute_Temp[1]_AND_97_o|         |         |    2.739|         |
 ----------------------------------------------+---------+---------+---------+---------+
@@ -2241,7 +2245,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    3.918|         |
+CLK                                           |         |         |    3.931|         |
 r_Clk_1_Hz                                    |         |         |    2.578|         |
 r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95_o|         |         |    2.646|         |
 ----------------------------------------------+---------+---------+---------+---------+
@@ -2251,7 +2255,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    5.025|         |
+CLK                                           |         |         |    5.038|         |
 r_Clk_1_Hz                                    |         |         |    3.668|         |
 r_Mode_p_CALCULATION.v_Minute_Temp[3]_AND_93_o|         |         |    3.845|         |
 ----------------------------------------------+---------+---------+---------+---------+
@@ -2261,7 +2265,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute[4]_AND_56_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    5.025|         |
+CLK                                           |         |         |    5.038|         |
 r_Clk_1_Hz                                    |         |         |    3.642|         |
 r_Mode_p_CALCULATION.v_Minute_Temp[4]_AND_91_o|         |         |    3.819|         |
 ----------------------------------------------+---------+---------+---------+---------+
@@ -2271,7 +2275,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    3.918|         |
+CLK                                           |         |         |    3.931|         |
 r_Clk_1_Hz                                    |         |         |    2.671|         |
 r_Mode_p_CALCULATION.v_Minute_Temp[5]_AND_89_o|         |         |    2.739|         |
 ----------------------------------------------+---------+---------+---------+---------+
@@ -2281,7 +2285,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute_Temp[0]_AND_99
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.898|         |
+CLK                                      |         |         |    3.911|         |
 Inst_DIV20M_2/r_Clk                      |         |         |    2.452|         |
 r_Mode_p_CALCULATION.v_Minute[0]_AND_64_o|         |         |    2.629|         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -2291,9 +2295,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute_Temp[1]_AND_97
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.898|         |
-Inst_DIV20M_2/r_Clk                      |         |         |    2.545|         |
-r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o|         |         |    2.722|         |
+CLK                                      |         |         |    3.911|         |
+Inst_DIV20M_2/r_Clk                      |         |         |    2.452|         |
+r_Mode_p_CALCULATION.v_Minute[1]_AND_61_o|         |         |    2.629|         |
 -----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95_o
@@ -2301,7 +2305,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute_Temp[2]_AND_95
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.898|         |
+CLK                                      |         |         |    3.911|         |
 Inst_DIV20M_2/r_Clk                      |         |         |    2.484|         |
 r_Mode_p_CALCULATION.v_Minute[2]_AND_59_o|         |         |    2.661|         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -2311,9 +2315,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute_Temp[3]_AND_93
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.898|         |
-Inst_DIV20M_2/r_Clk                      |         |         |    2.484|         |
-r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o|         |         |    2.661|         |
+CLK                                      |         |         |    3.911|         |
+Inst_DIV20M_2/r_Clk                      |         |         |    2.515|         |
+r_Mode_p_CALCULATION.v_Minute[3]_AND_58_o|         |         |    2.692|         |
 -----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute_Temp[4]_AND_91_o
@@ -2321,7 +2325,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute_Temp[4]_AND_91
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.898|         |
+CLK                                      |         |         |    3.911|         |
 Inst_DIV20M_2/r_Clk                      |         |         |    2.452|         |
 r_Mode_p_CALCULATION.v_Minute[4]_AND_56_o|         |         |    2.629|         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -2331,9 +2335,9 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Minute_Temp[5]_AND_89
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.898|         |
-Inst_DIV20M_2/r_Clk                      |         |         |    2.484|         |
-r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o|         |         |    2.661|         |
+CLK                                      |         |         |    3.911|         |
+Inst_DIV20M_2/r_Clk                      |         |         |    2.452|         |
+r_Mode_p_CALCULATION.v_Minute[5]_AND_53_o|         |         |    2.629|         |
 -----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second[0]_AND_75_o
@@ -2341,7 +2345,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second[0]_AND_75_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    4.868|         |
+CLK                                           |         |         |    4.881|         |
 r_Clk_1_Hz                                    |         |         |    2.627|         |
 r_Mode_p_CALCULATION.v_Second_Temp[0]_AND_87_o|         |         |    2.775|         |
 ----------------------------------------------+---------+---------+---------+---------+
@@ -2351,7 +2355,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second[1]_AND_74_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    3.801|         |
+CLK                                           |         |         |    3.814|         |
 r_Clk_1_Hz                                    |         |         |    3.888|         |
 r_Mode_p_CALCULATION.v_Second_Temp[1]_AND_85_o|         |         |    4.065|         |
 ----------------------------------------------+---------+---------+---------+---------+
@@ -2361,7 +2365,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second[2]_AND_72_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    3.801|         |
+CLK                                           |         |         |    3.814|         |
 r_Clk_1_Hz                                    |         |         |    3.855|         |
 r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_83_o|         |         |    4.032|         |
 ----------------------------------------------+---------+---------+---------+---------+
@@ -2371,7 +2375,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second[3]_AND_70_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    3.801|         |
+CLK                                           |         |         |    3.814|         |
 r_Clk_1_Hz                                    |         |         |    3.848|         |
 r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_81_o|         |         |    4.025|         |
 ----------------------------------------------+---------+---------+---------+---------+
@@ -2381,7 +2385,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second[4]_AND_67_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    4.868|         |
+CLK                                           |         |         |    4.881|         |
 r_Clk_1_Hz                                    |         |         |    2.595|         |
 r_Mode_p_CALCULATION.v_Second_Temp[4]_AND_79_o|         |         |    2.743|         |
 ----------------------------------------------+---------+---------+---------+---------+
@@ -2391,7 +2395,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second[5]_AND_65_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLK                                           |         |         |    4.868|         |
+CLK                                           |         |         |    4.881|         |
 r_Clk_1_Hz                                    |         |         |    2.595|         |
 r_Mode_p_CALCULATION.v_Second_Temp[5]_AND_77_o|         |         |    2.743|         |
 ----------------------------------------------+---------+---------+---------+---------+
@@ -2401,7 +2405,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second_Temp[0]_AND_87
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.898|         |
+CLK                                      |         |         |    3.911|         |
 Inst_DIV20M_2/r_Clk                      |         |         |    2.452|         |
 r_Mode_p_CALCULATION.v_Second[0]_AND_75_o|         |         |    2.629|         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -2411,7 +2415,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second_Temp[1]_AND_85
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.898|         |
+CLK                                      |         |         |    3.911|         |
 Inst_DIV20M_2/r_Clk                      |         |         |    2.452|         |
 r_Mode_p_CALCULATION.v_Second[1]_AND_74_o|         |         |    2.629|         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -2421,7 +2425,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second_Temp[2]_AND_83
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.898|         |
+CLK                                      |         |         |    3.911|         |
 Inst_DIV20M_2/r_Clk                      |         |         |    2.484|         |
 r_Mode_p_CALCULATION.v_Second[2]_AND_72_o|         |         |    2.661|         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -2431,7 +2435,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second_Temp[3]_AND_81
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.898|         |
+CLK                                      |         |         |    3.911|         |
 Inst_DIV20M_2/r_Clk                      |         |         |    2.484|         |
 r_Mode_p_CALCULATION.v_Second[3]_AND_70_o|         |         |    2.661|         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -2441,7 +2445,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second_Temp[4]_AND_79
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.898|         |
+CLK                                      |         |         |    3.911|         |
 Inst_DIV20M_2/r_Clk                      |         |         |    2.484|         |
 r_Mode_p_CALCULATION.v_Second[4]_AND_67_o|         |         |    2.661|         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -2451,7 +2455,7 @@ Clock to Setup on destination clock r_Mode_p_CALCULATION.v_Second_Temp[5]_AND_77
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-CLK                                      |         |         |    3.898|         |
+CLK                                      |         |         |    3.911|         |
 Inst_DIV20M_2/r_Clk                      |         |         |    2.484|         |
 r_Mode_p_CALCULATION.v_Second[5]_AND_65_o|         |         |    2.661|         |
 -----------------------------------------+---------+---------+---------+---------+
@@ -2460,11 +2464,11 @@ r_Mode_p_CALCULATION.v_Second[5]_AND_65_o|         |         |    2.661|        
 
 
 Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.70 secs
+Total CPU time to Xst completion: 9.90 secs
  
 --> 
 
-Total memory usage is 4503856 kilobytes
+Total memory usage is 4503872 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  104 (   0 filtered)
