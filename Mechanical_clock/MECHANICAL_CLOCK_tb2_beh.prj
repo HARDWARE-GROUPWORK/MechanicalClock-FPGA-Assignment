@@ -1,6 +1,0 @@
-vhdl work "UART_TX.vhd"
-vhdl work "UART_RX.vhd"
-vhdl work "DIV20M_1.vhd"
-vhdl work "BCD_7SEGMENT.vhd"
-vhdl work "MECHANICAL_CLOCK.vhd"
-vhdl work "MECHANICAL_CLOCK_tb2.vhd"

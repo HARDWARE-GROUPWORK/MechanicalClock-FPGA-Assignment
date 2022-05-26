@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.54 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.54 secs
  
 --> Reading design: MECHANICAL_CLOCK.prj
 
@@ -140,10 +140,10 @@ Elaborating entity <DIV20M_X> (architecture <Behavioral>) with generics from lib
 Elaborating entity <DIV20M_X> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <BCD_7SEGMENT> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 372: Assignment to r_second_temp ignored, since the identifier is never used
-INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 606. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 645. Case statement is complete. others clause is never selected
-WARNING:Xst:2972 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" line 211. All outputs of instance <Inst_DIV20M_4> of block <DIV20M_X> are unconnected in block <MECHANICAL_CLOCK>. Underlying logic will be removed.
+WARNING:HDLCompiler:1127 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 370: Assignment to r_second_temp ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 604. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" Line 643. Case statement is complete. others clause is never selected
+WARNING:Xst:2972 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" line 209. All outputs of instance <Inst_DIV20M_4> of block <DIV20M_X> are unconnected in block <MECHANICAL_CLOCK>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -152,8 +152,7 @@ WARNING:Xst:2972 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANIC
 Synthesizing Unit <MECHANICAL_CLOCK>.
     Related source file is "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd".
 WARNING:Xst:647 - Input <INPUT_DATA<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" line 211: Output port <o_Newclk> of the instance <Inst_DIV20M_4> is unconnected or connected to loadless signal.
-WARNING:Xst:2935 - Signal 'LED_DEBUG', unconnected in block 'MECHANICAL_CLOCK', is tied to its initial value (0).
+INFO:Xst:3210 - "C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK.vhd" line 209: Output port <o_Newclk> of the instance <Inst_DIV20M_4> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <SEGMENT_DOT>.
     Found 4-bit register for signal <r_Digit>.
     Found 2-bit register for signal <r_Counter_4>.
@@ -250,47 +249,47 @@ WARNING:Xst:2935 - Signal 'LED_DEBUG', unconnected in block 'MECHANICAL_CLOCK', 
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 9-bit subtractor for signal <GND_4_o_GND_4_o_sub_80_OUT> created at line 516.
-    Found 9-bit subtractor for signal <GND_4_o_GND_4_o_sub_82_OUT> created at line 516.
-    Found 9-bit subtractor for signal <GND_4_o_GND_4_o_sub_84_OUT> created at line 517.
-    Found 9-bit subtractor for signal <GND_4_o_GND_4_o_sub_86_OUT> created at line 517.
-    Found 9-bit subtractor for signal <GND_4_o_GND_4_o_sub_88_OUT> created at line 518.
-    Found 9-bit subtractor for signal <GND_4_o_GND_4_o_sub_90_OUT> created at line 518.
-    Found 2-bit adder for signal <r_Counter_4[1]_GND_4_o_add_28_OUT> created at line 321.
-    Found 6-bit adder for signal <p_CALCULATION.v_Hour_Temp[5]_GND_4_o_add_38_OUT> created at line 407.
-    Found 7-bit adder for signal <p_CALCULATION.v_Minute_Temp[6]_GND_4_o_add_39_OUT> created at line 410.
-    Found 6-bit adder for signal <p_CALCULATION.v_Second[5]_GND_4_o_add_62_OUT> created at line 458.
-    Found 6-bit adder for signal <p_CALCULATION.v_Minute[5]_GND_4_o_add_64_OUT> created at line 464.
-    Found 5-bit adder for signal <p_CALCULATION.v_Hour[4]_GND_4_o_add_68_OUT> created at line 473.
-    Found 14-bit adder for signal <n0490> created at line 516.
-    Found 14-bit adder for signal <n0494> created at line 517.
-    Found 14-bit adder for signal <n0498> created at line 518.
-    Found 7-bit adder for signal <n0626[6:0]> created at line 574.
-    Found 7-bit adder for signal <n0628[6:0]> created at line 575.
-    Found 7-bit adder for signal <n0630[6:0]> created at line 576.
-    Found 7-bit adder for signal <n0632[6:0]> created at line 577.
-    Found 7-bit adder for signal <n0634[6:0]> created at line 578.
-    Found 7-bit adder for signal <n0636[6:0]> created at line 579.
-    Found 4-bit adder for signal <r_Index_TX[3]_GND_4_o_add_119_OUT> created at line 594.
-    Found 4-bit adder for signal <r_Index_RX[3]_GND_4_o_add_164_OUT> created at line 636.
-    Found 6-bit subtractor for signal <p_CALCULATION.v_Hour_Temp[5]_GND_4_o_sub_34_OUT<5:0>> created at line 399.
-    Found 7-bit subtractor for signal <p_CALCULATION.v_Minute_Temp[6]_GND_4_o_sub_35_OUT<6:0>> created at line 402.
-    Found 9x5-bit multiplier for signal <n0616> created at line 516.
-    Found 9x5-bit multiplier for signal <n0619> created at line 517.
-    Found 9x5-bit multiplier for signal <n0622> created at line 518.
+    Found 9-bit subtractor for signal <GND_4_o_GND_4_o_sub_80_OUT> created at line 514.
+    Found 9-bit subtractor for signal <GND_4_o_GND_4_o_sub_82_OUT> created at line 514.
+    Found 9-bit subtractor for signal <GND_4_o_GND_4_o_sub_84_OUT> created at line 515.
+    Found 9-bit subtractor for signal <GND_4_o_GND_4_o_sub_86_OUT> created at line 515.
+    Found 9-bit subtractor for signal <GND_4_o_GND_4_o_sub_88_OUT> created at line 516.
+    Found 9-bit subtractor for signal <GND_4_o_GND_4_o_sub_90_OUT> created at line 516.
+    Found 2-bit adder for signal <r_Counter_4[1]_GND_4_o_add_28_OUT> created at line 319.
+    Found 6-bit adder for signal <p_CALCULATION.v_Hour_Temp[5]_GND_4_o_add_38_OUT> created at line 405.
+    Found 7-bit adder for signal <p_CALCULATION.v_Minute_Temp[6]_GND_4_o_add_39_OUT> created at line 408.
+    Found 6-bit adder for signal <p_CALCULATION.v_Second[5]_GND_4_o_add_62_OUT> created at line 456.
+    Found 6-bit adder for signal <p_CALCULATION.v_Minute[5]_GND_4_o_add_64_OUT> created at line 462.
+    Found 5-bit adder for signal <p_CALCULATION.v_Hour[4]_GND_4_o_add_68_OUT> created at line 471.
+    Found 14-bit adder for signal <n0490> created at line 514.
+    Found 14-bit adder for signal <n0494> created at line 515.
+    Found 14-bit adder for signal <n0498> created at line 516.
+    Found 7-bit adder for signal <n0626[6:0]> created at line 572.
+    Found 7-bit adder for signal <n0628[6:0]> created at line 573.
+    Found 7-bit adder for signal <n0630[6:0]> created at line 574.
+    Found 7-bit adder for signal <n0632[6:0]> created at line 575.
+    Found 7-bit adder for signal <n0634[6:0]> created at line 576.
+    Found 7-bit adder for signal <n0636[6:0]> created at line 577.
+    Found 4-bit adder for signal <r_Index_TX[3]_GND_4_o_add_119_OUT> created at line 592.
+    Found 4-bit adder for signal <r_Index_RX[3]_GND_4_o_add_164_OUT> created at line 634.
+    Found 6-bit subtractor for signal <p_CALCULATION.v_Hour_Temp[5]_GND_4_o_sub_34_OUT<5:0>> created at line 397.
+    Found 7-bit subtractor for signal <p_CALCULATION.v_Minute_Temp[6]_GND_4_o_sub_35_OUT<6:0>> created at line 400.
+    Found 9x5-bit multiplier for signal <n0616> created at line 514.
+    Found 9x5-bit multiplier for signal <n0619> created at line 515.
+    Found 9x5-bit multiplier for signal <n0622> created at line 516.
     Found 4x4-bit Read Only RAM for signal <r_Counter_4_State[1]_GND_4_o_wide_mux_18_OUT>
-    Found 4-bit 4-to-1 multiplexer for signal <r_Counter_4_State[1]_r_Hour[4]_wide_mux_7_OUT> created at line 241.
-    Found 4-bit 4-to-1 multiplexer for signal <r_Counter_4_State[1]_r_Hour_Temp[4]_wide_mux_19_OUT> created at line 290.
-    Found 8-bit 9-to-1 multiplexer for signal <r_Index_TX[3]_X_4_o_wide_mux_124_OUT> created at line 604.
-    Found 8-bit 9-to-1 multiplexer for signal <OUTPUT_DATA> created at line 667.
-    Found 7-bit comparator lessequal for signal <n0070> created at line 416
-    Found 7-bit comparator lessequal for signal <n0072> created at line 418
-    Found 7-bit comparator lessequal for signal <n0076> created at line 423
-    Found 7-bit comparator lessequal for signal <n0078> created at line 425
-    Found 6-bit comparator lessequal for signal <n0082> created at line 430
-    Found 6-bit comparator lessequal for signal <n0084> created at line 432
-    Found 4-bit comparator greater for signal <r_Index_TX[3]_PWR_4_o_LessThan_119_o> created at line 593
-    Found 4-bit comparator greater for signal <r_Index_RX[3]_PWR_4_o_LessThan_164_o> created at line 635
+    Found 4-bit 4-to-1 multiplexer for signal <r_Counter_4_State[1]_r_Hour[4]_wide_mux_7_OUT> created at line 239.
+    Found 4-bit 4-to-1 multiplexer for signal <r_Counter_4_State[1]_r_Hour_Temp[4]_wide_mux_19_OUT> created at line 288.
+    Found 8-bit 9-to-1 multiplexer for signal <r_Index_TX[3]_X_4_o_wide_mux_124_OUT> created at line 602.
+    Found 8-bit 9-to-1 multiplexer for signal <OUTPUT_DATA> created at line 665.
+    Found 7-bit comparator lessequal for signal <n0070> created at line 414
+    Found 7-bit comparator lessequal for signal <n0072> created at line 416
+    Found 7-bit comparator lessequal for signal <n0076> created at line 421
+    Found 7-bit comparator lessequal for signal <n0078> created at line 423
+    Found 6-bit comparator lessequal for signal <n0082> created at line 428
+    Found 6-bit comparator lessequal for signal <n0084> created at line 430
+    Found 4-bit comparator greater for signal <r_Index_TX[3]_PWR_4_o_LessThan_119_o> created at line 591
+    Found 4-bit comparator greater for signal <r_Index_RX[3]_PWR_4_o_LessThan_164_o> created at line 633
     Summary:
 	inferred   1 RAM(s).
 	inferred   3 Multiplier(s).
@@ -956,9 +955,9 @@ Primitive and Black Box Usage:
 # Clock Buffers                    : 3
 #      BUFG                        : 2
 #      BUFGP                       : 1
-# IO Buffers                       : 46
+# IO Buffers                       : 45
 #      IBUF                        : 11
-#      OBUF                        : 35
+#      OBUF                        : 34
 # DSPs                             : 6
 #      DSP48A1                     : 6
 
@@ -981,8 +980,8 @@ Slice Logic Distribution:
    Number of unique control sets:       130
 
 IO Utilization: 
- Number of IOs:                          51
- Number of bonded IOBs:                  47  out of    102    46%  
+ Number of IOs:                          50
+ Number of bonded IOBs:                  46  out of    102    45%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
@@ -2482,14 +2481,14 @@ r_Mode_p_CALCULATION.v_Second[0]_AND_188_o|         |         |    3.515|       
 =========================================================================
 
 
-Total REAL time to Xst completion: 19.00 secs
-Total CPU time to Xst completion: 19.32 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.48 secs
  
 --> 
 
-Total memory usage is 4507348 kilobytes
+Total memory usage is 4507416 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   97 (   0 filtered)
+Number of warnings :   96 (   0 filtered)
 Number of infos    :   11 (   0 filtered)
 

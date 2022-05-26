@@ -44,12 +44,9 @@ entity MECHANICAL_CLOCK is
 		RX_LED: OUT STD_LOGIC;
 		OUTPUT_DATA : OUT STD_LOGIC_VECTOR(7 downto 0);
 		
-
 		
-		INDEX_TX: OUT natural range 0 to 8; -- HERE HERE
+		INDEX_TX: OUT natural range 0 to 8; -- HERE HERE -- FOR DEBUG TestBench only
 		INDEX_RX: OUT natural range 0 to 8; -- HERE HERE
-		
-		LED_DEBUG: OUT STD_LOGIC := '0';
 		
 		SEGMENTS: OUT STD_LOGIC_VECTOR(6 downto 0);
 		SEGMENT_GROUNDS: OUT STD_LOGIC_VECTOR(3 downto 0);

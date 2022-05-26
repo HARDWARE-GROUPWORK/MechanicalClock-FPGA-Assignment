@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK_tb2_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_tb2_isim_beh.wdb 
+Running: C:\Users\ASUS\Desktop\FPGA_Project\Mechanical_clock\MECHANICAL_CLOCK_tb3_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_tb3_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 Time resolution is 1 ps
@@ -7,7 +7,7 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /mechanical_clock_tb2/uut/Inst_BCD_7SEGMENT/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /mechanical_clock_tb3/uut/Inst_BCD_7SEGMENT/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
 # run all
-Stopped at time : 1343038550 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_tb2.vhd" Line 124
+Stopped at time : 113038875 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 86

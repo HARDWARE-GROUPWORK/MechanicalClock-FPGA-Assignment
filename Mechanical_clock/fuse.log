@@ -1,4 +1,4 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_tb2_isim_beh.exe -prj C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_tb2_beh.prj work.MECHANICAL_CLOCK_tb2 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_tb3_isim_beh.exe -prj C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_tb3_beh.prj work.MECHANICAL_CLOCK_tb3 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 12
 Turning on mult-threading, number of parallel sub-compilation jobs: 24 
@@ -8,7 +8,7 @@ Parsing VHDL file "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.v
 Parsing VHDL file "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/DIV20M_1.vhd" into library work
 Parsing VHDL file "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/BCD_7SEGMENT.vhd" into library work
 Parsing VHDL file "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.vhd" into library work
-Parsing VHDL file "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_tb2.vhd" into library work
+Parsing VHDL file "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_tb3.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -21,10 +21,11 @@ Compiling architecture behavioral of entity DIV20M_X [\DIV20M_X(5000000)\]
 Compiling architecture behavioral of entity DIV20M_X [\DIV20M_X(20000)\]
 Compiling architecture behavioral of entity BCD_7SEGMENT [bcd_7segment_default]
 Compiling architecture behavioral of entity MECHANICAL_CLOCK [mechanical_clock_default]
-Compiling architecture behavior of entity mechanical_clock_tb2
+Compiling architecture behavior of entity mechanical_clock_tb3
 Time Resolution for simulation is 1ps.
-WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\MECHANICAL_CLOCK_tb2_isim_beh.exe.sim\libPortability.dll".
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\MECHANICAL_CLOCK_tb3_isim_beh.exe.sim\libPortability.dll".
 Compiled 18 VHDL Units
-Built simulation executable C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_tb2_isim_beh.exe
-Fuse Memory Usage: 37100 KB
-Fuse CPU Usage: 515 ms
+Built simulation executable C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK_tb3_isim_beh.exe
+Fuse Memory Usage: 36816 KB
+Fuse CPU Usage: 453 ms
