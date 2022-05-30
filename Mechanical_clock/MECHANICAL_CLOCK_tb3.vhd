@@ -57,7 +57,7 @@ ARCHITECTURE behavior OF MECHANICAL_CLOCK_tb3 IS
 			INDEX_RX: OUT natural range 0 to 8;
 			
 			
-         LED_DEBUG : OUT  std_logic;
+         --LED_DEBUG : OUT  std_logic;
          SEGMENTS : OUT  std_logic_vector(6 downto 0);
          SEGMENT_GROUNDS : OUT  std_logic_vector(3 downto 0);
          SEGMENT_DOT : OUT  std_logic;
@@ -120,7 +120,7 @@ BEGIN
           OUTPUT_DATA => OUTPUT_DATA,
           INDEX_TX => INDEX_TX,
           INDEX_RX => INDEX_RX,
-          LED_DEBUG => LED_DEBUG,
+          --LED_DEBUG => LED_DEBUG,
           SEGMENTS => SEGMENTS,
           SEGMENT_GROUNDS => SEGMENT_GROUNDS,
           SEGMENT_DOT => SEGMENT_DOT,

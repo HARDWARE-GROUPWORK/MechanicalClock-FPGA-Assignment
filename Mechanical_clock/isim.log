@@ -10,4 +10,4 @@ Simulator is doing circuit initialization process.
 at 0 ps, Instance /mechanical_clock_tb3/uut/Inst_BCD_7SEGMENT/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
 # run all
-Stopped at time : 113038875 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/UART_RX.vhd" Line 86
+Stopped at time : 291267850 ns : File "C:/Users/ASUS/Desktop/FPGA_Project/Mechanical_clock/MECHANICAL_CLOCK.vhd" Line 481

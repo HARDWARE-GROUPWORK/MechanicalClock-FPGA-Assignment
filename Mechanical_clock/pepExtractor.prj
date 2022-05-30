@@ -1,5 +1,1 @@
-work	"BCD_7SEGMENT.vhd"
 work	"DIV20M_1.vhd"
-work	"MECHANICAL_CLOCK.vhd"
-work	"UART_RX.vhd"
-work	"UART_TX.vhd"

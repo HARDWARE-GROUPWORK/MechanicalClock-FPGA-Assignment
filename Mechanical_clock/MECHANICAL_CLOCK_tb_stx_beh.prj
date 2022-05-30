@@ -1,4 +1,0 @@
-vhdl isim_temp "UART_TX.vhd"
-vhdl isim_temp "UART_RX.vhd"
-vhdl isim_temp "MECHANICAL_CLOCK.vhd"
-vhdl isim_temp "MECHANICAL_CLOCK_tb.vhd"

@@ -2,27 +2,29 @@ Command line:
    MECHANICAL_CLOCK_tb3_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  60062
+     -socket  57501
 
-Thu May 26 14:51:36 2022
+Fri May 27 03:59:15 2022
 
 
- Elaboration Time: 0.0625 sec
+ Elaboration Time: 0.046875 sec
 
- Current Memory Usage: 5155.25 Meg
+ Current Memory Usage: 5155.33 Meg
 
- Total Signals          : 118
+ Total Signals          : 117
  Total Nets             : 272
- Total Signal Drivers   : 65
+ Total Signal Drivers   : 64
  Total Blocks           : 10
  Total Primitive Blocks : 8
  Total Processes        : 32
  Total Traceable Variables  : 20
  Total Scalar Nets and Variables : 831
 
- Total Simulation Time: 4.03125 sec
+ Total Simulation Time: 9.875 sec
 
- Current Memory Usage: 4683.39 Meg
+ Current Memory Usage: 4840.76 Meg
 
-Thu May 26 21:16:19 2022
+Fri May 27 12:19:54 2022
+
+
 
